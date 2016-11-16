@@ -1,0 +1,53 @@
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table,
+th,
+td {
+    padding: 5px;
+    border: solid 1px grey
+}
+
+.column {
+    width: 30%;
+}
+
+.header {
+    color: deepskyblue;
+    text-decoration: underline;
+}
+
+fieldset {
+    width: 30%;
+    display: inline-block;
+}
+
+img {
+    width: 140px;
+    height: 100px;
+    display: inline-block;
+}
+
+div {
+    display: inline-block;
+}
+
+.features {
+    float: right;
+    padding: 0px;
+}
+
+.left {
+    float: left;
+    width: 66%;
+}
+
+.right {
+    float: right;
+    width: 33%;
+}
+
+
+}
