@@ -1,0 +1,6 @@
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task3_SumOfEvenDivisor\bin\Debug\Task3_SumOfEvenDivisor.exe.config
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task3_SumOfEvenDivisor\bin\Debug\Task3_SumOfEvenDivisor.exe
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task3_SumOfEvenDivisor\bin\Debug\Task3_SumOfEvenDivisor.pdb
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task3_SumOfEvenDivisor\obj\Debug\Task3_SumOfEvenDivisor.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task3_SumOfEvenDivisor\obj\Debug\Task3_SumOfEvenDivisor.exe
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task3_SumOfEvenDivisor\obj\Debug\Task3_SumOfEvenDivisor.pdb

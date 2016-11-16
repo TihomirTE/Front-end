@@ -1,0 +1,6 @@
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task1_Mutant\bin\Debug\Task1_Mutant.exe.config
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task1_Mutant\bin\Debug\Task1_Mutant.exe
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task1_Mutant\bin\Debug\Task1_Mutant.pdb
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task1_Mutant\obj\Debug\Task1_Mutant.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task1_Mutant\obj\Debug\Task1_Mutant.exe
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task1_Mutant\obj\Debug\Task1_Mutant.pdb

@@ -1,0 +1,6 @@
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task2_Speeds\bin\Debug\Task2_Speeds.exe.config
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task2_Speeds\bin\Debug\Task2_Speeds.exe
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task2_Speeds\bin\Debug\Task2_Speeds.pdb
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task2_Speeds\obj\Debug\Task2_Speeds.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task2_Speeds\obj\Debug\Task2_Speeds.exe
+E:\Programming\Telerik\C# Basic\OldExams\Exam_2016_04_26\Task2_Speeds\obj\Debug\Task2_Speeds.pdb
