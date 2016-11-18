@@ -1,0 +1,5 @@
+E:\Programming\NBU\Cplusplus\HW2_Methods\Task4_AppearanceCount\bin\Debug\Task4_AppearanceCount.exe.config
+E:\Programming\NBU\Cplusplus\HW2_Methods\Task4_AppearanceCount\bin\Debug\Task4_AppearanceCount.exe
+E:\Programming\NBU\Cplusplus\HW2_Methods\Task4_AppearanceCount\bin\Debug\Task4_AppearanceCount.pdb
+E:\Programming\NBU\Cplusplus\HW2_Methods\Task4_AppearanceCount\obj\Debug\Task4_AppearanceCount.exe
+E:\Programming\NBU\Cplusplus\HW2_Methods\Task4_AppearanceCount\obj\Debug\Task4_AppearanceCount.pdb

@@ -1,0 +1,5 @@
+E:\Programming\NBU\Cplusplus\HW2_Methods\Task5_LargerThanNeighbours\bin\Debug\Task5_LargerThanNeighbours.exe.config
+E:\Programming\NBU\Cplusplus\HW2_Methods\Task5_LargerThanNeighbours\bin\Debug\Task5_LargerThanNeighbours.exe
+E:\Programming\NBU\Cplusplus\HW2_Methods\Task5_LargerThanNeighbours\bin\Debug\Task5_LargerThanNeighbours.pdb
+E:\Programming\NBU\Cplusplus\HW2_Methods\Task5_LargerThanNeighbours\obj\Debug\Task5_LargerThanNeighbours.exe
+E:\Programming\NBU\Cplusplus\HW2_Methods\Task5_LargerThanNeighbours\obj\Debug\Task5_LargerThanNeighbours.pdb
