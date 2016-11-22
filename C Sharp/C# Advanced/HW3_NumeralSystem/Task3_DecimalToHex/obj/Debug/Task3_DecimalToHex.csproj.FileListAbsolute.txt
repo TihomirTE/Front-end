@@ -1,0 +1,5 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task3_DecimalToHex\bin\Debug\Task3_DecimalToHex.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task3_DecimalToHex\bin\Debug\Task3_DecimalToHex.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task3_DecimalToHex\bin\Debug\Task3_DecimalToHex.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task3_DecimalToHex\obj\Debug\Task3_DecimalToHex.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task3_DecimalToHex\obj\Debug\Task3_DecimalToHex.pdb

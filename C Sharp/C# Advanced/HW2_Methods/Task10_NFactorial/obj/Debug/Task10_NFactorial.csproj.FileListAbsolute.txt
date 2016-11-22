@@ -1,0 +1,1 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task10_NFactorial\bin\Debug\Task10_NFactorial.exe.config

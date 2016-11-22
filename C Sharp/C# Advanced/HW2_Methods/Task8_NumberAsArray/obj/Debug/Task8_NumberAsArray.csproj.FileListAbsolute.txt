@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task8_NumberAsArray\bin\Debug\Task8_NumberAsArray.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task8_NumberAsArray\bin\Debug\Task8_NumberAsArray.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task8_NumberAsArray\bin\Debug\Task8_NumberAsArray.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task8_NumberAsArray\obj\Debug\Task8_NumberAsArray.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task8_NumberAsArray\obj\Debug\Task8_NumberAsArray.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task8_NumberAsArray\obj\Debug\Task8_NumberAsArray.pdb
