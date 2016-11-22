@@ -3,3 +3,6 @@ E:\Programming\NBU\Cplusplus\HW2_Methods\Task5_LargerThanNeighbours\bin\Debug\Ta
 E:\Programming\NBU\Cplusplus\HW2_Methods\Task5_LargerThanNeighbours\bin\Debug\Task5_LargerThanNeighbours.pdb
 E:\Programming\NBU\Cplusplus\HW2_Methods\Task5_LargerThanNeighbours\obj\Debug\Task5_LargerThanNeighbours.exe
 E:\Programming\NBU\Cplusplus\HW2_Methods\Task5_LargerThanNeighbours\obj\Debug\Task5_LargerThanNeighbours.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task5_LargerThanNeighbours\bin\Debug\Task5_LargerThanNeighbours.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task5_LargerThanNeighbours\obj\Debug\Task5_LargerThanNeighbours.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task5_LargerThanNeighbours\obj\Debug\Task5_LargerThanNeighbours.pdb

@@ -3,3 +3,6 @@ E:\Programming\NBU\Cplusplus\HW2_Methods\Task3_EnglishDigit\bin\Debug\Task3_Engl
 E:\Programming\NBU\Cplusplus\HW2_Methods\Task3_EnglishDigit\bin\Debug\Task3_EnglishDigit.pdb
 E:\Programming\NBU\Cplusplus\HW2_Methods\Task3_EnglishDigit\obj\Debug\Task3_EnglishDigit.exe
 E:\Programming\NBU\Cplusplus\HW2_Methods\Task3_EnglishDigit\obj\Debug\Task3_EnglishDigit.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task3_EnglishDigit\bin\Debug\Task3_EnglishDigit.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task3_EnglishDigit\obj\Debug\Task3_EnglishDigit.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task3_EnglishDigit\obj\Debug\Task3_EnglishDigit.pdb
