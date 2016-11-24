@@ -27,7 +27,7 @@ td {
     font-size: 90%;
 }
 
-.diffCollor {
+tbody tr:nth-child(2n) {
     background-color: #ECECD8;
 }
 
@@ -40,10 +40,6 @@ td {
     border: none;
 }
 
-#headCheck {
-    border-bottom: solid 1px grey;
-}
-
-#checkBox {
+.checkBox {
     box-shadow: inset 1px 1px 15px grey;
 }

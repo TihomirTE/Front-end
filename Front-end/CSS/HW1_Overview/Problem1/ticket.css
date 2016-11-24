@@ -28,17 +28,17 @@ table {
 }
 
 .Yell,
-.Parker {
+#Parker {
     color: #E0D383;
 }
 
-.Red {
+#Red {
     color: #EA0205;
     vertical-align: 0px;
     padding-top: 0px;
 }
 
-.Orange {
+#Orange {
     color: #E06B1E;
 }
 
@@ -47,11 +47,11 @@ table {
     padding-top: 0px;
 }
 
-.Parker {
+#Parker {
     padding-bottom: 0px;
 }
 
-.Parker::before {
+#Parker::before {
     content: '';
     display: inline-block;
     width: 12px;
