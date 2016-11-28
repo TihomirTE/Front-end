@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task2_BitShiftMatrix\bin\Debug\Task2_BitShiftMatrix.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task2_BitShiftMatrix\bin\Debug\Task2_BitShiftMatrix.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task2_BitShiftMatrix\bin\Debug\Task2_BitShiftMatrix.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task2_BitShiftMatrix\obj\Debug\Task2_BitShiftMatrix.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task2_BitShiftMatrix\obj\Debug\Task2_BitShiftMatrix.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task2_BitShiftMatrix\obj\Debug\Task2_BitShiftMatrix.csprojResolveAssemblyReference.cache

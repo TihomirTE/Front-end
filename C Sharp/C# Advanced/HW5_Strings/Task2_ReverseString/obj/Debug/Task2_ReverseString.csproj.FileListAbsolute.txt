@@ -1,0 +1,1 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task2_ReverseString\bin\Debug\Task2_ReverseString.exe.config

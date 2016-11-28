@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task1_Messages\bin\Debug\Task1_Messages.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task1_Messages\bin\Debug\Task1_Messages.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task1_Messages\bin\Debug\Task1_Messages.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task1_Messages\obj\Debug\Task1_Messages.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task1_Messages\obj\Debug\Task1_Messages.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Workshop_ArraysMethodsClasses\Task1_Messages\obj\Debug\Task1_Messages.pdb

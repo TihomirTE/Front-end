@@ -1,0 +1,5 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task6_StringLenght\bin\Debug\Task6_StringLenght.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task6_StringLenght\bin\Debug\Task6_StringLenght.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task6_StringLenght\bin\Debug\Task6_StringLenght.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task6_StringLenght\obj\Debug\Task6_StringLenght.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task6_StringLenght\obj\Debug\Task6_StringLenght.pdb

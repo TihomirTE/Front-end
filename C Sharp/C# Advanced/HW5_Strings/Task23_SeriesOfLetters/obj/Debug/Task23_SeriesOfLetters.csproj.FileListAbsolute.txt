@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task23_SeriesOfLetters\bin\Debug\Task23_SeriesOfLetters.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task23_SeriesOfLetters\bin\Debug\Task23_SeriesOfLetters.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task23_SeriesOfLetters\bin\Debug\Task23_SeriesOfLetters.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task23_SeriesOfLetters\obj\Debug\Task23_SeriesOfLetters.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task23_SeriesOfLetters\obj\Debug\Task23_SeriesOfLetters.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task23_SeriesOfLetters\obj\Debug\Task23_SeriesOfLetters.pdb

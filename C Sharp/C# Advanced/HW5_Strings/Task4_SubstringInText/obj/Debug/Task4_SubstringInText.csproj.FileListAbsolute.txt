@@ -1,0 +1,1 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task4_SubstringInText\bin\Debug\Task4_SubstringInText.exe.config
