@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task3_CorrectBrackets\bin\Debug\Task3_CorrectBrackets.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task3_CorrectBrackets\bin\Debug\Task3_CorrectBrackets.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task3_CorrectBrackets\bin\Debug\Task3_CorrectBrackets.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task3_CorrectBrackets\obj\Debug\Task3_CorrectBrackets.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task3_CorrectBrackets\obj\Debug\Task3_CorrectBrackets.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task3_CorrectBrackets\obj\Debug\Task3_CorrectBrackets.pdb

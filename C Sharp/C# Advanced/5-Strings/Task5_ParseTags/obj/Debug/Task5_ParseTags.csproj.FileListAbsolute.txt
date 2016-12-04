@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task5_ParseTags\bin\Debug\Task5_ParseTags.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task5_ParseTags\bin\Debug\Task5_ParseTags.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task5_ParseTags\bin\Debug\Task5_ParseTags.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task5_ParseTags\obj\Debug\Task5_ParseTags.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task5_ParseTags\obj\Debug\Task5_ParseTags.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task5_ParseTags\obj\Debug\Task5_ParseTags.pdb
