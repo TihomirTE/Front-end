@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task5_TriangleThreeSide\bin\Debug\Task5_TriangleThreeSide.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task5_TriangleThreeSide\bin\Debug\Task5_TriangleThreeSide.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task5_TriangleThreeSide\bin\Debug\Task5_TriangleThreeSide.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task5_TriangleThreeSide\obj\Debug\Task5_TriangleThreeSide.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task5_TriangleThreeSide\obj\Debug\Task5_TriangleThreeSide.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task5_TriangleThreeSide\obj\Debug\Task5_TriangleThreeSide.pdb
