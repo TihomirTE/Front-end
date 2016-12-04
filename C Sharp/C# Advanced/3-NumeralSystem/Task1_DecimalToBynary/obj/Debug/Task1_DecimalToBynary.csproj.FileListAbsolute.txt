@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task1_DecimalToBynary\bin\Debug\Task1_DecimalToBynary.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task1_DecimalToBynary\bin\Debug\Task1_DecimalToBynary.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task1_DecimalToBynary\bin\Debug\Task1_DecimalToBynary.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task1_DecimalToBynary\obj\Debug\Task1_DecimalToBynary.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task1_DecimalToBynary\obj\Debug\Task1_DecimalToBynary.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task1_DecimalToBynary\obj\Debug\Task1_DecimalToBynary.pdb

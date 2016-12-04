@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task7_OneSystemToAnyOther\bin\Debug\Task7_OneSystemToAnyOther.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task7_OneSystemToAnyOther\bin\Debug\Task7_OneSystemToAnyOther.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task7_OneSystemToAnyOther\bin\Debug\Task7_OneSystemToAnyOther.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task7_OneSystemToAnyOther\obj\Debug\Task7_OneSystemToAnyOther.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task7_OneSystemToAnyOther\obj\Debug\Task7_OneSystemToAnyOther.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task7_OneSystemToAnyOther\obj\Debug\Task7_OneSystemToAnyOther.pdb
