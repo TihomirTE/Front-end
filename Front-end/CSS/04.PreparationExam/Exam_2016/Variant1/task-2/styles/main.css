@@ -1,0 +1,77 @@
+#site-header {
+    text-align: center;
+    background-color: #ccc;
+    color: #fff;
+    text-shadow: 2px 2px #0F0F0F;
+    width: 90%;
+}
+
+#site-header span:before {
+    content: url("imgs/logo.png");
+    background-repeat: no-repeat;
+}
+
+.superheroes {
+    float: left;
+    justify-content: center;
+}
+
+.superheroes li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 1px;
+}
+
+img {
+    display: block;
+    height: 170px;
+    width: 170px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.hero-header {
+    display: block;
+    position: relative;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    top: 31px;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 8px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+a {
+    position: relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #636363;
+    padding: 5px;
+    font-size: 0.8em;
+    top: -40px;
+    z-index: -1;
+}
+
+li:hover img {
+    height: 200px;
+    width: 180px;
+}
+
+li:hover .hero-header {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+li:hover a {
+    top: 2px;
+}
+
+.super-heroes li a:nth-of-type(4):hover {
+    text-decoration: underline;
+}
