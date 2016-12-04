@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task3.1_SequenceInMatrix\bin\Debug\Task3.1_SequenceInMatrix.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task3.1_SequenceInMatrix\bin\Debug\Task3.1_SequenceInMatrix.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task3.1_SequenceInMatrix\bin\Debug\Task3.1_SequenceInMatrix.pdb
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task3.1_SequenceInMatrix\obj\Debug\Task3.1_SequenceInMatrix.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task3.1_SequenceInMatrix\obj\Debug\Task3.1_SequenceInMatrix.exe
+E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task3.1_SequenceInMatrix\obj\Debug\Task3.1_SequenceInMatrix.pdb
