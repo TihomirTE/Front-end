@@ -1,42 +1,68 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task2_BitShiftMatrix
+namespace TaskWorkshop_BitShiftMatrix
 {
-    class BitShiftMatrix
+    class Program
     {
-        static void Main()
+        static int rows;
+        static int cols;
+        static int[] moves;
+        static BigInteger[,] field;
+        static void Main(string[] args)
         {
             // input
-            int rows = int.Parse(Console.ReadLine());
-            int cols = int.Parse(Console.ReadLine());
-            int numberMoves = int.Parse(Console.ReadLine());
-            var codes = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            rows = int.Parse(Console.ReadLine());
+            cols = int.Parse(Console.ReadLine());
+            int movesCount = int.Parse(Console.ReadLine());
+            moves = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
-            int coeff = Math.Max(rows, cols);
-            
-            int sum = 0;
-            for (int i = 0; i < numberMoves; i++)
+            field = new BigInteger[rows, cols];
+            FillMatrix();
+
+            BigInteger sum = 0;
+            int[] pos = { rows - 1, 0 };
+            sum += field[pos[0], pos[1]];
+            field[pos[0], pos[1]] = 0;
+            int coeff = rows > cols ? rows : cols;
+            foreach (var code in moves)
             {
-                sum += CalculateTheMove(codes[i], coeff);
+                int[] targetPos = { code / coeff, code % coeff };
+
+                int stepRow = pos[0] == targetPos[0] ? 0 : (pos[0] < targetPos[0] ? 1 : -1);
+                int stepCol = pos[1] == targetPos[1] ? 0 : (pos[1] < targetPos[1] ? 1 : -1);
+                do
+                {
+                    // moving on columns
+                    pos[1] += stepCol;
+                    sum += field[pos[0], pos[1]];
+                    field[pos[0], pos[1]] = 0; // visited cell
+                } while (pos[1] != targetPos[1] && pos[1] >= 0 && pos[1] < cols);
+
+                do
+                {
+                    // moving on rows
+                    pos[0] += stepRow;
+                    sum += field[pos[0], pos[1]];
+                    field[pos[0], pos[1]] = 0; // visited cell
+                } while (pos[0] != targetPos[0] && pos[0] >= 0 && pos[0] < rows);
             }
+            Console.WriteLine(sum);
         }
 
-        static int CalculateTheMove(int move, int coeff)
+        private static void FillMatrix()
         {
-            int row = move / coeff;
-            int col = move % coeff;
-
-            int currentSum = SumTheMovement(row, col);
-            return currentSum;
-        }
-
-        static int SumTheMovement(int row, int col)
-        {
-            
+            for (int r = 0; r < rows; r++)
+            {
+                for (int c = 0; c < cols; c++)
+                {
+                    field[r, c] = (BigInteger)1 << (rows - 1 - r + c);
+                }
+            }
         }
     }
 }

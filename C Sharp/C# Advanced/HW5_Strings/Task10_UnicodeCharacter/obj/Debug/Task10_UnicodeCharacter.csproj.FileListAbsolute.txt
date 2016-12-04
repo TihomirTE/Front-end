@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task10_UnicodeCharacter\bin\Debug\Task10_UnicodeCharacter.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task10_UnicodeCharacter\bin\Debug\Task10_UnicodeCharacter.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task10_UnicodeCharacter\bin\Debug\Task10_UnicodeCharacter.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task10_UnicodeCharacter\obj\Debug\Task10_UnicodeCharacter.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task10_UnicodeCharacter\obj\Debug\Task10_UnicodeCharacter.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task10_UnicodeCharacter\obj\Debug\Task10_UnicodeCharacter.pdb

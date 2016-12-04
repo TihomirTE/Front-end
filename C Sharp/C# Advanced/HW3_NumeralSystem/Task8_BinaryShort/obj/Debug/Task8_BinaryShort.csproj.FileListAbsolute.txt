@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task8_BinaryShort\bin\Debug\Task8_BinaryShort.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task8_BinaryShort\bin\Debug\Task8_BinaryShort.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task8_BinaryShort\bin\Debug\Task8_BinaryShort.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task8_BinaryShort\obj\Debug\Task8_BinaryShort.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task8_BinaryShort\obj\Debug\Task8_BinaryShort.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task8_BinaryShort\obj\Debug\Task8_BinaryShort.pdb

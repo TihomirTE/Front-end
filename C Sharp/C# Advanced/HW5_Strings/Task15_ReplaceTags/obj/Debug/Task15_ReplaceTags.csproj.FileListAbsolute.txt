@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task15_ReplaceTags\bin\Debug\Task15_ReplaceTags.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task15_ReplaceTags\bin\Debug\Task15_ReplaceTags.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task15_ReplaceTags\bin\Debug\Task15_ReplaceTags.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task15_ReplaceTags\obj\Debug\Task15_ReplaceTags.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task15_ReplaceTags\obj\Debug\Task15_ReplaceTags.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task15_ReplaceTags\obj\Debug\Task15_ReplaceTags.pdb

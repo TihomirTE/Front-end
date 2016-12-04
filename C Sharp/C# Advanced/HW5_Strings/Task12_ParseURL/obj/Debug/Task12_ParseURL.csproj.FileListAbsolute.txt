@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task12_ParseURL\bin\Debug\Task12_ParseURL.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task12_ParseURL\bin\Debug\Task12_ParseURL.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task12_ParseURL\bin\Debug\Task12_ParseURL.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task12_ParseURL\obj\Debug\Task12_ParseURL.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task12_ParseURL\obj\Debug\Task12_ParseURL.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task12_ParseURL\obj\Debug\Task12_ParseURL.pdb

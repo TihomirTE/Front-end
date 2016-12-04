@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task4_LargestAreaInMatrix\bin\Debug\Task4_LargestAreaInMatrix.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task4_LargestAreaInMatrix\bin\Debug\Task4_LargestAreaInMatrix.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task4_LargestAreaInMatrix\bin\Debug\Task4_LargestAreaInMatrix.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task4_LargestAreaInMatrix\obj\Debug\Task4_LargestAreaInMatrix.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task4_LargestAreaInMatrix\obj\Debug\Task4_LargestAreaInMatrix.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task4_LargestAreaInMatrix\obj\Debug\Task4_LargestAreaInMatrix.pdb

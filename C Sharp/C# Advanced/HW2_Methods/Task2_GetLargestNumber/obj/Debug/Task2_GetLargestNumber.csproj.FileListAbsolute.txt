@@ -1,9 +1,0 @@
-E:\Programming\NBU\Cplusplus\HW2_Methods\Task2_GetLargestNumber\bin\Debug\Task2_GetLargestNumber.exe.config
-E:\Programming\NBU\Cplusplus\HW2_Methods\Task2_GetLargestNumber\bin\Debug\Task2_GetLargestNumber.exe
-E:\Programming\NBU\Cplusplus\HW2_Methods\Task2_GetLargestNumber\bin\Debug\Task2_GetLargestNumber.pdb
-E:\Programming\NBU\Cplusplus\HW2_Methods\Task2_GetLargestNumber\obj\Debug\Task2_GetLargestNumber.csprojResolveAssemblyReference.cache
-E:\Programming\NBU\Cplusplus\HW2_Methods\Task2_GetLargestNumber\obj\Debug\Task2_GetLargestNumber.exe
-E:\Programming\NBU\Cplusplus\HW2_Methods\Task2_GetLargestNumber\obj\Debug\Task2_GetLargestNumber.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task2_GetLargestNumber\bin\Debug\Task2_GetLargestNumber.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task2_GetLargestNumber\obj\Debug\Task2_GetLargestNumber.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task2_GetLargestNumber\obj\Debug\Task2_GetLargestNumber.pdb

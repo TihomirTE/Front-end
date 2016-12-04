@@ -1,5 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task6_TriangleTwoSidesAndAngle\bin\Debug\Task6_TriangleTwoSidesAndAngle.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task6_TriangleTwoSidesAndAngle\bin\Debug\Task6_TriangleTwoSidesAndAngle.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task6_TriangleTwoSidesAndAngle\bin\Debug\Task6_TriangleTwoSidesAndAngle.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task6_TriangleTwoSidesAndAngle\obj\Debug\Task6_TriangleTwoSidesAndAngle.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task6_TriangleTwoSidesAndAngle\obj\Debug\Task6_TriangleTwoSidesAndAngle.pdb

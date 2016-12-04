@@ -1,9 +1,0 @@
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task1_FillTheMatrix\bin\Debug\Task1_FillTheMatrix.exe.config
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task1_FillTheMatrix\bin\Debug\Task1_FillTheMatrix.exe
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task1_FillTheMatrix\bin\Debug\Task1_FillTheMatrix.pdb
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task1_FillTheMatrix\obj\Debug\Task1_FillTheMatrix.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task1_FillTheMatrix\obj\Debug\Task1_FillTheMatrix.exe
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task1_FillTheMatrix\obj\Debug\Task1_FillTheMatrix.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task1_FillTheMatrix\bin\Debug\Task1_FillTheMatrix.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task1_FillTheMatrix\obj\Debug\Task1_FillTheMatrix.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task1_FillTheMatrix\obj\Debug\Task1_FillTheMatrix.pdb
