@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 20px;
+}
+
+#site {
+    width: 750px;
+    margin: 0 auto;
+    font-family: Corbel, Tahoma, san-serif;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    font-size: 20px;
+    color: #00aaff;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+hr {
+    border: 0;
+    height: 2px;
+    width: 700px;
+    margin: 10px auto;
+    background-color: #000000;
+}
+
+section {
+    float: left;
+    border: 2px solid #000000;
+}
+
+.clear:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#table {
+    width: 530px;
+    margin: 0 0 8px 0;
+}
+
+fieldset {
+    width: 230px;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #000000;
+    font-size: 18px;
+}
+
+legend {
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+img {
+    width: 100px;
+    height: 80px;
+    float: left;
+}
+
+.information p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.information {
+    margin-top: 25px;
+}
+
+.price {
+    padding: 16px;
+}
+
+aside {
+    float: left;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    font-size: 20px;
+}
+
+input {
+    width: 165px;
+    padding: 22px 0;
+}
+
+.price-slide {
+    margin-left: 20px;
+}
+
+.RAM-slide {
+    margin-left: 35px;
+}
+
+aside p {
+    margin-left: -6px;
+}
