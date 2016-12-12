@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace TaskWorkshop_BitShiftMatrix
 {
     class Program
     {
+        /* condition http://bgcoder.com/Contests/Practice/Index/223#2 */
+
         static int rows;
         static int cols;
         static int[] moves;
@@ -25,7 +25,7 @@ namespace TaskWorkshop_BitShiftMatrix
             FillMatrix();
 
             BigInteger sum = 0;
-            int[] pos = { rows - 1, 0 };
+            int[] pos = { rows - 1, 0 };  // starting point
             sum += field[pos[0], pos[1]];
             field[pos[0], pos[1]] = 0;
             int coeff = rows > cols ? rows : cols;
