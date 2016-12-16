@@ -1,8 +1,13 @@
+/*Person.prototype.getName = function() {
+  return this.name;
+};*/
+
+
 function solve(args) {
-    let elements = args[0];
+    var elements = args[0];
 
     Array.prototype.removeElement = function(elements) {
-        let index = this.indexOf(elements);
+        var index = this.indexOf(elements);
 
         while (index != -1) {
             this.splice(index, 1);
@@ -17,7 +22,7 @@ function solve(args) {
 
 
 //solve(['1', '2', '3', '2', '1', '2', '3', '2']);
-solve([
+/*solve([
     '_h/_',
     '^54F#',
     'V',
@@ -38,8 +43,4 @@ solve([
     'kv?tc`',
     'kv?tc`',
     'Z285'
-]);
-
-/*Person.prototype.getName = function() {
-  return this.name;
-};*/
+]);*/
