@@ -7,7 +7,7 @@ namespace _01.Defining_Classes_Part_1
     {
         //If you want to check this test first you have to comment the class GSMCallHistoryTest.cs
 
-        /*public static void Main()
+        public static void Main()
         {
             var phoneCollection = new List<GSM>();
 
@@ -27,6 +27,6 @@ namespace _01.Defining_Classes_Part_1
             }
 
             Console.WriteLine(GSM.IPhone4S);
-        }*/
+        }
     }
 }

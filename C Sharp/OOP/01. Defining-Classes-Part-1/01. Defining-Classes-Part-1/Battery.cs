@@ -36,6 +36,7 @@ namespace _01.Defining_Classes_Part_1
             this.model = model;
         }
 
+        // properties
         public string Model { get; set; }
         public int? HoursIdle
         {

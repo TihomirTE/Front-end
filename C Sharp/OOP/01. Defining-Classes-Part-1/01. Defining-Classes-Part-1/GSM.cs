@@ -1,40 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace _01.Defining_Classes_Part_1
 {
     class GSM
     {
         // private fields
-        private string model;
-        private string owner;
-        private decimal? price;
-        private string manufacturer;
-        private Display display;
-        private Battery battery;
+        private string model = null;
+        private string owner = null;
+        private decimal? price = null;
+        private string manufacturer = null;
         private static readonly GSM iPhone4S = new GSM("iPhone 4S", "Apple");
         public List<Call> callHistory = new List<Call>();
-        private static readonly double pricePerMinute = 0.37;
+        private const double pricePerMinute = 0.37;
 
         // constructors
         public GSM(string model, string manufacturer)
-            : this(model, manufacturer, null)
         {
-           
+            this.model = model;
+            this.manufacturer = manufacturer;  
         }
         public GSM(string model, string manufacturer, decimal? price)
-            : this(model, manufacturer, price, null)
         {
-           
+            this.model = model;
+            this.manufacturer = manufacturer;
+            this.price = price;  
         }
 
         public GSM(string model, string manufacturer, string owner, decimal? price)
-            :this(model, manufacturer, owner, price, null)
         {
-           
+            this.model = model;
+            this.manufacturer = manufacturer;
+            this.owner = owner;
+            this.price = price;  
         }
 
         public GSM(string model, string manufacturer, string owner, decimal? price, Battery battery)
@@ -131,7 +130,7 @@ namespace _01.Defining_Classes_Part_1
             }
             return duration = (duration  / 60) * pricePerMinute;
         } 
-             // ToString() 
+             // ToString() Method
         public override string ToString()
         {
             StringBuilder output = new StringBuilder();
