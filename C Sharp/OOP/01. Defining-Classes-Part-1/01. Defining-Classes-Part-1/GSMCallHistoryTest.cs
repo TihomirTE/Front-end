@@ -10,7 +10,7 @@ namespace _01.Defining_Classes_Part_1
     {
         // If you want to test GSMTest - first comment the Main method of this class
 
-        /*static void Main()
+        static void Main()
         {
             Display samsungDysplay = new Display(16000000, 5.1);
             GSM phone = new GSM("Galaxy S7 ", "Samsung", 1000, samsungDysplay);
@@ -48,6 +48,6 @@ namespace _01.Defining_Classes_Part_1
             Console.WriteLine("Total price without the longest call is: {0:f2}lv.", phone.CalculateTotalPrice());
             phone.ClearHistory();
 
-        }*/
+        }
     }
 }

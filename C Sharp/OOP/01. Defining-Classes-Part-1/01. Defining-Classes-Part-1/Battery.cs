@@ -6,10 +6,10 @@ namespace _01.Defining_Classes_Part_1
     public class Battery
     {
         // fields 
-        private string model;
-        private int? hoursIde;
-        private int? hoursTalk;
-        private BatteryType? type;
+        private string model = null;
+        private int? hoursIde = null;
+        private int? hoursTalk = null;
+        private BatteryType? type = null;
 
         // constructors
         public Battery()
@@ -61,6 +61,7 @@ namespace _01.Defining_Classes_Part_1
             }
         }
         public BatteryType Type { get; set; }
+        
 
     }
 }

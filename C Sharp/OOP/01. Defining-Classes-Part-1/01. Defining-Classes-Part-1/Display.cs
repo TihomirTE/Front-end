@@ -5,8 +5,8 @@ namespace _01.Defining_Classes_Part_1
     public class Display
     {
         // fields
-        private double? size;
-        private int? colors;
+        private double? size = null;
+        private int? colors = null;
 
         // constructors
         public Display()
