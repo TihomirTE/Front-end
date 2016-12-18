@@ -17,7 +17,7 @@ namespace _01.Defining_Classes_Part_1
         private Battery battery;
         private static readonly GSM iPhone4S = new GSM("iPhone 4S", "Apple");
         public List<Call> callHistory = new List<Call>();
-        private static readonly decimal pricePerMinute = 0.37m;
+        private static readonly double pricePerMinute = 0.37;
 
         // constructors
         public GSM(string model, string manufacturer)
@@ -122,14 +122,14 @@ namespace _01.Defining_Classes_Part_1
         {
             callHistory.Clear();
         }
-        public decimal? CalculateTotalPrice()
+        public double? CalculateTotalPrice()
         {
-            decimal? duration = 0;
+            double? duration = 0;
             foreach (var call in callHistory)
             {
                 duration += call.Duration;
             }
-            return duration = (duration  / 60)* pricePerMinute;
+            return duration = (duration  / 60) * pricePerMinute;
         } 
              // ToString() 
         public override string ToString()

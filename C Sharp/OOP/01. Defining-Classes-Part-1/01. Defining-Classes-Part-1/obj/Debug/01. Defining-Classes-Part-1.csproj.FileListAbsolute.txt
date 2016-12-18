@@ -4,3 +4,9 @@ E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\01. Defining-Classes-Par
 E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\01. Defining-Classes-Part-1\01. Defining-Classes-Part-1\bin\Debug\_01.Defining_Classes_Part_1.pdb
 E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\01. Defining-Classes-Part-1\01. Defining-Classes-Part-1\obj\Debug\_01.Defining_Classes_Part_1.exe
 E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\01. Defining-Classes-Part-1\01. Defining-Classes-Part-1\obj\Debug\_01.Defining_Classes_Part_1.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\01. Defining-Classes-Part-1\01. Defining-Classes-Part-1\bin\Debug\_01.Defining_Classes_Part_1.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\OOP\01. Defining-Classes-Part-1\01. Defining-Classes-Part-1\obj\Debug\_01.Defining_Classes_Part_1.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\01. Defining-Classes-Part-1\01. Defining-Classes-Part-1\obj\Debug\_01.Defining_Classes_Part_1.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\01. Defining-Classes-Part-1\01. Defining-Classes-Part-1\bin\Debug\_01.Defining_Classes_Part_1.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\01. Defining-Classes-Part-1\01. Defining-Classes-Part-1\bin\Debug\_01.Defining_Classes_Part_1.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\01. Defining-Classes-Part-1\01. Defining-Classes-Part-1\obj\Debug\01. Defining-Classes-Part-1.csprojResolveAssemblyReference.cache
