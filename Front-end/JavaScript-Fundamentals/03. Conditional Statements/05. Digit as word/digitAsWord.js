@@ -36,4 +36,4 @@ function digit(args) {
     }
 }
 
-digit(['0']);
+//digit(['0']);

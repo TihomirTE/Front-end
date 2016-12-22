@@ -38,4 +38,4 @@ function digit(num) {
 
 }
 
-digit(49);
+//digit(49);

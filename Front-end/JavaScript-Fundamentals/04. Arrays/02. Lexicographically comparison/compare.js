@@ -11,20 +11,21 @@ function compare(args) {
 
     for (let i = 0; i < len; i += 1) {
         if (str1[i] < str2[i]) {
-            return '<';
+            return console.log('<');
+
         } else if (str2[i] < str1[i]) {
-            return '>';
+            return console.log('>');
         }
     }
 
     if (str1.length === str2.length) {
-        return '=';
+        return console.log('=');
     } else if (str1.length < str2.length) {
-        return '<';
+        return console.log('<');
     } else {
-        return '>';
+        return console.log('>');
     }
 }
 
-console.log(compare(['hello', 'halo']));
-console.log(compare(['food', 'food']));
+//compare(['hello', 'halo']);
+//compare(['food', 'food']);

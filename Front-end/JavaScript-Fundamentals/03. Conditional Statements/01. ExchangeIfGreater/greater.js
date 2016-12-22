@@ -1,4 +1,4 @@
-greater(['5', '2']);
+//greater(['5', '2']);
 
 
 function greater(args) {

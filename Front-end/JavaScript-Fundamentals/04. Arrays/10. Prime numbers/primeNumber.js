@@ -23,4 +23,4 @@ function primeNum(x) {
     }
 }
 
-primeNum(126);
+//primeNum(126);

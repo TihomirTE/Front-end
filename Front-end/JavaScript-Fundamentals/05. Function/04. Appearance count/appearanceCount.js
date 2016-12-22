@@ -16,4 +16,4 @@ function appearanceCount(input) {
     console.log(count);
 }
 
-appearanceCount(['8', '28 6 21 6 -7856 73 73 -56', '73']);
+//appearanceCount(['8', '28 6 21 6 -7856 73 73 -56', '73']);

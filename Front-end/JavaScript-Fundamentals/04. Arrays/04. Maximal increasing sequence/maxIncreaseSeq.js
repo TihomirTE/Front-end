@@ -16,4 +16,4 @@ function increasingSequence(x) {
     console.log(biggestSeq);
 }
 
-increasingSequence(['8', '7', '3', '2', '3', '4', '2', '2', '4']);
+//increasingSequence(['8', '7', '3', '2', '3', '4', '2', '2', '4']);

@@ -18,4 +18,4 @@ function largerThanNeighbours(args) {
     console.log(count);
 }
 
-largerThanNeighbours(['6', '-26 -25 -28 31 2 27']);
+//largerThanNeighbours(['6', '-26 -25 -28 31 2 27']);

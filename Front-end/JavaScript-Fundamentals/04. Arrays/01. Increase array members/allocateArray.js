@@ -6,4 +6,4 @@ function allocate(num) {
     }
 }
 
-allocate(['5']);
+//allocate(['5']);

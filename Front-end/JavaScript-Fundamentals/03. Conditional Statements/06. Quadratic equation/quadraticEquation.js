@@ -39,8 +39,8 @@ function findRoots(arr) {
     }
 }
 
-discriminant(['2', '5', '-3']);
+/*discriminant(['2', '5', '-3']);
 discriminant(['-1', '3', '0']);
 discriminant(['-0.5', '4', '-8']);
 discriminant(['5', '2', '8']);
-discriminant(['0.2', '9.572', '0.2']);
+discriminant(['0.2', '9.572', '0.2']);*/
