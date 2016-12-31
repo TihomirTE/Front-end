@@ -34,9 +34,12 @@ let text = "1 2 3 4 5 6 7 8 9";
 let sum = text.split(" ")
 	.reduce((s, n) => s + 1*n, 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ----------------------------------------------------------------------
 =======
+=======
+>>>>>>> remotes/origin/HEAD
 	
 -------------------------------------------------------------------------
 // switch case - in order to find the number we have to convert 'true' to 'false'
@@ -47,4 +50,7 @@ switch (false){
 	case !(number <= 5): console.log('...-5'); break;
 	case !(number > 5): console.log('6 - ...'); break;
 }
+<<<<<<< HEAD
 >>>>>>> cac48801275bc64d8dfec133d9a15ae0a82a53e7
+=======
+>>>>>>> remotes/origin/HEAD
