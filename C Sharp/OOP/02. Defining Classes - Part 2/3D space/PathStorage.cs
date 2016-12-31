@@ -4,15 +4,11 @@
 
     public static class PathStorage
     {
-        /// <summary>
-        /// IO files
-        /// </summary>
-        private static readonly StreamReader readFile = new StreamReader(@"..\InputCoordinates.txt");
-        private static readonly StreamWriter writeFile = new StreamWriter(@"..\OutputCoordinates.txt");
+        // IO files
+        private static readonly StreamReader readFile = new StreamReader(@"..\..\InputCoordinates.txt");
+        private static readonly StreamWriter writeFile = new StreamWriter(@"..\..\OutputCoordinates.txt");
 
-        /// <summary>
-        /// Reading file
-        /// </summary>
+        // Reading file
         public static Path LoadFile()
         {
             Path currentPath = new Path();
@@ -39,10 +35,7 @@
             return currentPath;
         }
 
-        /// <summary>
-        /// Write in the file
-        /// </summary>
-        /// <param name="currentPath"></param>
+        // Write in the file
         public static void SaveFile(Path currentPath)
         {
             using (writeFile)

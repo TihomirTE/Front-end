@@ -1,3 +1,8 @@
 E:\Programming\Telerik\Telerik\C Sharp\OOP\Defining Classes - Part 2\3D space\bin\Debug\3D space.exe.config
 E:\Programming\Telerik\Telerik\C Sharp\OOP\Defining Classes - Part 2\3D space\obj\Debug\3D space.csprojResolveAssemblyReference.cache
 E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\3D space\bin\Debug\3D space.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\3D space\bin\Debug\3D space.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\3D space\bin\Debug\3D space.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\3D space\obj\Debug\3D space.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\3D space\obj\Debug\3D space.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\3D space\obj\Debug\3D space.csprojResolveAssemblyReference.cache

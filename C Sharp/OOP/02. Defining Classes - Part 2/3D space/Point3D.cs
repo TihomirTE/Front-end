@@ -2,10 +2,12 @@
 {
     public struct Point3D
     {
+        // coordinates
+        private decimal x;
+        private decimal y;
+        private decimal z;
         
-        /// <summary>
-        /// strarting point of the Coordinated System
-        /// </summary>
+        // strarting point of the Coordinated System
         private static readonly Point3D startPointOfCoordSystem = new Point3D(0, 0, 0);
         
         /// <summary>
@@ -16,22 +18,32 @@
         /// <param name="z"></param>
         public Point3D (decimal x, decimal y, decimal z)
         {
-            this.X = x;
-            this.Y = y;
-            this.Z = z;
+            this.x = x;
+            this.y = y;
+            this.z = z;
         }
 
        
-        /// <summary>
-        /// properties
-        /// </summary>
-        public decimal X{ get; set; }
+        // properties
+        public decimal X
+        {
+            get { return this.x; }
+            set { this.x = value; }
+        }
 
-        public decimal Y{ get; set; }
+        public decimal Y
+        {
+            get { return this.y; }
+            set { this.y = value; }
+        }
 
-        public decimal Z{ get; set; }
+        public decimal Z
+        {
+            get { return this.z; }
+            set { this.z = value; }
+        }
 
-
+        //start of coordination system
         public static Point3D StartPointOfCoordSystem
         {
             get
@@ -41,7 +53,7 @@
         }
         
         /// <summary>
-        /// ToString Method
+        /// Override toString Method
         /// </summary>
         /// <param name="x"></param>
         /// <param name="y"></param>

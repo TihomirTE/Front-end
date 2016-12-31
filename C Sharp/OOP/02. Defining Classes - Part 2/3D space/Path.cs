@@ -4,14 +4,19 @@
 
     public class Path
     {
-        /// <summary>
-        /// Holding sequence of points
-        /// </summary>
+        // Holding sequence of points
         public List<Point3D> seqOfPoints = new List<Point3D>();
 
+        // add point
         public void AddPoint(Point3D point)
         {
             seqOfPoints.Add(point);
+        }
+
+        // remove point
+        public void RemovePoint(Point3D point)
+        {
+            seqOfPoints.Remove(point);
         }
     }
 }

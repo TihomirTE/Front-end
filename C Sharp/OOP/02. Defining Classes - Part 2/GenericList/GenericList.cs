@@ -2,6 +2,7 @@
 namespace GenericList
 {
     using System;
+    using System.Text;
 
     public class GenericList<T> where T:IComparable
     {
@@ -10,10 +11,11 @@ namespace GenericList
         private int currentElement = 0; // index of the list
 
 
-        #region // Constructorts of the list
+        #region 
+        // Constructorts of the list
         public GenericList(int capacity)
         {
-            this.list = new T[capacity];
+            list = new T[capacity];
         }
 
         
@@ -25,13 +27,13 @@ namespace GenericList
 
         // Methods
 
-        public void AddElement(T element)
+        public void AddElement(T value)
         {
             if (currentElement == list.Length)
             {
                 DoubleSizeList();
             }
-            list[currentElement] = element;
+            list[currentElement] = value;
             // update the index of the list
             currentElement++;
         }
@@ -40,7 +42,7 @@ namespace GenericList
         {
             if (index < 0 || index >= currentElement)
             {
-                throw new IndexOutOfRangeException();
+                throw new IndexOutOfRangeException("Index is out of range");
             }
             else
             {
@@ -63,7 +65,7 @@ namespace GenericList
             }
         }
 
-        public void InsertElement(int index, T element)
+        public void InsertElement(int index, T value)
         {
             if (currentElement == list.Length)
             {
@@ -71,7 +73,7 @@ namespace GenericList
             }
             if (index < 0 || index > currentElement)
             {
-                throw new IndexOutOfRangeException();
+                throw new IndexOutOfRangeException("Index is out of range");
             }
             else
             {
@@ -81,9 +83,9 @@ namespace GenericList
                     newList[i] = list[i];
                 }
 
-                newList[index] = element;
+                newList[index] = value;
 
-                for (int i = index + 1; i < list.Length; i++)
+                for (int i = index + 1; i < currentElement; i++)
                 {
                     newList[i + 1] = list[i];
                 }
@@ -95,8 +97,7 @@ namespace GenericList
 
         public void ClearList()
         {
-            T[] newList = new T[0];
-            list = newList;
+            list = new T[0];
             currentElement = 0;
         }
 
@@ -104,12 +105,11 @@ namespace GenericList
         {
             int index = -1;
             
-            for (int i = 0; i < list.Length; i++)
+            for (int i = 0; i < currentElement; i++)
             {
                 if (element.Equals(list[i]))
                 {
-                    index = i;
-                    return index; // return the position of the element
+                    return i; // return the position of the element
                 }
             }
             return index; // return -1 if the element is not find in the List
@@ -118,11 +118,10 @@ namespace GenericList
         public T FindMinValue()
         {
             T minValue = list[0];
-            int value = 0;
-            for (int i = 0; i < list.Length; i++)
+
+            for (int i = 1; i < list.Length; i++)
             {
-                value = list[i].CompareTo(minValue);
-                if (value < 0)
+                if (minValue.CompareTo(list[i]) <= 0)
                 {
                     minValue = list[i];
                 }
@@ -133,11 +132,9 @@ namespace GenericList
         public T FindMaxValue()
         {
             T maxValue = list[0];
-            int value = 0;
-            for (int i = 0; i < list.Length; i++)
+            for (int i = 1; i < list.Length; i++)
             {
-                value = list[i].CompareTo(maxValue);
-                if (value > 0)
+                if (maxValue.CompareTo(list[i]) > 0)
                 {
                     maxValue = list[i];
                 }
@@ -181,6 +178,26 @@ namespace GenericList
                 doubleSizeList[i] = list[i];
             }
             list = doubleSizeList;
+        }
+
+        // Finds the lists Count
+        public int Count
+        {
+            get { return currentElement; }
+        }
+
+        // ToString
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+
+            for (int i = 0; i < currentElement; i++)
+            {
+                result.Append(list[i] + " ");
+            }
+            result.AppendLine();
+
+            return result.ToString();
         }
     }
 }
