@@ -7,7 +7,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/getMaxNum.js",
+            "program": "${workspaceRoot}/sortArray.js",
             "cwd": "${workspaceRoot}"
         },
         {

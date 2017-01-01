@@ -1,31 +1,42 @@
-function compare(args) {
-    let str1 = args[0],
-        str2 = args[1],
-        len;
+function solve(args) {
 
-    if (str1.length >= str2.length) {
-        len = str1.length;
+    var firstArray = args[0];
+    secondArray = args[1];
+    firstLen = firstArray.length;
+    secondLen = secondArray.length;
+
+    if (firstLen == secondLen) {
+        for (var i = 0; i < firstLen; i++) {
+            if (firstArray[i] > secondArray[i]) {
+                return '>';
+            }
+            if (firstArray[i] < secondArray[i]) {
+                return '<';
+            }
+        }
+        return '=';
     } else {
-        len = str2.length;
-    }
 
-    for (let i = 0; i < len; i += 1) {
-        if (str1[i] < str2[i]) {
-            return console.log('<');
+        var min = 0;
+        if (firstLen > secondLen) {
+            min = secondLen;
+        } else {
+            min = firstLen;
+        }
 
-        } else if (str2[i] < str1[i]) {
-            return console.log('>');
+        for (var j = 0; j < min; j++) {
+            if (firstArray[j] > secondArray[j]) {
+                return '>';
+            }
+            if (firstArray[j] < secondArray[j]) {
+                return '<';
+            }
+        }
+        if (firstLen > secondLen) {
+            return '>';
+        }
+        if (firstLen < secondLen) {
+            return '<';
         }
     }
-
-    if (str1.length === str2.length) {
-        return console.log('=');
-    } else if (str1.length < str2.length) {
-        return console.log('<');
-    } else {
-        return console.log('>');
-    }
 }
-
-//compare(['hello', 'halo']);
-//compare(['food', 'food']);
