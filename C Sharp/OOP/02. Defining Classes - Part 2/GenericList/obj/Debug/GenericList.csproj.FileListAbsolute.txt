@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\obj\Debug\GenericList.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\bin\Debug\GenericList.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\bin\Debug\GenericList.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\bin\Debug\GenericList.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\obj\Debug\GenericList.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\obj\Debug\GenericList.pdb

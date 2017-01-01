@@ -4,7 +4,7 @@
 
     public class SampleClass
     {
-        static void Main()
+        /*static void Main()
         {
             Type type = typeof(SampleClass);
             object[] attr = type.GetCustomAttributes(false);
@@ -12,6 +12,6 @@
             {
                 Console.WriteLine(item.Version);
             }
-        }
+        }*/
     }
 }

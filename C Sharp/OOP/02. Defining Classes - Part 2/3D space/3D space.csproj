@@ -47,6 +47,7 @@
     <Compile Include="Path.cs" />
     <Compile Include="PathStorage.cs" />
     <Compile Include="Point3D.cs" />
+    <Compile Include="Point3DTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

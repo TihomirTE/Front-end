@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\ArrayOfStudents\bin\Debug\ArrayOfStudents.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\ArrayOfStudents\bin\Debug\ArrayOfStudents.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\ArrayOfStudents\bin\Debug\ArrayOfStudents.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\ArrayOfStudents\obj\Debug\ArrayOfStudents.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\ArrayOfStudents\obj\Debug\ArrayOfStudents.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\ArrayOfStudents\obj\Debug\ArrayOfStudents.pdb
