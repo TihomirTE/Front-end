@@ -1,7 +1,7 @@
 function solve(args) {
     let num,
-        min = Number.MAX_VALUE,
-        max = Number.MIN_VALUE,
+        min = 10001,
+        max = -10001,
         sum = 0,
         avrg = 0,
         len = args.length;
