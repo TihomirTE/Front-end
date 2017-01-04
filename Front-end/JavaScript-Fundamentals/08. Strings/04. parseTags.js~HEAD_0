@@ -5,7 +5,7 @@ function solve(args) {
         tags = [],
         result = [];
 
-    for (let i = 0; i < text.length; i++) {
+    for (var i = 0; i < text.length; i++) {
         if (text[i] === '<') {
             inTag = true;
         } else if (text[i] === '>' && inTag) {
@@ -36,8 +36,9 @@ function solve(args) {
     }
 
     console.log(result.join(''));
+    //console.log(tags);
 }
 
-/*solve([
+solve([
     'We are <orgcase>liViNg</orgcase> in a <upcase>yellow submarine</upcase>. We <orgcase>doN\'t</orgcase> have <lowcase>aaANytHing</lowcase> else.'
-]);*/
+]);
