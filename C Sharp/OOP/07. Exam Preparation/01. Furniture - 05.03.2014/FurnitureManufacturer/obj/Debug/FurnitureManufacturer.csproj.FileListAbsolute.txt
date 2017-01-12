@@ -1,9 +1,0 @@
-C:\Users\Tihomir\Desktop\01. Furniture - 05.03.2014\FurnitureManufacturer\bin\Debug\Furnitures.exe.config
-C:\Users\Tihomir\Desktop\01. Furniture - 05.03.2014\FurnitureManufacturer\bin\Debug\Furnitures.exe
-C:\Users\Tihomir\Desktop\01. Furniture - 05.03.2014\FurnitureManufacturer\bin\Debug\Furnitures.pdb
-C:\Users\Tihomir\Desktop\01. Furniture - 05.03.2014\FurnitureManufacturer\obj\Debug\FurnitureManufacturer.csprojResolveAssemblyReference.cache
-C:\Users\Tihomir\Desktop\01. Furniture - 05.03.2014\FurnitureManufacturer\obj\Debug\Furnitures.exe
-C:\Users\Tihomir\Desktop\01. Furniture - 05.03.2014\FurnitureManufacturer\obj\Debug\Furnitures.pdb
-E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\07. Exam Preparation\01. Furniture - 05.03.2014\FurnitureManufacturer\bin\Debug\Furnitures.exe.config
-E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\07. Exam Preparation\01. Furniture - 05.03.2014\FurnitureManufacturer\obj\Debug\Furnitures.exe
-E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\07. Exam Preparation\01. Furniture - 05.03.2014\FurnitureManufacturer\obj\Debug\Furnitures.pdb
