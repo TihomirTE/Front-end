@@ -4,3 +4,6 @@ E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\Generic
 E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\bin\Debug\GenericList.pdb
 E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\obj\Debug\GenericList.exe
 E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\obj\Debug\GenericList.pdb
+E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\bin\Debug\GenericList.exe.config
+E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\obj\Debug\GenericList.exe
+E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\02. Defining Classes - Part 2\GenericList\obj\Debug\GenericList.pdb
