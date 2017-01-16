@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\RangeExceptions\bin\Debug\RangeExceptions.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\RangeExceptions\obj\Debug\RangeExceptions.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\RangeExceptions\bin\Debug\RangeExceptions.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\RangeExceptions\bin\Debug\RangeExceptions.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\RangeExceptions\obj\Debug\RangeExceptions.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\RangeExceptions\obj\Debug\RangeExceptions.pdb
