@@ -3,3 +3,6 @@ E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\Attribu
 E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\Attribute\bin\Debug\Attribute.pdb
 E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\Attribute\obj\Debug\Attribute.exe
 E:\Programming\Telerik\Telerik\C Sharp\OOP\02. Defining Classes - Part 2\Attribute\obj\Debug\Attribute.pdb
+E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\02. Defining Classes - Part 2\Attribute\bin\Debug\Attribute.exe.config
+E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\02. Defining Classes - Part 2\Attribute\obj\Debug\Attribute.exe
+E:\Tihomir\Programing\GitHub\TelerikAcademy\C Sharp\OOP\02. Defining Classes - Part 2\Attribute\obj\Debug\Attribute.pdb

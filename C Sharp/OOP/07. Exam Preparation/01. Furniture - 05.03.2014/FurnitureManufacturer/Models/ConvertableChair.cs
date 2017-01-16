@@ -20,7 +20,7 @@ namespace FurnitureManufacturer.Models
         {
             get
             {
-                return this.isConverted;
+                return isConverted;
             }
         }
 
