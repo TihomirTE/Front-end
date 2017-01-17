@@ -30,4 +30,4 @@ function solve(args) {
 }
 
 //solve(["5 1 7 4 8"]);
-solve(["5 1 7 6 5 6 4 2 3 8"]);
+//solve(["5 1 7 6 5 6 4 2 3 8"]);

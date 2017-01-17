@@ -7,7 +7,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/02.gameOfTanks(Author's solution).js",
+            "program": "${workspaceRoot}/pockets.js",
             "cwd": "${workspaceRoot}"
         },
         {
