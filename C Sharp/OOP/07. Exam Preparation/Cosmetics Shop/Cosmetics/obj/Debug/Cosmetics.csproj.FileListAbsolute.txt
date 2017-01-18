@@ -1,0 +1,18 @@
+C:\Users\Tihomir\Downloads\1. Cosmetics Shop_Description (1)\Cosmetics-Skeleton\Cosmetics\bin\Debug\Cosmetics.exe.config
+C:\Users\Tihomir\Downloads\1. Cosmetics Shop_Description (1)\Cosmetics-Skeleton\Cosmetics\bin\Debug\Cosmetics.exe
+C:\Users\Tihomir\Downloads\1. Cosmetics Shop_Description (1)\Cosmetics-Skeleton\Cosmetics\bin\Debug\Cosmetics.pdb
+C:\Users\Tihomir\Downloads\1. Cosmetics Shop_Description (1)\Cosmetics-Skeleton\Cosmetics\obj\Debug\Cosmetics.exe
+C:\Users\Tihomir\Downloads\1. Cosmetics Shop_Description (1)\Cosmetics-Skeleton\Cosmetics\obj\Debug\Cosmetics.pdb
+C:\Users\Tihomir\Downloads\1. Cosmetics Shop_Description (1)\Cosmetics-Skeleton\Cosmetics\obj\Debug\Cosmetics.csprojResolveAssemblyReference.cache
+C:\Users\Tihomir\Downloads\Submission_1134924\Cosmetics\bin\Debug\Cosmetics.exe.config
+C:\Users\Tihomir\Downloads\Submission_1134924\Cosmetics\obj\Debug\Cosmetics.exe
+C:\Users\Tihomir\Downloads\Submission_1134924\Cosmetics\obj\Debug\Cosmetics.pdb
+C:\Users\Tihomir\Downloads\Submission_1134924\Cosmetics\bin\Debug\Cosmetics.exe
+C:\Users\Tihomir\Downloads\Submission_1134924\Cosmetics\bin\Debug\Cosmetics.pdb
+C:\Users\Tihomir\Downloads\Submission_1134924\Cosmetics\obj\Debug\Cosmetics.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\OOP\07. Exam Preparation\Cosmetics Shop\Cosmetics\bin\Debug\Cosmetics.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\OOP\07. Exam Preparation\Cosmetics Shop\Cosmetics\obj\Debug\Cosmetics.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\07. Exam Preparation\Cosmetics Shop\Cosmetics\obj\Debug\Cosmetics.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\07. Exam Preparation\Cosmetics Shop\Cosmetics\bin\Debug\Cosmetics.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\07. Exam Preparation\Cosmetics Shop\Cosmetics\bin\Debug\Cosmetics.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\07. Exam Preparation\Cosmetics Shop\Cosmetics\obj\Debug\Cosmetics.csprojResolveAssemblyReference.cache

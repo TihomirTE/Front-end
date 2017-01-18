@@ -1,0 +1,6 @@
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\Shapes\bin\Debug\Shapes.exe.config
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\Shapes\bin\Debug\Shapes.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\Shapes\bin\Debug\Shapes.pdb
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\Shapes\obj\Debug\Shapes.csprojResolveAssemblyReference.cache
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\Shapes\obj\Debug\Shapes.exe
+E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\Shapes\obj\Debug\Shapes.pdb
