@@ -6,8 +6,6 @@ function solve(params) {
 
     let table = MakeChessTable(rows, cols);
 
-
-
     for (let i = 0; i < numberOfTests; i++) {
         move = params[rows + 3 + i];
 
@@ -19,7 +17,7 @@ function solve(params) {
         let deltaRow = startRow - endRow;
         let deltaCol = startCol - endCol;
 
-        if (table[startRow][startCol] === "-") {
+        if (table[startRow][startCol] === "-") { // starting position is empty
             console.log("no");
             continue;
         }
@@ -28,40 +26,38 @@ function solve(params) {
             console.log("no");
             continue;
         }
-        if (table[startRow][startCol] === "R") {
+
+        if (table[startRow][startCol] === "R") { // check for Rook
             if (deltaRow === 0) {
                 CheckRookRow(startCol, deltaCol, table, startRow, endCol);
-                continue;
             } else if (deltaCol === 0) {
                 CheckRookCol(startRow, deltaRow, table, startCol, endRow);
-                continue;
-            } else {
+            } else { // invalid move
                 console.log("no");
                 continue;
             }
         }
-        if (table[startRow][startCol] === "B") {
-            if (deltaRow === 0 || deltaCol === 0) {
+
+        if (table[startRow][startCol] === "B") { // check for Bishop
+            if (deltaRow === 0 || deltaCol === 0) { // invalid move 
                 console.log("no");
                 continue;
             } else {
                 CheckBishop(deltaRow, startRow, endRow, deltaCol, startCol, table);
-                continue;
             }
         }
-        if (table[startRow][startCol] === "Q") {
+
+        if (table[startRow][startCol] === "Q") { // check for Queen
             if (deltaRow === 0) {
                 CheckRookRow(startCol, deltaCol, table, startRow, endCol);
-                continue;
             } else if (deltaCol === 0) {
                 CheckRookCol(startRow, deltaRow, table, startCol, endRow);
-                continue;
             } else {
                 CheckBishop(deltaRow, startRow, endRow, deltaCol, startCol, table);
-                continue;
             }
         }
     }
+
 
     function CheckBishop(deltaRow, startRow, endRow, deltaCol, startCol, table) {
         let currentRow = (deltaRow > 0) ? (startRow - 1) : (startRow + 1);
@@ -126,7 +122,6 @@ function solve(params) {
             let figures = params[i + 2].split("");
             for (let j = 0; j < cols; j += 1) {
                 tableChess[i][j] = figures[j];
-                //console.log(tableChess[i][j]);
             }
         }
         return tableChess;
