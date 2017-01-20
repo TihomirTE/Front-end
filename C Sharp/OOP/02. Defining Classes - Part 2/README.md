@@ -1,4 +1,5 @@
 Homework: Defining Classes - Part 2
+===================================
 
 ### Problem 1. Structure
 *	Create a structure `Point3D` to hold a 3D-coordinate {X, Y, Z} in the Euclidian 3D space.
