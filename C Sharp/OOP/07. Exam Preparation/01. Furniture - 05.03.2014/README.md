@@ -87,14 +87,16 @@ Company validity rules:
 *	Finding furniture by model gets the first occurance. If such is not found, return null. Searching is case insensitive.
 
 Companies should only be created through the ICompanyFactory implemented by a class named CompanyFactory. Furniture should only be created through the IFurnitureFactory implemented by a class named FurnitureFactory. Both classes are in the FurnitureManufacturer.Engine.Factories namespace.
-The company catalog method returns the information about the available furniture in the following form:
-(company name) – (number of furniture/”no”) (“furniture”/”furnitures”)
-(information about furniture)
-(information about furniture)
-(information about furniture)
-The listed furniture added to a certain company (through the Add(…) method) should be ordered by price then by model. If the company has no furniture added, print “no furnitures” (yes, we know “furnitures” is not a valid word, but we do not care, obey the requirements :D ). If the company has 1 piece of furniture, print “1 furniture” and show its information on a separate line. If the company has more than 1 piece of furniture, print its number and list each one’s information on a separate line. All decimal type fields should be printed “as is”, without any formatting or rounding.
-* You may use the following for reference:
 
+*The company catalog method returns the information about the available furniture in the following form:
+`(company name) – (number of furniture/”no”) (“furniture”/”furnitures”)
+(information about furniture)
+(information about furniture)
+(information about furniture)`
+
+The listed furniture added to a certain company (through the Add(…) method) should be ordered by price then by model. If the company has no furniture added, print “no furnitures” (yes, we know “furnitures” is not a valid word, but we do not care, obey the requirements :D ). If the company has 1 piece of furniture, print “1 furniture” and show its information on a separate line. If the company has more than 1 piece of furniture, print its number and list each one’s information on a separate line. All decimal type fields should be printed “as is”, without any formatting or rounding.
+
+* You may use the following for reference:
 `"{0} - {1} - {2} {3}",
 this.Name,
 this.RegistrationNumber,
