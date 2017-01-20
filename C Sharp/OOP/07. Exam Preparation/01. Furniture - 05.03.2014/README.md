@@ -93,20 +93,25 @@ The company catalog method returns the information about the available furniture
 (information about furniture)
 (information about furniture)
 The listed furniture added to a certain company (through the Add(…) method) should be ordered by price then by model. If the company has no furniture added, print “no furnitures” (yes, we know “furnitures” is not a valid word, but we do not care, obey the requirements :D ). If the company has 1 piece of furniture, print “1 furniture” and show its information on a separate line. If the company has more than 1 piece of furniture, print its number and list each one’s information on a separate line. All decimal type fields should be printed “as is”, without any formatting or rounding.
-You may use the following for reference:
-"{0} - {1} - {2} {3}",
+* You may use the following for reference:
+
+`"{0} - {1} - {2} {3}",
 this.Name,
 this.RegistrationNumber,
 this.Furnitures.Count != 0 ? this.Furnitures.Count.ToString() : "no",
-this.Furnitures.Count != 1 ? "furnitures" : "furniture"
-Look into the example below to get better understanding of the printing format. 
+this.Furnitures.Count != 1 ? "furnitures" : "furniture"`
+
+* Look into the example below to get better understanding of the printing format. 
 The table information should be in the following form:
-"Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Length: {5}, Width: {6}, Area: {7}", this.GetType().Name, this.Model, this.Material, this.Price, this.Height,  this.Length, this.Width, this.Area
-The normal and adjustable chair information should be in the following form:
-"Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Legs: {5}", this.GetType().Name, this.Model, this.Material, this.Price, this.Height, this.NumberOfLegs
-The convertible chair information should be in the following form:
-"Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Legs: {5}, State: {6}", this.GetType().Name, this.Model, this.Material, this.Price, this.Height, this.NumberOfLegs, this.IsConverted ? "Converted" : "Normal"
-The Type is either “Table“, or “Chair”, or “AdjustableChair” or “ConvertibleChair”. The convertible chair state is either “Converted” or “Normal”. All decimal type fields should be printed “as is”, without any formatting or rounding.
+`"Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Length: {5}, Width: {6}, Area: {7}", this.GetType().Name, this.Model, this.Material, this.Price, this.Height,  this.Length, this.Width, this.Area`
+
+*The normal and adjustable chair information should be in the following form:
+`"Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Legs: {5}", this.GetType().Name, this.Model, this.Material, this.Price, this.Height, this.NumberOfLegs`
+
+* The convertible chair information should be in the following form:
+`"Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Legs: {5}, State: {6}", this.GetType().Name, this.Model, this.Material, this.Price, this.Height, this.NumberOfLegs, this.IsConverted ? "Converted" : "Normal"`
+The Type is either “Table“, or “Chair”, or “AdjustableChair” or “ConvertibleChair”. The convertible chair state is either “Converted” or “Normal”.
+All decimal type fields should be printed “as is”, without any formatting or rounding.
 All properties in the above interfaces are mandatory (cannot be null or empty).
 If a null value is passed to some mandatory property, you should use defensive programming to prevent unwanted results.
 
