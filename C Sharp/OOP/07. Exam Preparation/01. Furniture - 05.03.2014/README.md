@@ -85,6 +85,7 @@ Company validity rules:
 *	Adding duplicate furniture is allowed.
 *	Removing furniture removes the first occurance. If such is not found, nothing happens.
 *	Finding furniture by model gets the first occurance. If such is not found, return null. Searching is case insensitive.
+
 Companies should only be created through the ICompanyFactory implemented by a class named CompanyFactory. Furniture should only be created through the IFurnitureFactory implemented by a class named FurnitureFactory. Both classes are in the FurnitureManufacturer.Engine.Factories namespace.
 The company catalog method returns the information about the available furniture in the following form:
 (company name) – (number of furniture/”no”) (“furniture”/”furnitures”)
