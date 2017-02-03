@@ -21,5 +21,5 @@ function solve() {
         return numbers.reduce((x, y) => x + (+y), 0);
     };
 }
-
+//solve()
 module.exports = solve;
