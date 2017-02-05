@@ -8,7 +8,7 @@ function sum(...items){
 
 sum(1, 2, 3); // -> it will become [1, 2, 3]
 
----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
 
 // convert array-like objects to arrays
 var args = [].slice.call(arguments); // -> copy arguments (e.x. array) to array
@@ -17,10 +17,10 @@ var sum = args.reduce((s, n) => s + n, 0)
 // The reduce() method applies a function against an accumulator and each value of 
 //the array (from left-to-right) to reduce it to a single value.
 
-------------------------------------------------------------------------------	
+--------------------------------------------------------------------------------------	
 
-// MODULE -> we execute only once generator (IIFE) and after that we have all
-// function wich are expose with "return". Only they are visible from outside.
+// MODULE -> we execute only once generator (IIFE) and after that we have access from outside
+// only on the "return" part of the anonymous function.
 
 var generator = (function(){
 	// lastId is available only inside the IIFE
@@ -36,6 +36,6 @@ var generator = (function(){
 	}
 }());
   // from outside of the function we have access only on the part "return" (which is exposed)
-console.log(generator.getId() // call the function);
+console.log(generator.getId() // ->([function name].[object property name]);
 
 --------------------------------------------------------------------------
