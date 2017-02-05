@@ -15,16 +15,30 @@ function solve() {
     }
 
     function validateStudentName(name) {
-        if (/^[a-z]/.test(name)) {
-            throw 'Invalid student name';
-        }
-        if (!(/^[A-Z][a-z]*$/.test(name)) && name.length >= 2) {
-            throw 'Invalid student name';
-        }
-        let nameArr = name.split(' ');
+        let nameArr = name.split(' '),
+            firstName = nameArr[0],
+            lastName = nameArr[1];
+
         if (nameArr.length < 2 || nameArr.length > 2) {
             throw 'Student must have two names';
         }
+        if (/^[a-z]/.test(firstName) || /^[a-z]/.test(lastName)) {
+            throw 'Invalid student name';
+        }
+
+        for (let i = 1; i < firstName.length; i += 1) {
+            if (!/[a-z]/.test(firstName[i])) {
+                throw 'Invalid student name 2';
+            }
+        }
+
+        for (let i = 1; i < lastName.length; i += 1) {
+            if (!/[a-z]/.test(lastName[i])) {
+                throw 'Invalid student name 3';
+            }
+        }
+
+        return name;
     }
 
     class AcademyCourse {
@@ -99,12 +113,14 @@ function solve() {
                 firstName = nameArr[0],
                 lastName = nameArr[1],
                 student = new Student(firstName, lastName);
-            return this;
+            course.students.push(student);
+            return student.id;
         },
         getAllStudents: function() { // not return array of students
             let studentsArr = [];
             for (let i = 0; i < course.students.length; i += 1) {
                 let currentStudent = course.students[i];
+
                 let objStudent = {
                     firstname: currentStudent.firstName,
                     lastname: currentStudent.lastName,
@@ -116,6 +132,16 @@ function solve() {
             return studentsArr;
         },
         submitHomework: function(studentID, homeworkID) {
+            if (studentID === undefined || studentID === null || isNaN(studentID) || +studentID < 0 || +studentID > uniqueNumbers) {
+                throw 'Invalid studentID';
+            }
+
+            if (homeworkID === undefined || homeworkID === null || isNaN(homeworkID) || +homeworkID <= 0 || +homeworkID > course.presentations.length) {
+                throw 'Invalid homeworkId';
+            }
+
+            let student = course.students.filter(st => st.id == studentID)[0];
+            student.homeworks[homeworkID - 1] = true;
 
         },
         pushExamResults: function(results) {
@@ -139,9 +165,7 @@ function solve() {
                 throw 'Error';
             }
 
-
-
-
+            return this;
         },
         getTopStudents: function() {}
     };
