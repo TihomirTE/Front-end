@@ -1,8 +1,5 @@
 function solve() {
 
-    function sortTypes(a, b) {
-
-    }
 
     function getProduct(productType, name, price) {
 
@@ -66,33 +63,32 @@ function solve() {
         }
 
         function getInfo() {
-            let price = 0,
-                productsArr = [];
 
-            let productQuantity = 1;
-
-            let obj = {
-                totalPrice: price,
-                products: productsArr
-            };
-
-            if (products.length === 0) {
-                return obj;
+            if (this.products.length === 0) {
+                return {
+                    totalPrice: 0,
+                    products: []
+                };
             } else {
-                products = products.sort();
-                for (let i = 0; i < products.length; i += 1) {
-                    price += products[i].price;
-
-
-                    productsArr = {
-                        name: products.name,
-                        totalPrice: price,
-                        quantity: productQuantity
-                    };
-                }
-
-
+                return {
+                    totalPrice: sumPrices(),
+                    products: productUniqueName().map(x => x === {})
+                };
             }
+        }
+
+        function sumPrices() {
+            let sum = 0;
+            products.forEach(function(x) {
+                sum += x.price;
+            });
+            return sum;
+        }
+
+        function productUniqueName() {
+            let uniqueName = {};
+            products.forEach(x => uniqueName[x.name] = true);
+            return Object.keys(uniqueName);
         }
 
         return {
