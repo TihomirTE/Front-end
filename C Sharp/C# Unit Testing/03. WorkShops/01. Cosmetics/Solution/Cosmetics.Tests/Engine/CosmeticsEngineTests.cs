@@ -45,6 +45,38 @@ namespace Cosmetics.Tests.Engine
             // Assert
             Assert.IsTrue(mockEngine.Categories.ContainsKey(categoryName));
             Assert.AreSame(stubCategory.Object, mockEngine.Categories[categoryName]);
+
+        }
+
+        [Test]
+        public void Start_WhenTheInputIsInFormatInAddToCategoryCommand_ShouldReadParseAndExecuteAddToCategoryCommand()
+        {
+            // Arrange
+            var categoryName = "ForEveryDay";
+            var productName = "super";
+
+            var mockedFactory = new Mock<ICosmeticsFactory>();
+            var mockedShoppingCart = new Mock<IShoppingCart>();
+            var mockedCommandParser = new Mock<ICommandParser>();
+
+            var mockedCommand = new Mock<ICommand>();
+            var mockedCategory = new Mock<ICategory>();
+            var mockedToothpatse = new Mock<IToothpaste>();
+
+            mockedCommand.SetupGet(n => n.Name).Returns("AddToCategory");
+            mockedCommand.SetupGet(p => p.Parameters).Returns(new List<string>() { categoryName, productName });
+            mockedCommandParser.Setup(p => p.ReadCommands()).Returns(() => new List<ICommand>() { mockedCommand.Object });
+
+            var mockedEngine = new MockedCosmeticEngine(mockedFactory.Object, mockedShoppingCart.Object, mockedCommandParser.Object);
+            mockedEngine.Categories.Add(categoryName, mockedCategory.Object);
+            mockedEngine.Products.Add(productName, mockedToothpatse.Object);
+            
+            // Act
+            mockedEngine.Start();
+
+            // Assert
+            mockedCategory.Verify(c => c.AddProduct(mockedToothpatse.Object), Times.Once);
+
         }
     }
 }

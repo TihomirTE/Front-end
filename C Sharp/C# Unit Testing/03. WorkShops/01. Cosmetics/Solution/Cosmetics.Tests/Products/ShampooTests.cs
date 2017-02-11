@@ -23,7 +23,7 @@ namespace Cosmetics.Tests.Products
             expectedResult.AppendLine("  * Price: $1000");
             expectedResult.AppendLine("  * For gender: Men");
             expectedResult.AppendLine("  * Quantity: 100 ml");
-            expectedResult.AppendLine("  * Usage: EveryDay");
+            expectedResult.Append("  * Usage: EveryDay");
 
             // Act
             var result = shampoo.Print();
