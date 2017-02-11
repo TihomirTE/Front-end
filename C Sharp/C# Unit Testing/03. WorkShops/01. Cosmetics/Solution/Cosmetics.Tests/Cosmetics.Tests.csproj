@@ -57,6 +57,8 @@
     <Compile Include="Engine\CosmeticsEngineTests.cs" />
     <Compile Include="Engine\CosmeticsFactoryTests.cs" />
     <Compile Include="Engine\Mocks\MockedCosmeticEngine.cs" />
+    <Compile Include="Products\CategoryTests.cs" />
+    <Compile Include="Products\Mocks\MockedCategory.cs" />
     <Compile Include="Products\Mocks\MockedShoppingCart.cs" />
     <Compile Include="Products\ShampooTests.cs" />
     <Compile Include="Products\ShoppingCartTests.cs" />

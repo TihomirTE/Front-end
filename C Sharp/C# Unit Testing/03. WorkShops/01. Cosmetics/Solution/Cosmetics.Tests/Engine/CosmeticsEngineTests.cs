@@ -49,7 +49,7 @@ namespace Cosmetics.Tests.Engine
         }
 
         [Test]
-        public void Start_WhenTheInputIsInFormatInAddToCategoryCommand_ShouldReadParseAndExecuteAddToCategoryCommand()
+        public void Start_WhenTheInputIsInFormatInAddToCategoryCommand_ShouldAddProductToTheRespectiveCategory()
         {
             // Arrange
             var categoryName = "ForEveryDay";
@@ -77,6 +77,36 @@ namespace Cosmetics.Tests.Engine
             // Assert
             mockedCategory.Verify(c => c.AddProduct(mockedToothpatse.Object), Times.Once);
 
+        }
+
+        [Test]
+        public void Start_WhenTheInputIsInFormatInRemoveFromCategoryCommand_ShouldRemoveTheProductFromTheCategory()
+        {
+            // Arrange
+            var categoryName = "ForEveryDay";
+            var productName = "super";
+
+            var mockedFactory = new Mock<ICosmeticsFactory>();
+            var mockedShoppingCart = new Mock<IShoppingCart>();
+            var mockedCommandParser = new Mock<ICommandParser>();
+
+            var mockedCommand = new Mock<ICommand>();
+            var mockedCategory = new Mock<ICategory>();
+            var mockedToothpatse = new Mock<IToothpaste>();
+
+            mockedCommand.SetupGet(n => n.Name).Returns("RemoveFromCategory");
+            mockedCommand.SetupGet(p => p.Parameters).Returns(new List<string>() { categoryName, productName });
+            mockedCommandParser.Setup(p => p.ReadCommands()).Returns(() => new List<ICommand>() { mockedCommand.Object });
+
+            var mockedEngine = new MockedCosmeticEngine(mockedFactory.Object, mockedShoppingCart.Object, mockedCommandParser.Object);
+            mockedEngine.Categories.Add(categoryName, mockedCategory.Object);
+            mockedEngine.Products.Add(productName, mockedToothpatse.Object);
+
+            // Act
+            mockedEngine.Start();
+
+            // Assert
+            mockedCategory.Verify(c => c.RemoveProduct(mockedToothpatse.Object), Times.Once);
         }
     }
 }
