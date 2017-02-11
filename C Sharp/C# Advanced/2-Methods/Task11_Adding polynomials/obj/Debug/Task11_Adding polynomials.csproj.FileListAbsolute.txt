@@ -1,1 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task11_Adding polynomials\bin\Debug\Task11_Adding polynomials.exe.config

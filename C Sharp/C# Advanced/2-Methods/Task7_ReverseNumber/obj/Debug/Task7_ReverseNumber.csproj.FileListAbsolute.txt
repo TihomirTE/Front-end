@@ -1,1 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task7_ReverseNumber\bin\Debug\Task7_ReverseNumber.exe.config

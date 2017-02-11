@@ -1,6 +1,0 @@
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Таск4_SequenceOfBits\bin\Debug\Таск4_SequenceOfBits.exe.config
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Таск4_SequenceOfBits\bin\Debug\Таск4_SequenceOfBits.exe
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Таск4_SequenceOfBits\bin\Debug\Таск4_SequenceOfBits.pdb
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Таск4_SequenceOfBits\obj\Debug\Таск4_SequenceOfBits.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Таск4_SequenceOfBits\obj\Debug\Таск4_SequenceOfBits.exe
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Таск4_SequenceOfBits\obj\Debug\Таск4_SequenceOfBits.pdb

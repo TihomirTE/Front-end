@@ -1,5 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task1_LeapYear\bin\Debug\Task1_LeapYear.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task1_LeapYear\bin\Debug\Task1_LeapYear.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task1_LeapYear\bin\Debug\Task1_LeapYear.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task1_LeapYear\obj\Debug\Task1_LeapYear.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task1_LeapYear\obj\Debug\Task1_LeapYear.pdb

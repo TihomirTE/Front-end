@@ -1,5 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\StudentsAndWorkers\bin\Debug\StudentsAndWorkers.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\StudentsAndWorkers\bin\Debug\StudentsAndWorkers.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\StudentsAndWorkers\bin\Debug\StudentsAndWorkers.pdb
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\StudentsAndWorkers\obj\Debug\StudentsAndWorkers.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\StudentsAndWorkers\obj\Debug\StudentsAndWorkers.pdb

@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\OOP\Demos\StaticConstructorSqrtPrecalculated\bin\Debug\StaticConstructorSqrtPrecalculated.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\OOP\Demos\StaticConstructorSqrtPrecalculated\bin\Debug\StaticConstructorSqrtPrecalculated.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\Demos\StaticConstructorSqrtPrecalculated\bin\Debug\StaticConstructorSqrtPrecalculated.pdb
-E:\Programming\Telerik\Telerik\C Sharp\OOP\Demos\StaticConstructorSqrtPrecalculated\obj\Debug\StaticConstructorSqrtPrecalculated.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\OOP\Demos\StaticConstructorSqrtPrecalculated\obj\Debug\StaticConstructorSqrtPrecalculated.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\Demos\StaticConstructorSqrtPrecalculated\obj\Debug\StaticConstructorSqrtPrecalculated.pdb

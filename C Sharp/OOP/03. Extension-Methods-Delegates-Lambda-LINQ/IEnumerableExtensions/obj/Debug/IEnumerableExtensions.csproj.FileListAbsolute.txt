@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\bin\Debug\IEnumerableExtensions.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\bin\Debug\IEnumerableExtensions.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\bin\Debug\IEnumerableExtensions.pdb
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\obj\Debug\IEnumerableExtensions.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\obj\Debug\IEnumerableExtensions.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\obj\Debug\IEnumerableExtensions.pdb

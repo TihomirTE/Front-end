@@ -1,5 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task8_SumInteger\bin\Debug\Task8_SumInteger.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task8_SumInteger\bin\Debug\Task8_SumInteger.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task8_SumInteger\bin\Debug\Task8_SumInteger.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task8_SumInteger\obj\Debug\Task8_SumInteger.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task8_SumInteger\obj\Debug\Task8_SumInteger.pdb

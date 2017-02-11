@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\02.IncreaseAbsDiff\bin\Debug\02.IncreaseAbsDiff.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\02.IncreaseAbsDiff\bin\Debug\02.IncreaseAbsDiff.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\02.IncreaseAbsDiff\bin\Debug\02.IncreaseAbsDiff.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\02.IncreaseAbsDiff\obj\Debug\02.IncreaseAbsDiff.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\02.IncreaseAbsDiff\obj\Debug\02.IncreaseAbsDiff.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\02.IncreaseAbsDiff\obj\Debug\02.IncreaseAbsDiff.pdb

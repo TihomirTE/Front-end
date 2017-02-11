@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task2_BinaryToDecimal\bin\Debug\Task2_BinaryToDecimal.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task2_BinaryToDecimal\bin\Debug\Task2_BinaryToDecimal.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task2_BinaryToDecimal\bin\Debug\Task2_BinaryToDecimal.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task2_BinaryToDecimal\obj\Debug\Task2_BinaryToDecimal.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task2_BinaryToDecimal\obj\Debug\Task2_BinaryToDecimal.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task2_BinaryToDecimal\obj\Debug\Task2_BinaryToDecimal.csprojResolveAssemblyReference.cache

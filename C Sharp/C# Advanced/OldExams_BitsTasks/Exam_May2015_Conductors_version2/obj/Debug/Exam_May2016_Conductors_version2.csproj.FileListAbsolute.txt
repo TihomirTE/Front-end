@@ -1,3 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_May2015_Conductors_version2\bin\Debug\Exam_May2015_Conductors_version2.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_May2015_Conductors_version2\obj\Debug\Exam_May2015_Conductors_version2.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_May2015_Conductors_version2\obj\Debug\Exam_May2015_Conductors_version2.pdb

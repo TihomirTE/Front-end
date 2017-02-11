@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task8.1_ExtractSentence\bin\Debug\Task8.1_ExtractSentence.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task8.1_ExtractSentence\bin\Debug\Task8.1_ExtractSentence.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task8.1_ExtractSentence\bin\Debug\Task8.1_ExtractSentence.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task8.1_ExtractSentence\obj\Debug\Task8.1_ExtractSentence.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task8.1_ExtractSentence\obj\Debug\Task8.1_ExtractSentence.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW5_Strings\Task8.1_ExtractSentence\obj\Debug\Task8.1_ExtractSentence.pdb

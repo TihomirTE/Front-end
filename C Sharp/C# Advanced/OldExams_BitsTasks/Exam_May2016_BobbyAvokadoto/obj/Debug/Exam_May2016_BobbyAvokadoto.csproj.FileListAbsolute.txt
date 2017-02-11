@@ -1,5 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_May2016_BobbyAvokadoto\bin\Debug\Exam_May2016_BobbyAvokadoto.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_May2016_BobbyAvokadoto\bin\Debug\Exam_May2016_BobbyAvokadoto.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_May2016_BobbyAvokadoto\bin\Debug\Exam_May2016_BobbyAvokadoto.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_May2016_BobbyAvokadoto\obj\Debug\Exam_May2016_BobbyAvokadoto.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_May2016_BobbyAvokadoto\obj\Debug\Exam_May2016_BobbyAvokadoto.pdb

@@ -1,6 +1,0 @@
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task11_BinarySearch\bin\Debug\Task11_BinarySearch.exe.config
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task11_BinarySearch\bin\Debug\Task11_BinarySearch.exe
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task11_BinarySearch\bin\Debug\Task11_BinarySearch.pdb
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task11_BinarySearch\obj\Debug\Task11_BinarySearch.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task11_BinarySearch\obj\Debug\Task11_BinarySearch.exe
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task11_BinarySearch\obj\Debug\Task11_BinarySearch.pdb

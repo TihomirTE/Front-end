@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\01.MultiCommunication\bin\Debug\01.MultiCommunication.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\01.MultiCommunication\bin\Debug\01.MultiCommunication.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\01.MultiCommunication\bin\Debug\01.MultiCommunication.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\01.MultiCommunication\obj\Debug\01.MultiCommunication.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\01.MultiCommunication\obj\Debug\01.MultiCommunication.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\01.MultiCommunication\obj\Debug\01.MultiCommunication.pdb

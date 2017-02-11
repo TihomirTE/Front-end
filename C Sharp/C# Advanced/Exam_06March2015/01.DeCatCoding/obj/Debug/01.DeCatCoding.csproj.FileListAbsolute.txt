@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\01.DeCatCoding\bin\Debug\01.DeCatCoding.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\01.DeCatCoding\bin\Debug\01.DeCatCoding.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\01.DeCatCoding\bin\Debug\01.DeCatCoding.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\01.DeCatCoding\obj\Debug\01.DeCatCoding.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\01.DeCatCoding\obj\Debug\01.DeCatCoding.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_06March2015\01.DeCatCoding\obj\Debug\01.DeCatCoding.pdb

@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\StudentGroups\bin\Debug\StudentGroups.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\StudentGroups\bin\Debug\StudentGroups.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\StudentGroups\bin\Debug\StudentGroups.pdb
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\StudentGroups\obj\Debug\StudentGroups.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\StudentGroups\obj\Debug\StudentGroups.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\StudentGroups\obj\Debug\StudentGroups.pdb

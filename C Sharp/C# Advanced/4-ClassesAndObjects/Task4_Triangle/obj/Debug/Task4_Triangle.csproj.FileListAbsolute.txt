@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task4_Triangle\bin\Debug\Task4_Triangle.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task4_Triangle\bin\Debug\Task4_Triangle.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task4_Triangle\bin\Debug\Task4_Triangle.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task4_Triangle\obj\Debug\Task4_Triangle.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task4_Triangle\obj\Debug\Task4_Triangle.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW4_ClassesAndObjects\Task4_Triangle\obj\Debug\Task4_Triangle.pdb

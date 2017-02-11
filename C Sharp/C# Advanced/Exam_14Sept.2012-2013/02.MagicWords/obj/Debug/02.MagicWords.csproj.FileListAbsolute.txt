@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\02.MagicWords\bin\Debug\02.MagicWords.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\02.MagicWords\obj\Debug\02.MagicWords.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\02.MagicWords\bin\Debug\02.MagicWords.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\02.MagicWords\bin\Debug\02.MagicWords.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\02.MagicWords\obj\Debug\02.MagicWords.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_14Sept.2012-2013\02.MagicWords\obj\Debug\02.MagicWords.pdb

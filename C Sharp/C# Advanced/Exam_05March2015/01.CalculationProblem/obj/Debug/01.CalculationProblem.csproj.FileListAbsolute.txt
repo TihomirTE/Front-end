@@ -1,1 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\Exam_05March2015\01.CalculationProblem\bin\Debug\01.CalculationProblem.exe.config

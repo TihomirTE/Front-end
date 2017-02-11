@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\SchoolClasses\bin\Debug\SchoolClasses.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\SchoolClasses\bin\Debug\SchoolClasses.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\SchoolClasses\bin\Debug\SchoolClasses.pdb
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\SchoolClasses\obj\Debug\SchoolClasses.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\SchoolClasses\obj\Debug\SchoolClasses.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\04. OOP-Principles-Part-2\SchoolClasses\obj\Debug\SchoolClasses.pdb

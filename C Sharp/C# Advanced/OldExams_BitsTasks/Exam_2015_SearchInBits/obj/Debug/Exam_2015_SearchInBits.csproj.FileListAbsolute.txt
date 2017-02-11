@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_SearchInBits\bin\Debug\Exam_2015_SearchInBits.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_SearchInBits\bin\Debug\Exam_2015_SearchInBits.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_SearchInBits\bin\Debug\Exam_2015_SearchInBits.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_SearchInBits\obj\Debug\Exam_2015_SearchInBits.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_SearchInBits\obj\Debug\Exam_2015_SearchInBits.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_SearchInBits\obj\Debug\Exam_2015_SearchInBits.pdb

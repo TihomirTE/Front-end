@@ -1,5 +1,0 @@
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task9_FrequentNumber\bin\Debug\Task9_FrequentNumber.exe.config
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task9_FrequentNumber\bin\Debug\Task9_FrequentNumber.exe
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task9_FrequentNumber\bin\Debug\Task9_FrequentNumber.pdb
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task9_FrequentNumber\obj\Debug\Task9_FrequentNumber.exe
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme7_Arrays\Task9_FrequentNumber\obj\Debug\Task9_FrequentNumber.pdb

@@ -1,1 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW2_Methods\Task14_IntegerCalculations\bin\Debug\Task14_IntegerCalculations.exe.config

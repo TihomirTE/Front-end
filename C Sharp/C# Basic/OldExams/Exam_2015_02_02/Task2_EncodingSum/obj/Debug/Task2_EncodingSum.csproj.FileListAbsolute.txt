@@ -1,6 +1,0 @@
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task2_EncodingSum\bin\Debug\Task2_EncodingSum.exe.config
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task2_EncodingSum\bin\Debug\Task2_EncodingSum.exe
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task2_EncodingSum\bin\Debug\Task2_EncodingSum.pdb
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task2_EncodingSum\obj\Debug\Task2_EncodingSum.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task2_EncodingSum\obj\Debug\Task2_EncodingSum.exe
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task2_EncodingSum\obj\Debug\Task2_EncodingSum.pdb

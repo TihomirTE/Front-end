@@ -1,9 +1,0 @@
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task2_MaximalSum\obj\Debug\Task2_MaximalSum.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task2_MaximalSum\bin\Debug\Task2_MaximalSum.exe.config
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task2_MaximalSum\bin\Debug\Task2_MaximalSum.exe
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task2_MaximalSum\bin\Debug\Task2_MaximalSum.pdb
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task2_MaximalSum\obj\Debug\Task2_MaximalSum.exe
-E:\Programming\Telerik\C# Advanced\HW1_Matrixes\Task2_MaximalSum\obj\Debug\Task2_MaximalSum.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task2_MaximalSum\bin\Debug\Task2_MaximalSum.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task2_MaximalSum\obj\Debug\Task2_MaximalSum.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW1_Matrixes\Task2_MaximalSum\obj\Debug\Task2_MaximalSum.pdb

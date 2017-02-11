@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\BankAccounts\obj\Debug\BankAccounts.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\BankAccounts\bin\Debug\BankAccounts.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\BankAccounts\bin\Debug\BankAccounts.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\BankAccounts\bin\Debug\BankAccounts.pdb
-E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\BankAccounts\obj\Debug\BankAccounts.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\05. OOP-Principles-Part-2\BankAccounts\obj\Debug\BankAccounts.pdb

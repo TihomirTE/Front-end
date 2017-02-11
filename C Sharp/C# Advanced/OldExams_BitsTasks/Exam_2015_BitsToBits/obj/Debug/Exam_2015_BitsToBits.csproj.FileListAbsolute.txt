@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_BitsToBits\bin\Debug\Exam_2015_BitsToBits.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_BitsToBits\bin\Debug\Exam_2015_BitsToBits.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_BitsToBits\bin\Debug\Exam_2015_BitsToBits.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_BitsToBits\obj\Debug\Exam_2015_BitsToBits.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_BitsToBits\obj\Debug\Exam_2015_BitsToBits.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\OldExams_BitsTasks\Exam_2015_BitsToBits\obj\Debug\Exam_2015_BitsToBits.pdb

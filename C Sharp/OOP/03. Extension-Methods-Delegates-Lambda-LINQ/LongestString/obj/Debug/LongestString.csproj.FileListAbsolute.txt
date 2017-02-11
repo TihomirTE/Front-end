@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\LongestString\bin\Debug\LongestString.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\LongestString\bin\Debug\LongestString.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\LongestString\bin\Debug\LongestString.pdb
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\LongestString\obj\Debug\LongestString.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\LongestString\obj\Debug\LongestString.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\LongestString\obj\Debug\LongestString.pdb

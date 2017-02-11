@@ -1,1 +1,0 @@
-E:\Programming\Telerik\C# Basic\CSharp-basic_HomeWorks\Theme6_Loops\HW_Loops\Task1_NumbersFrom1ToN\bin\Debug\Task1_NumbersFrom1ToN.exe.config

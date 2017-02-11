@@ -1,5 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\DivisibleBy7And3\bin\Debug\DivisibleBy7And3.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\DivisibleBy7And3\bin\Debug\DivisibleBy7And3.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\DivisibleBy7And3\bin\Debug\DivisibleBy7And3.pdb
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\DivisibleBy7And3\obj\Debug\DivisibleBy7And3.exe
-E:\Programming\Telerik\Telerik\C Sharp\OOP\03. Extension-Methods-Delegates-Lambda-LINQ\DivisibleBy7And3\obj\Debug\DivisibleBy7And3.pdb

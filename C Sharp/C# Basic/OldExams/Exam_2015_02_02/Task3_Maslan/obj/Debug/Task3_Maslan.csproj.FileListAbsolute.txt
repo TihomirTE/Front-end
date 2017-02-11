@@ -1,6 +1,0 @@
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task3_Maslan\bin\Debug\Task3_Maslan.exe.config
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task3_Maslan\bin\Debug\Task3_Maslan.exe
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task3_Maslan\bin\Debug\Task3_Maslan.pdb
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task3_Maslan\obj\Debug\Task3_Maslan.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task3_Maslan\obj\Debug\Task3_Maslan.exe
-E:\Programming\Telerik\C# Basic\OldExams\Exam_2015_02_02\Task3_Maslan\obj\Debug\Task3_Maslan.pdb

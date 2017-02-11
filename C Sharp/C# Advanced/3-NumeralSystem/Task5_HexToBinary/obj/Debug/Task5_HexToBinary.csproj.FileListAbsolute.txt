@@ -1,6 +1,0 @@
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task5_HexToBinary\bin\Debug\Task5_HexToBinary.exe.config
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task5_HexToBinary\bin\Debug\Task5_HexToBinary.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task5_HexToBinary\bin\Debug\Task5_HexToBinary.pdb
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task5_HexToBinary\obj\Debug\Task5_HexToBinary.csprojResolveAssemblyReference.cache
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task5_HexToBinary\obj\Debug\Task5_HexToBinary.exe
-E:\Programming\Telerik\Telerik\C Sharp\C# Advanced\HW3_NumeralSystem\Task5_HexToBinary\obj\Debug\Task5_HexToBinary.pdb
