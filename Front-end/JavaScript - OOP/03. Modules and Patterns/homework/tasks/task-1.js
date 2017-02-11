@@ -116,7 +116,7 @@ function solve() {
             course.students.push(student);
             return student.id;
         },
-        getAllStudents: function() { // not return array of students
+        getAllStudents: function() { 
             let studentsArr = [];
             for (let i = 0; i < course.students.length; i += 1) {
                 let currentStudent = course.students[i];

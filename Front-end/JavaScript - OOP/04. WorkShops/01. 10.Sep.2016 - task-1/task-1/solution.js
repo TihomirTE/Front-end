@@ -53,13 +53,31 @@ function solve() {
         }
 
         function showProductTypes() {
-            let type = [];
+            // variant 1
+            /*let uniqueTypes = [];
 
-            if (products.length === 0) {
-                return type;
-            } else {
-                return products.sort();
+             for (const product of products) {
+                 if (uniqueTypes.indexOf(product.productType) === -1) {
+                     uniqueTypes.push(product.productType);
+                 }
+             }
+             if (uniqueTypes.length === 0) {
+                 return uniqueTypes;
+             } else {
+                 return uniqueTypes.sort();
+             }*/
+
+            // variant 2
+            const uniqueTypes = {};
+            products.forEach(p => uniqueTypes[p.productType] = true);
+
+            const unique = [];
+            for (const pr in uniqueTypes) {
+                unique.push(pr);
             }
+            return unique.sort();
+
+
         }
 
         function getInfo() {
@@ -75,6 +93,19 @@ function solve() {
                     products: productUniqueName().map(x => x === {})
                 };
             }
+
+            // const groupName = {};
+
+            // products.forEach(p => {
+            //     groupName[p.name].quantity += 1,
+            //         groupName[p.name].totalPrice = p.price
+
+            // });
+
+            // return {
+            //     products: uniqueNames,
+            //     totalPrice: sumPrices()
+            // };
         }
 
         function sumPrices() {
