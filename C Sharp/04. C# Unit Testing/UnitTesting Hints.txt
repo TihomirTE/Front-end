@@ -1,0 +1,10 @@
+
+// CollectionAssert enumerates the arrays (which is what Lists are internally) 
+// and determines if they have the same items. 
+// CollectionAssert.AreEqual check that they have the same items in the same order. 
+// CollectionAssert.AreEquivalent check that they have the same items, in any order.
+
+CollectionAssert.AreEqual(expectedValue, actualValue);
+
+----------------------------------------------------------------------------------------------
+
