@@ -7,4 +7,6 @@
 CollectionAssert.AreEqual(expectedValue, actualValue);
 
 ----------------------------------------------------------------------------------------------
+// Test Internal method(or sth else internal) in the unit test class -> to have access to the internal method
 
+[assembly: InternalVisibleTo("Name of the test class")]
