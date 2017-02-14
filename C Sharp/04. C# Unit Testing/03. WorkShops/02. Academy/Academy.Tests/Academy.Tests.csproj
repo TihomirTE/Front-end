@@ -52,7 +52,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\Adding\AddStudentToCourseCommandTests.cs" />
+    <Compile Include="Commands\Adding\AddStudentToSeasonCommandTests.cs" />
+    <Compile Include="Commands\Adding\Mock\AddStudentToCourseCommandMock.cs" />
+    <Compile Include="Commands\Adding\Mock\AddStudentToSeasonCommnadMock.cs" />
+    <Compile Include="Core\Factories\AcademyFactoryTests.cs" />
+    <Compile Include="Models\Abstracions\MockedUser.cs" />
+    <Compile Include="Models\Abstracions\UserTests.cs" />
     <Compile Include="Models\CourseTests.cs" />
+    <Compile Include="Models\SeasonTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

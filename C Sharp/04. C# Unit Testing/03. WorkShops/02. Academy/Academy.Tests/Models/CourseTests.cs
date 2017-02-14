@@ -1,15 +1,14 @@
-﻿using Academy.Models;
-using Academy.Models.Contracts;
-using Moq;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Academy.Tests.Models
+﻿namespace Academy.Tests.Models
 {
+    using System;
+    using System.Collections.Generic;
+
+    using Moq;
+    using NUnit.Framework;
+
+    using Academy.Models;
+    using Academy.Models.Contracts;
+
     [TestFixture]
     public class CourseTests
     {
