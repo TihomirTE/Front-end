@@ -41,6 +41,22 @@ namespace PackageManager.Tests.Repositories
         }
 
         [Test]
+        public void AddPackage_WhenThePackageDoesNotExist()
+        {
+            // Arrange
+            var packageMock = new Mock<IPackage>();
+            packageMock.Setup(x => x.Name).Returns("Pesho");
+
+            var loggerMock = new Mock<ILogger>();
+            var packageRepo = new PackageRepository(loggerMock.Object);
+
+            packageRepo.Add(packageMock.Object);
+            // TODO finish whole Class
+            // Act & Assert
+            
+        }
+
+        [Test]
         public void Delete_ShouldThrowArgumentNullException_IfPackageValueIsNull()
         {
             // Arrange

@@ -38,4 +38,24 @@ var generator = (function(){
   // from outside of the function we have access only on the part "return" (which is exposed)
 console.log(generator.getId() // ->([function name].[object property name]);
 
---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+
+// using variable numbers of parameters with the function
+
+function my_log(...args) {
+     //args is an Array
+     console.log(args);
+     //You can pass this array as parameters to another function
+     console.log(...args);
+}
+
+---------------------------------------------------------------------------------------
+
+function name(parameter 1, parameter 2){}
+
+name.length = 2 // -> gives the number of the parametrs on the function
+
+---------------------------------------------------------------------------------------
+
+
+	
