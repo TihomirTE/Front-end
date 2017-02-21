@@ -39,105 +39,232 @@ function solve() {
         }
     }
 
-
-    class Item {
-        constructor(description, name) {
-            this._id = nextId();
-            this.description = description;
-            this.name = name;
+    function validateNumberBigger(n, min) {
+        if (typeof n !== 'number' || n <= min) {
+            throw 'Not a valid number';
         }
 
-        get name() {
-            return this._name;
+
+        class Item {
+            constructor(description, name) {
+                this._id = nextId();
+                this.description = description;
+                this.name = name;
+            }
+
+            get name() {
+                return this._name;
+            }
+
+            set name(currentName) {
+                validateLengthRange(currentName, 2, 40);
+                this._name = currentName;
+            }
+
+            get description() {
+                return this._description;
+            }
+
+            set description(currentDescription) {
+                validateNonEmpty(currentDescription);
+                this._description = currentDescription;
+            }
+
+            get id() {
+                return this._id;
+            }
         }
 
-        set name(currentName) {
-            validateLengthRange(currentName, 2, 40);
-            this._name = currentName;
+        class Book extends Item {
+            constructor(name, isbn, genre, description) {
+                super(name, description);
+
+                this.isbn = isbn;
+                this.genre = genre;
+            }
+
+            get isbn() {
+                return this._isbn;
+            }
+
+            set isbn(isbn) {
+                validateIsbn(isbn);
+                this._isbn = isbn;
+            }
+
+            get genre() {
+                return this._genre;
+            }
+
+            set genre(genre) {
+                validateLengthRange(genre, 2, 20);
+                this._genre = genre;
+            }
         }
 
-        get description() {
-            return this._description;
+        class Media extends Item {
+            constructor(name, rating, duration, description) {
+                super(name, description);
+
+                this.duration = duration;
+                this.rating = rating;
+            }
+
+            get duration() {
+                return this._duration;
+            }
+
+            set duration(currDuration) {
+                validateDuration(currDuration);
+                this._duration = currDuration;
+            }
+
+            get rating() {
+                return this._rating;
+            }
+
+            set rating(currRating) {
+                validateNumberRange(currRating, 1, 5);
+                this._rating = currRating;
+            }
         }
 
-        set description(currentDescription) {
-            validateNonEmpty(currentDescription);
-            this._description = currentDescription;
+        class Catalog {
+            constructor(name) {
+                this._id = nextId();
+                this.name = name;
+                this._items = [];
+            }
+
+            get id() {
+                return this._id;
+            }
+
+            get name() {
+                return this._name;
+            }
+
+            set name(n) {
+                validateLengthRange(n, 2, 40);
+                this._name = n;
+            }
+
+            get items() {
+                return this._items;
+            }
+
+            add(...item) {
+                if (Array.isArray(items[0])) {
+                    items = items[0];
+                }
+
+                if (items.length === 0) {
+                    throw new Error('The Array must have at least one item');
+                }
+
+                items.forEach(item => {
+                    if (typeof item !== 'object') {
+                        throw new Error('Item not an object');
+                    }
+
+                    validateNumberBigger(item.id, 0);
+                    validateLengthRange(item.name, 2, 40);
+                    validateNonEmpty(item.description);
+                });
+
+                this._item.push(...items);
+
+                return this;
+            }
+
+            find(parameters) {
+                function findById(id) {
+                    if (typeof id !== 'number') {
+                        throw new Error('id is not a number');
+                    }
+
+                    return this._items.find(item => item.id === id) || null;
+                }
+
+                function findByOptions(options) {
+                    return this._items.filter(item => {
+                        return ((!options.hasOwnProperty('name') || item.name === options.name) &&
+                            (!options.hasOwnProperty('id') || item.id === options.id));
+                    });
+                }
+
+                if (typeof parameters === 'object') {
+                    return findByOptions.call(this, arg);
+                }
+                return findById.call(this, parameters);
+            }
+
+            search(pattern) {
+                validateNonEmpty(pattern);
+
+                return this._items.filter(item => {
+                    return (item.name.indexOf(pattern) >= 0 || item.description.indexOf(pattern) >= 0);
+                });
+            }
         }
 
-        get id() {
-            return this._id;
+        class BookCatalog extends Catalog {
+            constructor(name) {
+                super(name);
+            }
+
+            add(...books) {
+                if (Array.isArray(books[0])) {
+                    books = books[0];
+                }
+
+                books.forEach(book => {
+                    if (typeof book !== 'object') {
+                        throw new Error('Item not an object');
+                    }
+
+                    validateIsbn(book.isbn);
+                    validateLengthRange(book.genre, 2, 20);
+                });
+
+                return super.add(books);
+            }
+
+            getGenres() {
+                return this._item
+                    .map(book => book.genre.toLowerCase())
+                    .sort()
+                    .filter((genre, index, genres) => genre !== genres[index - 1]);
+            }
+
+            find(arg) {
+                if (typeof arg === 'object') {
+                    const books = super.find(arg);
+                    if (arg.hasOwnProperty('genre')) {
+                        return books.filter(book => book.genre === arg.genre);
+                    }
+                    return books;
+                }
+
+                return super.find(arg);
+            }
         }
+
+
+        return {
+            getBook: function(name, isbn, genre, description) {
+                return new Book(name, isbn, genre, description);
+            },
+            getMedia: function(name, rating, duration, description) {
+                return new Media(name, rating, duration, description);
+            },
+            getBookCatalog: function(name) {
+                return new BookCatalog(name);
+            },
+            getMediaCatalog: function(name) {
+
+            }
+        };
     }
 
-    class Book extends Item {
-        constructor(name, isbn, genre, description) {
-            super(name, description);
-
-            this.isbn = isbn;
-            this.genre = genre;
-        }
-
-        get isbn() {
-            return this._isbn;
-        }
-
-        set isbn(isbn) {
-            validateIsbn(isbn);
-            this._isbn = isbn;
-        }
-
-        get genre() {
-            return this._genre;
-        }
-
-        set genre(genre) {
-            validateLengthRange(genre, 2, 20);
-            this._genre = genre;
-        }
-    }
-
-    class Media extends Item {
-        constructor(name, rating, duration, description) {
-            super(name, description);
-
-            this.duration = duration;
-            this.rating = rating;
-        }
-
-        get duration() {
-            return this._duration;
-        }
-
-        set duration(currDuration) {
-            validateDuration(currDuration);
-            this._duration = currDuration;
-        }
-
-        get rating() {
-            return this._rating;
-        }
-
-        set rating(currRating) {
-            validateNumberRange(currRating, 1, 5);
-            this._rating = currRating;
-        }
-    }
-
-    return {
-        getBook: function(name, isbn, genre, description) {
-            return new Book(name, isbn, genre, description);
-        },
-        getMedia: function(name, rating, duration, description) {
-            return new Media(name, rating, duration, description);
-        },
-        getBookCatalog: function(name) {
-            // return a book catalog instance
-        },
-        getMediaCatalog: function(name) {
-            // return a media catalog instance
-        }
-    };
-}
-
-module.exports = solve;
+    //module.exports = solve;
