@@ -37,7 +37,7 @@ function solve() {
         }
 
         get playlists() {
-            return this._playlist;
+            return this._playlists;
         }
 
         addPlaylist(playlistToAdd) {
@@ -115,6 +115,11 @@ function solve() {
             return this._id;
         }
 
+        get playables() {
+            return this._playables;
+        }
+
+
 
         addPlayable(playable) {
 
@@ -133,12 +138,13 @@ function solve() {
         }
 
         removePlayable(id) {
-            let num = this._playables.indexOf(id);
-            if (num < 0) {
-                throw 'playlist does not exist';
+            let index = this._playables.findIndex(p => p.id === id);
+
+            if (index < 0) {
+                throw 'playable is not contained in the playlist';
             }
 
-            this._playables.splice(num, 1);
+            this._playables.splice(index, 1);
             return this;
         }
 
@@ -158,8 +164,8 @@ function solve() {
     class Playable {
         constructor(title, author) {
             this._id = nextId();
-            this._title = title;
-            this._author = author;
+            this.title = title;
+            this.author = author;
         }
 
         get id() {
@@ -196,7 +202,6 @@ function solve() {
         constructor(title, author, length) {
             super(title, author);
             this.length = length;
-            this._id = nextId();
         }
 
         get length() {
@@ -220,7 +225,6 @@ function solve() {
         constructor(title, author, imdbRating) {
             super(title, author);
             this.imdbRating = imdbRating;
-            this._id = nextId();
         }
 
         get imdbRating() {
