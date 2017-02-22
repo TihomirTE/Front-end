@@ -183,11 +183,11 @@ function solve() {
                         throw new Error('id is not a number');
                     }
 
-                    return this._items.find(item => item.id === id) || null;
+                    return items.find(item => item.id === id) || null;
                 }
 
                 function findByOptions(options) {
-                    return this._items.filter(item => {
+                    return items.filter(item => {
                         return ((!options.hasOwnProperty('name') || item.name === options.name) &&
                             (!options.hasOwnProperty('id') || item.id === options.id));
                     });
@@ -266,5 +266,6 @@ function solve() {
             }
         };
     }
+}
 
     //module.exports = solve;
