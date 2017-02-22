@@ -62,14 +62,17 @@ function solve() {
 
                 brand[p.name].totalPrice += p.price;
                 brand[p.name].quantity += 1;
+
             }
 
             const products = Object.keys(brand).map(groupName => brand.groupName);
             const totalPrice = this.products.reduce((a, b) => a + b.price, 0);
 
             return {
+
                 products,
                 totalPrice
+
             };
         }
     }
