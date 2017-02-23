@@ -38,6 +38,17 @@ var generator = (function(){
   // from outside of the function we have access only on the part "return" (which is exposed)
 console.log(generator.getId() // ->([function name].[object property name]);
 
+
+// shorter generator
+
+const nextId = (function() {
+        let counter = 0;
+        return function() {
+            counter += 1;
+            return counter;
+        };
+    }());
+
 ---------------------------------------------------------------------------------------
 
 // using variable numbers of parameters with the function
@@ -57,5 +68,18 @@ name.length = 2 // -> gives the number of the parametrs on the function
 
 ---------------------------------------------------------------------------------------
 
+// To inherit (extend) a method from the parent class -> invoke super.[name of the method]
+// and after that add extended logic for the method from the child class
 
+play() {
+	super.play() + 'some logic';
+}
+
+-------------------------------------------------------------------------
+	
+// useful methods over arrays
+
+map, slice, splice, sort, find, filter, indexOf	
+	
+	
 	
