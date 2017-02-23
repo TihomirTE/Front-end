@@ -21,7 +21,7 @@ function solve() {
         }
         remove(product) {
             let result = this.products.indexOf(product);
-            if (result === -1) {
+            if (result === -1 || this.products.length === 0) {
                 throw Error('product does not contain in the shopping cart');
             }
 
