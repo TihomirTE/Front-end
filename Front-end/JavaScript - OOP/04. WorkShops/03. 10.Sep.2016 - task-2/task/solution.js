@@ -152,6 +152,7 @@ function solve() {
     class ArmyUnit extends Unit {
         constructor(name, alignment, id, damage, health, count, speed) {
             super(name, alignment);
+
             this._id = getNextId;
             this.damage = damage;
             this.health = health;
@@ -208,6 +209,7 @@ function solve() {
     class Commander extends Unit {
         constructor(name, alignment, mana) {
             super(name, alignment);
+
             this.mana = mana;
             this.spellbook = [];
             this.army = [];
