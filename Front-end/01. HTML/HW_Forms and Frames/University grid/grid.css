@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table,
+th,
+td {
+    padding: 5px;
+    border: solid 1px grey
+}
+
+.name,
+.number {
+    border-color: transparent;
+    width: 100%;
+}
+
+span {
+    color: blue;
+    text-decoration: underline;
+}
