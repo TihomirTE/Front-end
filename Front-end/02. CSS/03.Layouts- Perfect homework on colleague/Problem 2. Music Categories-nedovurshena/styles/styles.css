@@ -1,0 +1,93 @@
+body{
+  font-family: sans-serif;
+}
+
+.main {
+  padding: 15px 10px 25px 15px;
+  border-radius: 8px;
+  width: 425px;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+img {
+  margin-right: 15px;
+  float: left;
+  border: solid 1px #aaa;
+}
+
+h1 {
+  font-family: Futura Lt;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+article {
+  width: 390px;
+  height: 90px;
+  background-color: #fff;
+  border: solid 1px #aaa;
+  padding: 15px;
+  margin-bottom: 35px;
+  font-size: 12px;
+}
+
+p {
+  margin-top: 0px;
+}
+
+.buttons {
+  position: relative;
+  top: 8px;
+  left: 103px;
+}
+
+.buttons1 {
+  position: relative;
+  top: 20px;
+  left: 103px;
+}
+
+.listen {
+  background-image: url("../images/listen.png");
+  background-repeat: no-repeat;
+  border:2px solid red;
+  border-style: outset;
+  width: 72px;
+}
+
+.listen:hover {
+  background-image: url("../images/listen-hover.png");
+  background-repeat: no-repeat;
+  width: 72px;
+  border:2px solid red;
+  border-style: inset;
+}
+
+.add {
+  background-image: url("../images/add.png");
+  background-repeat: no-repeat;
+  width: 58px;
+  border:2px solid red;
+  border-style: outset;
+}
+
+.add:hover {
+  background-image: url("images/add-hover.png");
+  background-repeat: no-repeat;
+  width: 58px;
+  border:2px solid red;
+  border-style: inset;
+}
+
+button {
+  height: 25px;
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 15px;
+  color: #fff;
+}
+
+article:last-child {
+  margin-bottom: 0;
+}

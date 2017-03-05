@@ -1,0 +1,18 @@
+body {
+    color: #0894FF;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 25px;
+    word-spacing: 10px;
+}
+
+body::first-line {
+    font-weight: bold;
+    padding-bottom: 25px;
+    line-height: 70px;
+}
+
+body::first-letter {
+    font-family: Edwardian Script ITC;
+    font-size: 60px;
+}

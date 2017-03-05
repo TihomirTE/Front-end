@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+th {
+    background-color: #5CB621;
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    border-bottom: solid 1px grey;
+}
+
+table {
+    border-collapse: collapse;
+    border-bottom: solid 1px #b2b285;
+    padding-bottom: 0px;
+}
+
+th,
+td {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    border-right: solid 1px #b2b285;
+    font-size: 90%;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #ECECD8;
+}
+
+.flag {
+    height: 15px;
+    width: 20px;
+}
+
+.check {
+    border: none;
+}
+
+.checkBox {
+    box-shadow: inset 1px 1px 15px grey;
+}
