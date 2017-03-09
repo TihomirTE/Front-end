@@ -1,0 +1,6 @@
+
+npm install -g bower 
+/* bower is plugin on node.js for taking libraries
+ //Functions:
+ 1) search jquery-> return all libraries which contains the word jquery 
+ 2) install */
