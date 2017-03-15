@@ -19,6 +19,7 @@ function solve() {
             buttons[i].addEventListener('click', function(ev) {
                 let clickedButton = ev.target,
                     nextContentSibling = clickedButton.nextElementSibling;
+                
                 let firstContent,
                     validFirstContent = false;
 
