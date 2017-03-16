@@ -27,8 +27,8 @@ module.exports = function() {
         }
 
 
-        let newContent = '';
-        for (let i = 0, len = contents.length; i < len; i += 1) {
+        var newContent = '';
+        for (var i = 0, len = contents.length; i < len; i += 1) {
 
             // Any of the contents is neither string nor number
             if (typeof contents[i] !== 'string' && typeof contents[i] !== 'number') {
