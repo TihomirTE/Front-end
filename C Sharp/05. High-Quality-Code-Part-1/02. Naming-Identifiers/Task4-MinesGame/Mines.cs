@@ -37,10 +37,12 @@ namespace Minesweeper
                 Console.Write("Enter command : ");
                 command = Console.ReadLine().Trim();
 
-                if (command.Length >= 3)
+                var turn = command.Split(' ');
+
+                if (turn.Length == 3)
                 {
-                    if (int.TryParse(command[0].ToString(), out row) &&
-                        int.TryParse(command[2].ToString(), out column) &&
+                    if (int.TryParse(turn[1].ToString(), out row) &&
+                        int.TryParse(turn[2].ToString(), out column) &&
                         row <= field.GetLength(0) && column <= field.GetLength(1))
                     {
                         command = "turn";
@@ -153,13 +155,8 @@ namespace Minesweeper
                     isAlive = false;
                     isStart = true;
                 }
-            }
 
-            // TODO: check this lines of code
-            while (command != "exit");
-            Console.WriteLine("Made in Bulgaria - Uauahahahahaha!");
-            Console.WriteLine("AREEEEEEeeeeeee.");
-            Console.Read();
+            } while (command != "exit");
         }
 
         private static void RankPlayers(List<TotalPoints> points)
