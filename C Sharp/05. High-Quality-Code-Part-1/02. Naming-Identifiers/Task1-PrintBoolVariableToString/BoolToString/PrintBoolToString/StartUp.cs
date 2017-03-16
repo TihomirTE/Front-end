@@ -1,5 +1,4 @@
-﻿
-namespace PrintBoolToString
+﻿namespace PrintBoolToString
 {
     public class StartUp
     {
@@ -13,4 +12,3 @@ namespace PrintBoolToString
         }
     }
 }
-
