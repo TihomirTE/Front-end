@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1. Class Chef", "Task1. Class Chef\Task1. Class Chef.csproj", "{B8D46526-E042-42F4-9BE9-D4326820A125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2 If Statement", "Task2 If Statement\Task2 If Statement.csproj", "{677A406F-E768-4301-9728-0C2E2411F0F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3 Loop", "Task3 Loop\Task3 Loop.csproj", "{41C28024-11A1-444A-B9C0-3290705E4193}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8D46526-E042-42F4-9BE9-D4326820A125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D46526-E042-42F4-9BE9-D4326820A125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D46526-E042-42F4-9BE9-D4326820A125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D46526-E042-42F4-9BE9-D4326820A125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{677A406F-E768-4301-9728-0C2E2411F0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{677A406F-E768-4301-9728-0C2E2411F0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{677A406F-E768-4301-9728-0C2E2411F0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{677A406F-E768-4301-9728-0C2E2411F0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C28024-11A1-444A-B9C0-3290705E4193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C28024-11A1-444A-B9C0-3290705E4193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C28024-11A1-444A-B9C0-3290705E4193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C28024-11A1-444A-B9C0-3290705E4193}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
