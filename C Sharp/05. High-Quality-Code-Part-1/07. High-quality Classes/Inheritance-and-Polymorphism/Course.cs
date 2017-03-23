@@ -6,8 +6,8 @@
 
     public abstract class Course
     {
-        public const int MIN_NAMES_LENGTH = 2;
-        public const int MAX_NAMES_LENGTH = 15;
+        public const int MinNamesLength = 2;
+        public const int MaxNamesLength = 15;
 
         private string name;
         private string teacherName;
@@ -43,7 +43,7 @@
 
             private set
             {
-                if (value.Length < MIN_NAMES_LENGTH || value.Length > MAX_NAMES_LENGTH)
+                if (value.Length < MinNamesLength || value.Length > MaxNamesLength)
                 {
                     throw new ArgumentOutOfRangeException("Name should be between 2 and 15 symbols");
                 }
@@ -61,7 +61,7 @@
 
             internal set
             {
-                if (value.Length < MIN_NAMES_LENGTH || value.Length > MAX_NAMES_LENGTH)
+                if (value.Length < MinNamesLength || value.Length > MaxNamesLength)
                 {
                     throw new ArgumentOutOfRangeException("TeacherName should be between 2 and 15 symbols");
                 }
