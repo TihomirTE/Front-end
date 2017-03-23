@@ -79,7 +79,9 @@ play() {
 	
 // useful methods over arrays
 
-map, slice, splice, sort, find, filter, indexOf	
+map, slice, splice, sort, findIndex, filter, indexOf	
+
+hornet_hive
 	
 	
 	
