@@ -25,7 +25,11 @@ function solve() {
             '<ul class="animals-list">' +
             '{{#each animals}}' +
             '<li>' +
-            '{{#if url}} {{this.url}} {{/if}}' +
+            '<a href= "{{#if this.url}}{{this.url}}' +
+            '{{else}}' +
+            'http://cdn.playbuzz.com/cdn/3170bee8-985c-47bc-bbb5-2bcb41e85fe9/d8aa4750-deef-44ac-83a1-f2b5e6ee029a.jpg"{{/if}}">' +
+            '{{#if this.url}}See a {{this.name}}{{else}}No link for {{this.name}}, here is Batman!{{/if}}' +
+            '</a>' +
             '</li>' +
             '{{/each}}' +
             '</ul>' +
@@ -33,6 +37,6 @@ function solve() {
 
         $(selector).html(template);
     };
-};
+}
 
 module.exports = solve;
