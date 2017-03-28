@@ -17,7 +17,7 @@ function solve() {
             '			</div>',
             '			<ul>',
             '				{{#each comments}}',
-            '					{{#if deleted}}',
+            '					{{#if []}}',
             '					{{else}}',
             '						<li>',
             '							<div class="comment">',
