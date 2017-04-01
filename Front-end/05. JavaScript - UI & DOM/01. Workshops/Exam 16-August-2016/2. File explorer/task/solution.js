@@ -76,7 +76,7 @@ function solve() {
             }
 
             if (path.length === 1) {
-                renderFile(path[0].appendTo($items));
+                renderFile(path[0]).appendTo($items);
             } else {
                 file = renderFile(path[1]);
 
@@ -93,9 +93,7 @@ function solve() {
 
             $addInput.removeClass("visible");
             $addBtn.addClass("visible");
-
         });
-
     };
 }
 
