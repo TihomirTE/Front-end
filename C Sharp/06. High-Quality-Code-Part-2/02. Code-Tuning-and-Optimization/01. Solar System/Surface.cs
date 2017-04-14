@@ -81,17 +81,17 @@ namespace Surfaces
 
         private void SetContentMaterial()
         {
-            content.Material = Visible ? Material : null;
+            this.content.Material = this.Visible ? this.Material : null;
         }
 
         private void SetContentBackMaterial()
         {
-            content.BackMaterial = Visible ? BackMaterial : null;
+            this.content.BackMaterial = this.Visible ? this.BackMaterial : null;
         }
 
         private void OnGeometryChanged()
         {
-            content.Geometry = CreateMesh();
+            this.content.Geometry = CreateMesh();
         }
     }
 }

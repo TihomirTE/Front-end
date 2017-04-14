@@ -42,10 +42,6 @@ namespace SolarSystem
             {
                 return 40;
             }
-
-            set
-            {
-            }
         }
 
         public double Days { get; set; }
@@ -95,7 +91,7 @@ namespace SolarSystem
         private void OnTimerTick(object sender, EventArgs e)
         {
             var now = DateTime.Now;
-            this.Days += (now - this.startTime).TotalMilliseconds * DaysPerSecond / 1000.0 * (ReverseTime ? -1 : 1);
+            this.Days += (now - this.startTime).TotalMilliseconds * this.DaysPerSecond / 1000.0 * (this.ReverseTime ? -1 : 1);
             this.startTime = now;
             Update("Days");
             OnTimeChanged();
@@ -110,7 +106,7 @@ namespace SolarSystem
 
         private void EarthPosition()
         {
-            double angle = 2 * Math.PI * Days / EarthYear;
+            double angle = 2 * Math.PI * this.Days / EarthYear;
             this.EarthOrbitPositionX = this.EarthOrbitRadius * Math.Cos(angle);
             this.EarthOrbitPositionY = this.EarthOrbitRadius * Math.Sin(angle);
             Update("EarthOrbitPositionX");
@@ -120,13 +116,13 @@ namespace SolarSystem
         // Optimize this method - remove the forloop
         private void EarthRotation()
         {
-            this.EarthRotationAngle = 360 * Days / EarthRotationPeriod;
+            this.EarthRotationAngle = 360 * this.Days / EarthRotationPeriod;
             Update("EarthRotationAngle");
         }
 
         private void SunRotation()
         {
-            this.SunRotationAngle = 360 * Days / SunRotationPeriod;
+            this.SunRotationAngle = 360 * this.Days / SunRotationPeriod;
             Update("SunRotationAngle");
         }
 

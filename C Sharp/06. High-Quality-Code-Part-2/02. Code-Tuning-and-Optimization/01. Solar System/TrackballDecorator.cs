@@ -52,8 +52,8 @@ namespace Microsoft._3DTools
             base.OnMouseDown(e);
 
             this.previousPosition2D = e.GetPosition(this);
-            this.previousPosition3D = ProjectToTrackball(ActualWidth,
-                                      ActualHeight,
+            this.previousPosition3D = ProjectToTrackball(this.ActualWidth,
+                                      this.ActualHeight,
                                       this.previousPosition2D);
             if (Mouse.Captured == null)
             {
@@ -65,7 +65,7 @@ namespace Microsoft._3DTools
         {
             base.OnMouseUp(e);
 
-            if (IsMouseCaptured)
+            if (this.IsMouseCaptured)
             {
                 Mouse.Capture(this, CaptureMode.None);
             }
@@ -75,7 +75,7 @@ namespace Microsoft._3DTools
         {
             base.OnMouseMove(e);
 
-            if (IsMouseCaptured)
+            if (this.IsMouseCaptured)
             {
                 Point currentPosition = e.GetPosition(this);
 
@@ -121,7 +121,7 @@ namespace Microsoft._3DTools
         private void Track(Point currentPosition)
         {
             Vector3D currentPosition3D = ProjectToTrackball(
-                ActualWidth, ActualHeight, currentPosition);
+                this.ActualWidth, this.ActualHeight, currentPosition);
 
             Vector3D axis = Vector3D.CrossProduct(this.previousPosition3D, currentPosition3D);
             double angle = Vector3D.AngleBetween(this.previousPosition3D, currentPosition3D);
