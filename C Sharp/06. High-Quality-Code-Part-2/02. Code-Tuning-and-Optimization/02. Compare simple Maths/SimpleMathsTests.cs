@@ -6,27 +6,7 @@ namespace _02.Compare_simple_Maths
     public class SimpleMathsTests
     {
         private const int NumberOfIterations = 1000000;
-
-        /// <summary>
-        /// Func<T1, T2, ..., Tn, Tr> represents a function, 
-        /// that takes (T1, T2, ..., Tn) arguments and returns Tr.
-        /// </summary>
-        /// <param name="calculateFunc"></param>
-        /// <returns> Calculate time for every value</returns>
-        private static TimeSpan Timer<T>(Func<T, T, T> calculateFunc)
-        {
-            var stopWatch = new Stopwatch();
-            stopWatch.Start();
-
-            for (int i = 0; i < NumberOfIterations; i++)
-            {
-                calculateFunc(default(T), default(T));
-            }
-
-            stopWatch.Stop();
-            return stopWatch.Elapsed;
-        }
-
+        
         /// <summary>
         /// Timer<T>(Func<a, b, (a (arithmetic operation) b)>)
         /// </summary>
@@ -72,6 +52,26 @@ namespace _02.Compare_simple_Maths
             Console.WriteLine($"Double: {Timer<double>((a, b) => (a / ++b))}");
             Console.WriteLine($"Decimal: {Timer<decimal>((a, b) => (a / ++b))}");
             Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Func<T1, T2, ..., Tn, Tr> represents a function, 
+        /// that takes (T1, T2, ..., Tn) arguments and returns Tr.
+        /// </summary>
+        /// <param name="calculateFunc"></param>
+        /// <returns> Calculate time for every value</returns>
+        private static TimeSpan Timer<T>(Func<T, T, T> calculateFunc)
+        {
+            var stopWatch = new Stopwatch();
+            stopWatch.Start();
+
+            for (int i = 0; i < NumberOfIterations; i++)
+            {
+                calculateFunc(default(T), default(T));
+            }
+
+            stopWatch.Stop();
+            return stopWatch.Elapsed;
         }
     }
 }
