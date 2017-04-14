@@ -1,5 +1,4 @@
 (function() {
-
     var location = new Promise(function(resolve, reject) {
         navigator.geolocation.getCurrentPosition(
             function(position) {
@@ -36,5 +35,4 @@
         .then(coordinates)
         .then(createMapView)
         .catch(locationNotFound);
-
 }());
