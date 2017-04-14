@@ -28,7 +28,7 @@
     }
 
     function locationNotFound(error) {
-        map.innerText = error.message;
+        map.innerHTML = error.message;
     }
 
     location
