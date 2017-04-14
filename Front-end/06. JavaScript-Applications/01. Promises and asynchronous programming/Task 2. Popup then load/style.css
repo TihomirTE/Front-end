@@ -1,0 +1,11 @@
+#btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px
+}
+
+#popup {
+    color: blue;
+    text-transform: capitalize;
+}
