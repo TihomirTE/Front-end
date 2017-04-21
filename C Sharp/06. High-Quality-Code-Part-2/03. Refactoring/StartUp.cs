@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Task3
+namespace GameFifteen
 {
     public class WalkInMatrix
     {
@@ -80,51 +80,86 @@ namespace Task3
         static void Main(string[] args)
         {
             int n;
+
             do
             {
                 Console.WriteLine("Enter number between 1 and 100");
                 n = int.Parse(Console.ReadLine());
-            } while (n <= 0 || n > 100);
+            } while (n < 1 || n > 100);
 
-            int[,] matrica = new int[n, n];
-            int step = n, k = 1, i = 0, j = 0, dx = 1, dy = 1;
+            var matrix = new int[n, n];
+            int step = n;
+            int k = 1;
+            int i = 0;
+            int j = 0;
+            int dx = 1;
+            int dy = 1;
+
             while (true)
-            { //malko e kofti tova uslovie, no break-a raboti 100% : )
-                matrica[i, j] = k;
+            {
+                matrix[i, j] = k;
 
-                if (!proverka(matrica, i, j)) { break; } // prekusvame ako sme se zadunili
-                if (i + dx >= n || i + dx < 0 || j + dy >= n || j + dy < 0 || matrica[i + dx, j + dy] != 0)
+                if (!proverka(matrix, i, j))
+                {
+                    break;
+                } // prekusvame ako sme se zadunili
 
-
-                    while ((i + dx >= n || i + dx < 0 || j + dy >= n || j + dy < 0 || matrica[i + dx, j + dy] != 0)) { change(ref dx, ref dy); }
-                i += dx; j += dy; k++;
+                if (i + dx >= n || i + dx < 0 || j + dy >= n || j + dy < 0 || matrix[i + dx, j + dy] != 0)
+                {
+                    while (i + dx >= n || i + dx < 0 || j + dy >= n || j + dy < 0 || matrix[i + dx, j + dy] != 0)
+                    {
+                        change(ref dx, ref dy);
+                    }
+                }
+                i += dx;
+                j += dy;
+                k++;
             }
+
             for (int p = 0; p < n; p++)
             {
-                for (int q = 0; q < n; q++) Console.Write("{0,3}", matrica[p, q]);
+                for (int q = 0; q < n; q++)
+                {
+                    Console.Write("{0,3}", matrix[p, q]);
+                }
                 Console.WriteLine();
             }
-            find_cell(matrica, out i, out j);
+
+            find_cell(matrix, out i, out j);
+
             if (i != 0 && j != 0)
             { // taka go napravih, zashtoto funkciqta ne mi davashe da ne si definiram out parametrite
-                dx = 1; dy = 1;
-
+                dx = 1;
+                dy = 1;
 
                 while (true)
                 { //malko e kofti tova uslovie, no break-a raboti 100% : )
-                    matrica[i, j] = k;
-                    if (!proverka(matrica, i, j)) { break; }// prekusvame ako sme se zadunili
-                    if (i + dx >= n || i + dx < 0 || j + dy >= n || j + dy < 0 || matrica[i + dx, j + dy] != 0)
+                    matrix[i, j] = k;
+                    if (!proverka(matrix, i, j))
+                    {
+                        break;
+                    }// prekusvame ako sme se zadunili
 
+                    if (i + dx >= n || i + dx < 0 || j + dy >= n || j + dy < 0 || matrix[i + dx, j + dy] != 0)
+                    {
+                        while (i + dx >= n || i + dx < 0 || j + dy >= n || j + dy < 0 || matrix[i + dx, j + dy] != 0)
+                        {
+                            change(ref dx, ref dy);
+                        }
+                    }
 
-                        while ((i + dx >= n || i + dx < 0 || j + dy >= n || j + dy < 0 || matrica[i + dx, j + dy] != 0)) change(ref dx, ref dy);
-                    i += dx; j += dy; k++;
+                    i += dx;
+                    j += dy;
+                    k++;
                 }
             }
+
             for (int pp = 0; pp < n; pp++)
             {
-                for (int qq = 0; qq < n; qq++) Console.Write("{0,3}", matrica[pp, qq]);
-
+                for (int qq = 0; qq < n; qq++)
+                {
+                    Console.Write("{0,3}", matrix[pp, qq]);
+                }
                 Console.WriteLine();
             }
         }
