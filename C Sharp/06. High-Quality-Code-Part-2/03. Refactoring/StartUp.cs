@@ -1,11 +1,10 @@
-﻿using System;
-using GameFifteen.Models;
-
-namespace GameFifteen
+﻿namespace RotatingWalkInMatrix
 {
-    public class StartUp
+    using System;
+
+    public class RotatingWalkInMatrix
     {
-        static void Main()
+        public static void Main()
         {
             int input;
 
@@ -13,12 +12,10 @@ namespace GameFifteen
             {
                 Console.WriteLine("Enter number between 1 and 100");
                 input = int.Parse(Console.ReadLine());
-            } while (input < 1 || input > 100);
+            } while (input <= 0 || input > 100);
 
             Matrix matrix = new Matrix(input);
             Console.WriteLine(matrix);
         }
     }
 }
-
-           

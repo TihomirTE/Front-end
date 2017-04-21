@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\Direction.cs" />
+    <Compile Include="Models\Cell.cs" />
     <Compile Include="Models\Matrix.cs" />
     <Compile Include="StartUp.cs" />
   </ItemGroup>
