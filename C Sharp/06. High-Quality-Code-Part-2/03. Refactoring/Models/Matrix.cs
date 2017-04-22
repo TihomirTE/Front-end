@@ -10,8 +10,20 @@
 
         private int currentTargetCellIndex;
 
-        public Matrix(int size)
+        public Matrix(string input)
         {
+            int size;
+
+            if (!int.TryParse(input, out size))
+            {
+                throw new ArgumentException("The input has to be number");
+            }
+
+            if (size <= 0 || size > 100)
+            {
+                throw new ArgumentOutOfRangeException("The number has to be between 1 and 100");
+            }
+
             this.Field = new int[size, size];
             this.targetCells = new[]
             {
