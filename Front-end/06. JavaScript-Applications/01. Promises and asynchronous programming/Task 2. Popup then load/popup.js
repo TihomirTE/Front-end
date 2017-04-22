@@ -7,15 +7,15 @@
     }
 
     let promise = new Promise(function(resolve, reject) {
-        setTimeout(function() {
-            resolve();
-        }, 2000);
+        resolve();
     });
 
     function clickButton() {
-        promise
-            .then(redirect)
-            .catch(error);
+        setTimeout(function() {
+            promise
+                .then(redirect)
+                .catch(error);
+        }, 2000);
     }
 
     window.onload = btn.addEventListener("click", clickButton, false);
