@@ -1,9 +1,9 @@
-﻿namespace RotatingWalkInMatrix
-{
-    using GameFifteen.Models;
-    using System;
-    using System.Text;
+﻿using System;
+using System.Text;
+using GameFifteen.Models;
 
+namespace RotatingWalkInMatrix
+{
     public class Matrix
     {
         private readonly Cell[] targetCells;
