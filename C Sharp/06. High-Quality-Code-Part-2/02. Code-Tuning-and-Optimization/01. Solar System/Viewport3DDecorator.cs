@@ -69,9 +69,6 @@ namespace Microsoft._3DTools
                     AddLogicalChild(newContent);
                     AddVisualChild(newContent);
 
-                    // let anyone know that derives from us that there was a change
-                    OnViewport3DDecoratorContentChange(oldContent, newContent);
-
                     // data bind to what is below us so that we have the same width/height
                     // as the Viewport3D being enhanced
                     // create the bindings now for use later
@@ -81,16 +78,6 @@ namespace Microsoft._3DTools
                     InvalidateMeasure();
                 }
             }
-        }
-
-        /// <summary>
-        /// Extenders of Viewport3DDecorator can override this function to be notified
-        /// when the Content property changes
-        /// </summary>
-        /// <param name="oldContent">The old value of the Content property</param>
-        /// <param name="newContent">The new value of the Content property</param>
-        protected virtual void OnViewport3DDecoratorContentChange(UIElement oldContent, UIElement newContent)
-        {
         }
 
         /// <summary>
@@ -165,6 +152,25 @@ namespace Microsoft._3DTools
             }
         }
 
+        /// <summary> 
+        /// Returns an enumertor to this element's logical children
+        /// </summary>
+        protected override IEnumerator LogicalChildren
+        {
+            get
+            {
+                Visual[] logicalChildren = new Visual[VisualChildrenCount];
+
+                for (int i = 0; i < this.VisualChildrenCount; i++)
+                {
+                    logicalChildren[i] = GetVisualChild(i);
+                }
+
+                // return an enumerator to the ArrayList
+                return logicalChildren.GetEnumerator();
+            }
+        }
+
         /// <summary>
         /// Returns the child at the specified index.
         /// </summary>
@@ -196,25 +202,6 @@ namespace Microsoft._3DTools
 
             // if we didn't return then the index is out of range - throw an error
             throw new ArgumentOutOfRangeException("index", orginalIndex, "Out of range visual requested");
-        }
-
-        /// <summary> 
-        /// Returns an enumertor to this element's logical children
-        /// </summary>
-        protected override IEnumerator LogicalChildren
-        {
-            get
-            {
-                Visual[] logicalChildren = new Visual[VisualChildrenCount];
-
-                for (int i = 0; i < this.VisualChildrenCount; i++)
-                {
-                    logicalChildren[i] = GetVisualChild(i);
-                }
-
-                // return an enumerator to the ArrayList
-                return logicalChildren.GetEnumerator();
-            }
         }
 
         /// <summary>
@@ -263,6 +250,76 @@ namespace Microsoft._3DTools
         }
 
         /// <summary>
+        /// Arranges the Pre and Post Viewport children, and arranges itself
+        /// </summary>
+        /// <param name="arrangeSize">The final size to use to arrange itself and its children</param>
+        protected override Size ArrangeOverride(Size arrangeSize)
+        {
+            ArrangePreViewportChildren(arrangeSize);
+
+            // arrange our Viewport3D(Enhancer)
+            if (this.Content != null)
+            {
+                this.Content.Arrange(new Rect(arrangeSize));
+            }
+
+            ArrangePostViewportChildren(arrangeSize);
+
+            return arrangeSize;
+        }
+
+        /// <summary>
+        /// Arranges all the PreViewportChildren.  If special measuring behavior is needed, this
+        /// method should be overridden.
+        /// </summary>
+        /// <param name="arrangeSize">The final size to use to arrange each child</param>
+        protected virtual void ArrangePreViewportChildren(Size arrangeSize)
+        {
+            ArrangeUIElementCollection(this.PreViewportChildren, arrangeSize);
+        }
+
+        /// <summary>
+        /// Arranges all the PostViewportChildren.  If special measuring behavior is needed, this
+        /// method should be overridden.
+        /// </summary>
+        /// <param name="arrangeSize">The final size to use to arrange each child</param>
+        protected virtual void ArrangePostViewportChildren(Size arrangeSize)
+        {
+            ArrangeUIElementCollection(this.PostViewportChildren, arrangeSize);
+        }
+
+        //  IAddChild implementation
+        void IAddChild.AddChild(object value)
+        {
+            // check against null
+            if (value == null)
+            {
+                throw new ArgumentNullException("value");
+            }
+
+            // we only can have one child
+            if (this.Content != null)
+            {
+                throw new ArgumentException("Viewport3DDecorator can only have one child");
+            }
+
+            // now we can actually set the content
+            this.Content = (UIElement)value;
+        }
+
+        void IAddChild.AddText(string text)
+        {
+            // The only text we accept is whitespace, which we ignore.
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (!char.IsWhiteSpace(text[i]))
+                {
+                    throw new ArgumentException("Non whitespace in add text", text);
+                }
+            }
+        }
+
+        /// <summary>
         /// Data binds the (Max/Min)Width and (Max/Min)Height properties to the same
         /// ones as the content.  This will make it so we end up being sized to be
         /// exactly the same ActualWidth and ActualHeight as waht is below us.
@@ -282,7 +339,6 @@ namespace Microsoft._3DTools
 
             BindingOperations.SetBinding(this, WidthProperty, widthBinding);
             BindingOperations.SetBinding(this, HeightProperty, heightBinding);
-
 
             // bind to max width and max height
             Binding maxWidthBinding = new Binding("MaxWidth");
@@ -326,45 +382,6 @@ namespace Microsoft._3DTools
         }
 
         /// <summary>
-        /// Arranges the Pre and Post Viewport children, and arranges itself
-        /// </summary>
-        /// <param name="arrangeSize">The final size to use to arrange itself and its children</param>
-        protected override Size ArrangeOverride(Size arrangeSize)
-        {
-            ArrangePreViewportChildren(arrangeSize);
-
-            // arrange our Viewport3D(Enhancer)
-            if (this.Content != null)
-            {
-                this.Content.Arrange(new Rect(arrangeSize));
-            }
-
-            ArrangePostViewportChildren(arrangeSize);
-
-            return arrangeSize;
-        }
-
-        /// <summary>
-        /// Arranges all the PreViewportChildren.  If special measuring behavior is needed, this
-        /// method should be overridden.
-        /// </summary>
-        /// <param name="arrangeSize">The final size to use to arrange each child</param>
-        protected virtual void ArrangePreViewportChildren(Size arrangeSize)
-        {
-            ArrangeUIElementCollection(this.PreViewportChildren, arrangeSize);
-        }
-
-        /// <summary>
-        /// Arranges all the PostViewportChildren.  If special measuring behavior is needed, this
-        /// method should be overridden.
-        /// </summary>
-        /// <param name="arrangeSize">The final size to use to arrange each child</param>
-        protected virtual void ArrangePostViewportChildren(Size arrangeSize)
-        {
-            ArrangeUIElementCollection(this.PostViewportChildren, arrangeSize);
-        }
-
-        /// <summary>
         /// Arranges all the UIElements in the passed in UIElementCollection
         /// </summary>
         /// <param name="collection">The collection that should be arranged</param>
@@ -377,37 +394,5 @@ namespace Microsoft._3DTools
                 uiElem.Arrange(new Rect(constraint));
             }
         }
-        
-        //  IAddChild implementation
-        void IAddChild.AddChild(object value)
-        {
-            // check against null
-            if (value == null)
-            {
-                throw new ArgumentNullException("value");
-            }
-
-            // we only can have one child
-            if (this.Content != null)
-            {
-                throw new ArgumentException("Viewport3DDecorator can only have one child");
-            }
-
-            // now we can actually set the content
-            this.Content = (UIElement)value;
-        }
-
-        void IAddChild.AddText(string text)
-        {
-            // The only text we accept is whitespace, which we ignore.
-            for (int i = 0; i < text.Length; i++)
-            {
-                if (!char.IsWhiteSpace(text[i]))
-                {
-                    throw new ArgumentException("Non whitespace in add text", text);
-                }
-            }
-        }
     }
 }
-

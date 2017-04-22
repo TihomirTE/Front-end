@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _04.Sort_algorithms
 {
@@ -16,12 +12,14 @@ namespace _04.Sort_algorithms
             var arr = new int[] { 5, 3, 9, 1, 8, 2, 7, 6, 4 };
             SelectionSort(arr);
 
+            var arrQuick = new int[] { 5, 3, 9, 1, 8, 2, 7, 6, 4 };
+            QuickSort(arrQuick, 0, arrQuick.Length - 1);
         }
 
+        // Sorting algorithms
         private static void InsertionSort<T>(T[] arr)
             where T : IComparable
         {
-
             for (int i = 1; i < arr.Length; i++)
             {
                 int j = i;
@@ -66,6 +64,49 @@ namespace _04.Sort_algorithms
             }
 
             Console.WriteLine("Selection sort: " + string.Join(" ", arr));
+        }
+
+        private static void QuickSort<T>(T[] array, int smaller, int bigger)
+            where T : IComparable
+        {
+            int left = smaller;
+            int right = bigger;
+            T pivot = array[(smaller + bigger) / 2];
+
+            while (left <= right)
+            {
+                while (array[left].CompareTo(pivot) < 0)
+                {
+                    left++;
+                }
+
+                while (array[right].CompareTo(pivot) > 0)
+                {
+                    right--;
+                }
+
+                if (left <= right)
+                {
+                    T swapVariable = array[left];
+                    array[left] = array[right];
+                    array[right] = swapVariable;
+
+                    left++;
+                    right--;
+                }
+
+                if (smaller < right)
+                {
+                    QuickSort<T>(array, smaller, right);
+                }
+
+                if (left < bigger)
+                {
+                    QuickSort<T>(array, left, bigger);
+                }
+            }
+
+            Console.WriteLine("Quick sort: " + string.Join(" ", array));
         }
     }
 }
