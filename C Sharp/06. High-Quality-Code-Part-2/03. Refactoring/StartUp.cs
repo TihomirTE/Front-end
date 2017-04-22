@@ -1,16 +1,15 @@
-﻿namespace RotatingWalkInMatrix
-{
-    using System;
+﻿using System;
 
+namespace RotatingWalkInMatrix
+{
     public class RotatingWalkInMatrix
     {
         public static void Main()
         {
-            int input;
-            
-                Console.WriteLine("Enter number between 1 and 100");
-                input = int.Parse(Console.ReadLine());
-           
+            string input;
+
+            Console.WriteLine("Enter number between 1 and 100");
+            input = Console.ReadLine();
 
             Matrix matrix = new Matrix(input);
             Console.WriteLine(matrix);
