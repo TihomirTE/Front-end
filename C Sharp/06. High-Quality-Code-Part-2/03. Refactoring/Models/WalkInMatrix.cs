@@ -4,19 +4,19 @@ using GameFifteen.Models;
 
 namespace RotatingWalkInMatrix
 {
-    public class Matrix
+    public class WalkInMatrix
     {
         private readonly Cell[] targetCells;
 
         private int currentTargetCellIndex;
 
-        public Matrix(string input)
+        public WalkInMatrix(string input)
         {
             int size;
 
             if (!int.TryParse(input, out size))
             {
-                throw new ArgumentException("The input has to be number");
+                throw new ArgumentException("The input has to be a number");
             }
 
             if (size <= 0 || size > 100)

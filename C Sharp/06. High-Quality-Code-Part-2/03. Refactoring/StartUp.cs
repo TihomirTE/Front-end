@@ -2,7 +2,7 @@
 
 namespace RotatingWalkInMatrix
 {
-    public class RotatingWalkInMatrix
+    public class StartUp
     {
         public static void Main()
         {
@@ -11,7 +11,7 @@ namespace RotatingWalkInMatrix
             Console.WriteLine("Enter number between 1 and 100");
             input = Console.ReadLine();
 
-            Matrix matrix = new Matrix(input);
+            WalkInMatrix matrix = new WalkInMatrix(input);
             Console.WriteLine(matrix);
         }
     }
