@@ -16,11 +16,6 @@ namespace GameFifteen.Models
 
         public static Cell operator +(Cell currentCell, Cell nextCell)
         {
-            if (currentCell == null || nextCell == null)
-            {
-                throw new ArgumentNullException("Cells can not be null");
-            }
-
             return new Cell(currentCell.X + nextCell.X, currentCell.Y + nextCell.Y);
         }
     }
