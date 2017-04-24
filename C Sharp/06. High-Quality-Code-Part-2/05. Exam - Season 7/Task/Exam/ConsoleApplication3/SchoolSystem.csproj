@@ -51,7 +51,7 @@
     <Compile Include="CreateStudentCommand.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Grade.cs" />
-    <Compile Include="Subject.cs" />
+    <Compile Include="Enums\Subject.cs" />
     <Compile Include="Mark.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Teachers.cs" />

@@ -1,14 +1,14 @@
-﻿using ConsoleApplication3;
-using System;
-
-namespace ConsoleApplication3
+﻿namespace ConsoleApplication3
 {
-    class Mark {
-        public Mark(Subjct sbj, float va) {
-            subject = sbj;
-            value = va;
+    class Mark
+    {
+        private float value;
+        private Subjct subject;
+
+        public Mark(Subjct subject, float value)
+        {
+            this.subject = subject;
+            this.value = value;
         }
-        internal float value;
-        internal Subjct subject;
     }
 }
