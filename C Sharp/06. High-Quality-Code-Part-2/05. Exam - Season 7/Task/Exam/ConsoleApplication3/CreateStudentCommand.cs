@@ -1,7 +1,8 @@
-﻿using System;
+﻿using SchoolSystem.Models;
+using System;
 using System.Collections.Generic;
 
-namespace ConsoleApplication3
+namespace SchoolSystem
 {
     class CreateTeacherCommand : ICommand
     {

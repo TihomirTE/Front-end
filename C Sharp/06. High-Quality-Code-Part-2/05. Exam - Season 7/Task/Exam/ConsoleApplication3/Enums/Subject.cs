@@ -1,6 +1,6 @@
-﻿namespace ConsoleApplication3
+﻿namespace SchoolSystem.Enums
 {
-    public enum Subjct
+    public enum Subject
     {
         Bulgarian,
         English,

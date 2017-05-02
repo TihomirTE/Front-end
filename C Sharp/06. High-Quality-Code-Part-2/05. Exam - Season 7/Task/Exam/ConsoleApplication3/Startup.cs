@@ -1,10 +1,11 @@
-﻿using System;
+﻿using SchoolSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
 
-namespace ConsoleApplication3
+namespace SchoolSystem
 {
     // I am not responsible of this code.
     // They made me write it, against my will.

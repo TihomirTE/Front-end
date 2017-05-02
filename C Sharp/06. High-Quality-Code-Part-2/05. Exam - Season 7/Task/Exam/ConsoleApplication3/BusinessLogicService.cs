@@ -1,4 +1,4 @@
-﻿namespace ConsoleApplication3
+﻿namespace SchoolSystem
 {
     // I am not sure if we need this, but too scared to delete. 
      class BusinessLogicService
