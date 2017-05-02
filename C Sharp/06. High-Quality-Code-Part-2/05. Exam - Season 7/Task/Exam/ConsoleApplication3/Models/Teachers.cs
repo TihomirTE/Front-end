@@ -15,7 +15,6 @@ namespace SchoolSystem.Models
 
         public Subject Subject { get; set; }
 
-        // TODO this method
         public void AddMark(IStudent student, float mark)
         {
             var addedMark = new Mark(this.Subject, mark);
