@@ -9,15 +9,14 @@ namespace SchoolSystem.Models
 {
     public class Student : Person, IStudent
     {
-        private const int NumberOfMarks = 20;
+        private const int MaxNumberOfMarks = 20;
 
-        private Grade grades;
         private IList<IMark> marks;
 
         public Student(string firstName, string lastName, Grade grades)
             : base(firstName, lastName)
         {
-            this.grades = grades;
+            this.Grade = grades;
             this.Marks = new List<IMark>();
         }
 
@@ -32,9 +31,9 @@ namespace SchoolSystem.Models
 
             set
             {
-                if (value.Count > NumberOfMarks)
+                if (value.Count > MaxNumberOfMarks)
                 {
-                    throw new ArgumentOutOfRangeException($"Each student must not have more than {NumberOfMarks} marks");
+                    throw new ArgumentOutOfRangeException($"Each student must not have more than {MaxNumberOfMarks} marks");
                 }
 
                 this.marks = value;
