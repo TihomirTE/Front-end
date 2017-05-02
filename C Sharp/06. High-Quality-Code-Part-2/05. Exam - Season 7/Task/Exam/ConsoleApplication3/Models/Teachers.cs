@@ -7,8 +7,6 @@ namespace SchoolSystem.Models
 {
     public class Teachers : Person, ITeacher
     {
-        private Subject subject;
-
         public Teachers(string firstName, string lastName, Subject subject)
             : base(firstName, lastName)
         {
@@ -20,15 +18,8 @@ namespace SchoolSystem.Models
         // TODO this method
         public void AddMark(IStudent student, float mark)
         {
-            throw new NotImplementedException();
-        }
-
-        public void AddMark(Student teacher, float value)
-        {
-            var cain = new Mark(this.subject, value);
-            teacher
-                .Marks
-                .Add(cain);
+            var addedMark = new Mark(this.Subject, mark);
+            student.Marks.Add(addedMark);
         }
     }
 }

@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="ICommand.cs" />
     <Compile Include="CreateStudentCommand.cs" />
+    <Compile Include="Models\Abstraction\Person.cs" />
     <Compile Include="Models\Contracts\IMark.cs" />
     <Compile Include="Models\Contracts\IPerson.cs" />
     <Compile Include="Models\Contracts\IStudent.cs" />
@@ -69,7 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
-    <Folder Include="Models\Abstraction\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Docs\Documentation.txt" />
