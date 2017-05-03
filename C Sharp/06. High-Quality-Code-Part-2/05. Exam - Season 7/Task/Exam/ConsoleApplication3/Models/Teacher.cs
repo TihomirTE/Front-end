@@ -19,7 +19,7 @@ namespace SchoolSystem.Models
 
         public void AddMark(IStudent student, float mark)
         {
-            if (student.Marks.Count > MaxNumberOfMarks)
+            if (student.Marks.Count >= MaxNumberOfMarks)
             {
                 throw new ArgumentOutOfRangeException($"Each student must not have more than {MaxNumberOfMarks} marks");
             }
