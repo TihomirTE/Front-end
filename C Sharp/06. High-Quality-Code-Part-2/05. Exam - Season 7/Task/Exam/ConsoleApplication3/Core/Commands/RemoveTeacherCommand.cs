@@ -1,0 +1,15 @@
+﻿using System.Collections.Generic;
+
+namespace SchoolSystem.Core.Commands
+{
+    public class RemoveTeacherCommand : ICommand
+    {
+        public string Execute(IList<string> parameter)
+        {
+            var teacherID = int.Parse(parameter[0]);
+            Engine.Teacher.Remove(teacherID);
+
+            return $"Teacher with ID {teacherID} was sucessfully removed.";
+        }
+    }
+}
