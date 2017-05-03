@@ -9,8 +9,6 @@ namespace SchoolSystem.Models
 {
     public class Student : Person, IStudent
     {
-        private IList<IMark> marks;
-
         public Student(string firstName, string lastName, Grade grades)
             : base(firstName, lastName)
         {
