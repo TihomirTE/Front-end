@@ -2,7 +2,7 @@
 using SchoolSystem.Enum;
 using SchoolSystem.Models;
 
-namespace SchoolSystem
+namespace SchoolSystem.Core.Contracts
 {
     public class CreateStudentCommand
     {
