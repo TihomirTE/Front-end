@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using SchoolSystem.Enum;
 using SchoolSystem.Models;
+using SchoolSystem.Core.Commands.Contracts;
 
 namespace SchoolSystem.Core.Contracts
 {
-    public class CreateStudentCommand
+    public class CreateStudentCommand : ICommand
     {
         private static int studentID = 0;
 

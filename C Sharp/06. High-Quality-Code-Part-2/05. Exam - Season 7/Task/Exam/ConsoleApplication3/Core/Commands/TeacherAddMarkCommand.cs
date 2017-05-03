@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using SchoolSystem.Core.Commands.Contracts;
 
 namespace SchoolSystem.Core.Commands
 {
