@@ -47,8 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICommand.cs" />
-    <Compile Include="CreateStudentCommand.cs" />
+    <Compile Include="Core\Commands\Contracts\ICommand.cs" />
+    <Compile Include="Core\Commands\CreateStudentCommand.cs" />
+    <Compile Include="Core\Commands\CreateTeacherCommand.cs" />
+    <Compile Include="Core\Commands\RemoveStudentCommand.cs" />
+    <Compile Include="Core\Commands\RemoveTeacherCommand.cs" />
+    <Compile Include="Core\Commands\StudentListMarksCommand.cs" />
+    <Compile Include="Core\Commands\TeacherAddMarkCommand.cs" />
     <Compile Include="Models\Abstraction\Person.cs" />
     <Compile Include="Models\Contracts\IMark.cs" />
     <Compile Include="Models\Contracts\IPerson.cs" />
@@ -59,7 +64,7 @@
     <Compile Include="Enums\Subject.cs" />
     <Compile Include="Models\Mark.cs" />
     <Compile Include="Models\Student.cs" />
-    <Compile Include="Models\Teachers.cs" />
+    <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BusinessLogicService.cs" />
   </ItemGroup>
@@ -68,9 +73,7 @@
     <None Include="Docs\Exam.ruleset" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Core\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Docs\Documentation.txt" />
   </ItemGroup>

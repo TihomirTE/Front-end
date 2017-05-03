@@ -1,13 +1,12 @@
-﻿using System;
-using SchoolSystem.Enums;
+﻿using SchoolSystem.Enums;
 using SchoolSystem.Models.Abstraction;
 using SchoolSystem.Models.Contracts;
 
 namespace SchoolSystem.Models
 {
-    public class Teachers : Person, ITeacher
+    public class Teacher : Person, ITeacher
     {
-        public Teachers(string firstName, string lastName, Subject subject)
+        public Teacher(string firstName, string lastName, Subject subject)
             : base(firstName, lastName)
         {
             this.Subject = subject;
