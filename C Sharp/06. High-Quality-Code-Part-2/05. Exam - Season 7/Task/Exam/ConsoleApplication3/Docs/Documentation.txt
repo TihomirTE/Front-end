@@ -6,7 +6,7 @@ Bug reports: --------------------
 Format: #Bug number - Class name - Bug description
 Example: #1 - PartnerBankingService - The variable "money" at line 36 overflows when you try to add more than 2.1 billion dollars.
 --------
-#1 -
-#2 -
+#1 - Enum Grades - there are no grades from 1 to 8
+#2 - CreateStudentCommand - not implement ICommand 
 #3 -
 #4 - 
