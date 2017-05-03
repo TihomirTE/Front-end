@@ -12,7 +12,7 @@ namespace SchoolSystem.Core.Commands
             var mark = float.Parse(parameters[2]);
 
             var student = Engine.Students[teacherID];
-            var teacher = Engine.Teacher[studentID];
+            var teacher = Engine.Teachers[studentID];
 
             teacher.AddMark(student, mark);
 

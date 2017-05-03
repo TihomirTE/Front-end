@@ -8,7 +8,7 @@ namespace SchoolSystem.Core.Commands
         public string Execute(IList<string> parameter)
         {
             var teacherID = int.Parse(parameter[0]);
-            Engine.Teacher.Remove(teacherID);
+            Engine.Teachers.Remove(teacherID);
 
             return $"Teacher with ID {teacherID} was sucessfully removed.";
         }
