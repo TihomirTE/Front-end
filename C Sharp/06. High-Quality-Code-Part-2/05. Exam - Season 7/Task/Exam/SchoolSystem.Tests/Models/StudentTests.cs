@@ -28,7 +28,7 @@ namespace SchoolSystem.Tests.Models
             var student = new Student("Ivan", "Ivanov", Grade.First);
 
             // Act & Assert
-            Assert.AreNotEqual(null, student.Marks);
+            Assert.AreNotEqual(null, student.Marks.Count);
         }
 
         [Test]
