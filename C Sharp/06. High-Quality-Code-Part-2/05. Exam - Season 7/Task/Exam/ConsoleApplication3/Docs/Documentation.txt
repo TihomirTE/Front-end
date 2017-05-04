@@ -8,6 +8,6 @@ Example: #1 - PartnerBankingService - The variable "money" at line 36 overflows 
 --------
 #1 - Enum Grades - there are no grades from 1 to 8.
 #2 - CreateStudentCommand - not implement ICommand.
-#3 - TeacherAddMarkCommand - ID parameters for teacher and student are swaped
+#3 - TeacherAddMarkCommand - ID parameters for teacher and student are swaped.
 #4 - StudentListMarksCommand - The command does not return a proper message when there are no marks.
 #5 (Bonus) - RemoveTeacherCommand/RemoveStudentCommand - When trying to remove a student/teacher that does not exist, it returns a success message.

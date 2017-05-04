@@ -37,7 +37,7 @@ namespace SchoolSystem.Models.Abstraction
 
                 if (value.Length < MinFirstNameLenght || value.Length > MaxFirstNameLenght)
                 {
-                    throw new ArgumentException($"LastName {this.acceptedSymbolLength}");
+                    throw new ArgumentException($"FirstName {this.acceptedSymbolLength}");
                 }
 
                 this.firstName = value;
@@ -55,7 +55,7 @@ namespace SchoolSystem.Models.Abstraction
             {
                 if (!Regex.Match(value, "^[A-Za-z]+$").Success)
                 {
-                    throw new ArgumentException($"FirstName {this.acceptedSymbolsMessage}");
+                    throw new ArgumentException($"LaststName {this.acceptedSymbolsMessage}");
                 }
 
                 if (value.Length < MinFirstNameLenght || value.Length > MaxFirstNameLenght)
