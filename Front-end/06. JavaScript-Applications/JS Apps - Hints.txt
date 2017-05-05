@@ -1,0 +1,28 @@
+In the directory open CMD:
+- npm init ->(когато пишем нов проект - създава нов package.json в проекта)
+- bower init
+- bower install system.js --save
+- bower install handlebars --save
+- bower install sammy -save
+- bower install jquery --save
+
+-----------------------------------------------------------------------
+Run local server:
+
+-------------------------------------------------------------------------
+- npm install:
+If we have package.json in the Repo in the CMD -> npm install (проверява какви
+неща има в package.json и ги инсталира)
+
+-----------------------------------------------------------------------------
+For Running Tests
+
+npm install -g mocha - трябва всички да го инсталират глобално
+ако е локално npm install mocha - трябва да се изписва пътят към него -> node ./node_modules/mocha/bin/_mocha fileTest
+npm install chai (assertion syntax plugin for mocha)
+npm install sinon (using for stubing)
+nmp install sinon-chai (using sinon with assertion syntax)
+
+
+print the tests on the Console -> $ mocha tests/ -R spec
+
