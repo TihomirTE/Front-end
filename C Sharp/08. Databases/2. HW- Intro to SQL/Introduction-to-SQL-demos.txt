@@ -108,7 +108,14 @@ SELECT FirstName AS Name
 FROM Employees
 INTERSECT
 SELECT LastName AS Name
-FROM Employees
+FROM Employees 
+
+-> Description
+The SQL INTERSECT operator is used to return the results of 2 or more SELECT statements.
+However, it only returns the rows selected by all queries or data sets.
+If a record exists in one query and not in the other, it will be omitted from the INTERSECT results.
+
+
 
 ---------------------------------------------------------------------
 
@@ -117,6 +124,11 @@ FROM Employees
 EXCEPT
 SELECT LastName AS Name
 FROM Employees
+
+-> Description
+The SQL EXCEPT clause/operator is used to combine two SELECT statements and returns rows from the first SELECT statement
+that are not returned by the second SELECT statement.
+This means EXCEPT returns only rows, which are not available in the second SELECT statement.
 
 ---------------------------------------------------------------------
 
@@ -153,6 +165,8 @@ WHERE ManagerID IN (109, 16, 3)
 SELECT FirstName FROM Employees
 WHERE FirstName LIKE 'S%'
 
+-> name starts with S
+
 ---------------------------------------------------------------------
 
 SELECT LastName FROM Employees
@@ -172,6 +186,9 @@ WHERE Salary >= 20000 AND LastName LIKE 'C%'
 
 SELECT LastName FROM Employees
 WHERE ManagerID IS NOT NULL OR LastName LIKE '%so_'
+
+-> LastName contains 'so' and afterthat there is only one letter.
+Before that there are random quantity of letters
 
 ---------------------------------------------------------------------
 
@@ -207,7 +224,8 @@ FROM Employees, Departments
 SELECT
   e.EmployeeID, e.LastName, e.DepartmentID, 
   d.DepartmentID, d.Name AS DepartmentName
-FROM Employees e INNER JOIN Departments d 
+FROM Employees e 
+INNER JOIN Departments d 
   ON e.DepartmentID = d.DepartmentID
 
 ---------------------------------------------------------------------
@@ -223,7 +241,8 @@ WHERE e.DepartmentID = d.DepartmentID
 SELECT
   e.LastName EmpLastName,
   m.EmployeeID MgrID, m.LastName MgrLastName
-FROM Employees e INNER JOIN Employees m
+FROM Employees e 
+INNER JOIN Employees m
   ON e.ManagerID = m.EmployeeID
 
 ---------------------------------------------------------------------
@@ -231,16 +250,8 @@ FROM Employees e INNER JOIN Employees m
 SELECT
   e.LastName EmpLastName,
   m.EmployeeID MgrID, m.LastName MgrLastName
-FROM Employees e LEFT OUTER JOIN Employees m
-  ON e.ManagerID = m.EmployeeID
-
-
----------------------------------------------------------------------
-
-SELECT
-  e.LastName EmpLastName,
-  m.EmployeeID MgrID, m.LastName MgrLastName
-FROM Employees e RIGHT OUTER JOIN Employees m
+FROM Employees e 
+LEFT OUTER JOIN Employees m
   ON e.ManagerID = m.EmployeeID
 
 ---------------------------------------------------------------------
@@ -248,7 +259,17 @@ FROM Employees e RIGHT OUTER JOIN Employees m
 SELECT
   e.LastName EmpLastName,
   m.EmployeeID MgrID, m.LastName MgrLastName
-FROM employee e FULL OUTER JOIN employee m
+FROM Employees e 
+RIGHT OUTER JOIN Employees m
+  ON e.ManagerID = m.EmployeeID
+
+---------------------------------------------------------------------
+
+SELECT
+  e.LastName EmpLastName,
+  m.EmployeeID MgrID, m.LastName MgrLastName
+FROM employee e 
+FULL OUTER JOIN employee m
   ON e.ManagerID = m.EmployeeID
 
 ---------------------------------------------------------------------
@@ -264,13 +285,15 @@ FROM Employees e
 
 SELECT e.FirstName + ' ' + e.LastName +
  ' is managed by ' + m.LastName as Message
-FROM Employees e JOIN Employees m
+FROM Employees e 
+JOIN Employees m
 ON (e.ManagerId = m.EmployeeId)
 
 ---------------------------------------------------------------------
 
 SELECT LastName [Last Name], Name [Dept Name]
-FROM Employees CROSS JOIN Departments
+FROM Employees 
+CROSS JOIN Departments
 
 ---------------------------------------------------------------------
 
@@ -283,12 +306,13 @@ WHERE d.Name = 'Sales'
 
 ---------------------------------------------------------------------
 
-SELECT e.FirstName, e.LastName, d.Name as DeptName
+SELECT e.FirstName, e.LastName,
+d.Name as DeptName
 FROM Employees e
   INNER JOIN Departments d
-  ON (e.DepartmentId = d.DepartmentId
-  AND e.HireDate > '1/1/1999'
-  AND d.Name IN ('Sales', 'Finance'))
+	ON (e.DepartmentId = d.DepartmentId
+	AND e.HireDate > '1/1/1999'
+	AND d.Name IN ('Sales', 'Finance'))
 
 ---------------------------------------------------------------------
 
