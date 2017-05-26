@@ -370,7 +370,8 @@ FROM employee
 
 ---------------------------------------------------------------------
 
-SELECT COUNT(*) Cnt FROM Employees
+SELECT COUNT(*) Cnt 
+FROM Employees
 WHERE DepartmentID = 3
 
 ---------------------------------------------------------------------
@@ -435,7 +436,7 @@ FROM Employees
 GROUP BY DepartmentID, JobTitle
 
 ---------------------------------------------------------------------
-
+-- UP TO HERE !!!!!!!!!!!
 SELECT DepartmentID, COUNT(EmployeeID) as Count, 
   AVG(Salary) AverageSalary
 FROM Employees
