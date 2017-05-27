@@ -1,0 +1,2 @@
+SQL Profiler - is an interface to create and manage traces
+ and analyze and replay trace results. 
