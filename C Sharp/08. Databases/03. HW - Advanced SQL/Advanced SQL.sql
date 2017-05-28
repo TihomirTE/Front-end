@@ -111,11 +111,11 @@ SELECT FORMAT(GETDATE(), 'dd.MMM.yyyy hh:m:ss:fff') AS [Date&Time]
 
 -- Task 15
 CREATE TABLE Users (
-	Id INT IDENTITY PRIMARY KEY NOT NULL,
-	Username NVARCHAR(50) UNIQUE NOT NULL,
-	FullName NVARCHAR(50) NOT NULL,
-	UserPassword NVARCHAR(50) CHECK(LEN(UserPassword) >= 5) NOT NULL,
-	LastLogin smalldatetime
+	[Id] INT IDENTITY PRIMARY KEY NOT NULL,
+	[Username] NVARCHAR(50) UNIQUE NOT NULL,
+	[FullName] NVARCHAR(50) NOT NULL,
+	[UserPassword] NVARCHAR(50) CHECK(LEN(UserPassword) >= 5) NOT NULL,
+	[LastLogin] smalldatetime
 )
 
 -- Task 16
@@ -126,8 +126,8 @@ CREATE VIEW TodayVisitors AS
 
 -- Task 17
 CREATE TABLE Groups (
-	Id INT IDENTITY PRIMARY KEY NOT NULL,
-	Name NVARCHAR(50) UNIQUE NOT NULL,
+	[Id] INT IDENTITY PRIMARY KEY NOT NULL,
+	[Name] NVARCHAR(50) UNIQUE NOT NULL,
 )
 
 -- Task 18
@@ -233,4 +233,89 @@ SELECT t.Name AS [Town],
 	ORDER BY [№ of managers]
 
 -- Task 29
-	
+CREATE TABLE WorkHours
+(
+	[Id] INT IDENTITY PRIMARY KEY,
+	[EmployeeId] INT FOREIGN KEY(EmployeeId) REFERENCES Employees(EmployeeID) NOT NULL,
+	[Date] DATETIME,
+	[Task] NVARCHAR(50),
+	[Hours] INT,
+	[Comments] VARCHAR(200)
+)
+GO
+
+INSERT INTO WorkHours
+	VALUES
+		(1, GETDATE(), 'Database', 20, 'Write SQL'),
+		(2, GETDATE(), 'Refactoring', 50, 'Legacy code'),
+		(3, GETDATE(), 'Unit tests', 70, '100% code coverage')
+GO
+
+UPDATE WorkHours
+	SET Comments = 'Relational Database'
+	WHERE EmployeeId = 1
+ GO
+
+DELETE FROM WorkHours
+	WHERE Task = 'Unit tests'
+GO
+
+CREATE TABLE ReportsLogs
+(
+	[Id]  INT IDENTITY PRIMARY KEY,
+	[EmployeeId] INT NOT NULL,
+	[Date] DATETIME,
+	[Task] NVARCHAR(50),
+	[Hours] INT,
+	[Comments] VARCHAR(200),
+	[For] VARCHAR(50)
+)
+GO
+
+-- Triggers
+CREATE TRIGGER trg_WorkHours_Insert ON WorkHours
+	FOR INSERT
+	AS
+	INSERT INTO ReportsLogs([EmployeeId], [Date], [Task], [Hours], [Comments], [For])
+			SELECT [EmployeeId], [Date], [Task], [Hours], [Comments],
+			'INSERT'
+			FROM INSERTED
+GO
+
+CREATE TRIGGER trg_WorkHours_Delete ON WorkHours
+	FOR DELETE 
+	AS
+	INSERT INTO ReportsLogs([EmployeeId], [Date], [Task], [Hours], [Comments], [For])
+		SELECT [EmployeeId], [Date], [Task], [Hours], [Comments], 
+		'DELETE'
+		FROM DELETED
+GO
+
+CREATE TRIGGER trg_WorkHours_Update ON WorkHours
+	FOR UPDATE 
+	AS
+	INSERT INTO ReportsLogs([EmployeeId], [Date], [Task], [Hours], [Comments], [For])
+		SELECT [EmployeeId], [Date], [Task], [Hours], [Comments], 
+		'UPDATE'
+		FROM INSERTED
+GO
+
+-- Changes
+INSERT INTO WorkHours
+	VALUES(2, GETDATE(), 'Unit tests', 35, '100% code coverage')
+GO
+
+INSERT INTO WorkHours
+	VALUES(3, GETDATE(), 'Refactoring', 50, 'Legacy code')
+GO
+
+DELETE FROM  WorkHours 
+	WHERE Id = 5
+GO
+
+UPDATE WorkHours
+	SET Comments = '90% code coverage'
+	WHERE Task = 'Unit tests'
+
+
+-- Task 30
