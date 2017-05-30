@@ -120,7 +120,7 @@ CREATE TABLE Countries
 	[Name] NVARCHAR(15) UNIQUE,
 )
 
--- Таск 12
+-- Г’Г Г±ГЄ 12
 ALTER TABLE Cities
 ADD CountryId INT FOREIGN KEY REFERENCES Countries(CountryId)
 
@@ -167,7 +167,7 @@ FROM (
 WHERE 
     Cities.CityId = CitiesInCountries.CityId
 
--- Таск 16
+-- Task 16
 ALTER TABLE Orders
 DROP COLUMN ShipCountry
 
