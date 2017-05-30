@@ -330,3 +330,37 @@ UPDATE WorkHours
 
 
 -- Task 30
+BEGIN TRAN
+	ALTER TABLE Departments
+	DROP CONSTRAINT FK_Departments_Employees
+
+	ALTER TABLE WorkHours
+	DROP CONSTRAINT FK_WorkHours_Employees
+
+	ALTER TABLE EmployeesProjects
+	DROP CONSTRAINT FK_EmployeesProjects_Employees
+
+	DELETE FROM Employees
+		SELECT d.Name
+		FROM Employees e
+			JOIN Departments d
+				ON e.DepartmentID = d.DepartmentID
+		WHERE d.Name = 'Sales'
+		GROUP BY d.Name
+ROLLBACK TRAN
+
+-- Task 31
+BEGIN TRAN
+	DROP TABLE EmployeesProjects
+ROLLBACK TRAN
+
+-- Task 32
+BEGIN TRAN
+		SELECT *  INTO  #TempEmployeesProjects
+		FROM EmployeesProjects
+
+		DROP TABLE EmployeesProjects
+
+		SELECT * INTO EmployeesPRojects
+		FROM #TempEmployeesProjects
+ROLLBACK TRAN
