@@ -64,7 +64,7 @@ GO
 
 -- Execute the stored procedure
 EXEC usp_GetMoney 10000
-
+GO
 
 -- Task 3
 CREATE FUNCTION ufn_CalculateInterestRate(
@@ -86,6 +86,7 @@ ALTER TABLE Accounts
 	UPDATE Accounts
 	SET Balance = 5000
 	WHERE Id = 1
+GO
 
 CREATE PROC usp_PersonalInterestRateForOneMonth
 	@accountId INT,
@@ -93,14 +94,14 @@ CREATE PROC usp_PersonalInterestRateForOneMonth
 AS
 	BEGIN
 		UPDATE Accounts
-		SET MoneyFromRate = dbo.ufn_CalculateInterestRate(Balance, @intersetRate, 1)
+		SET Balance = dbo.ufn_CalculateInterestRate(Balance, @intersetRate, 1)
 			WHERE Id = @accountId
 	END
 GO
 
-EXEC usp_PersonalInterestRateForOneMonth 1, 8.5 
+EXEC dbo.usp_PersonalInterestRateForOneMonth 1, 8.5 
 
-
+GO
 -- Task 5
  CREATE PROC usp_WithdrawMoney
 	@accountId int,
@@ -151,4 +152,9 @@ GO
 UPDATE Accounts
 	SET Balance = Balance + 100
 	WHERE Id = 3
+GO
+
+UPDATE Accounts
+	SET Balance = Balance + 5500
+	WHERE Id = 1
 GO
