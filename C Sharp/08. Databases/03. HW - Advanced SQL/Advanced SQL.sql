@@ -3,51 +3,61 @@
 -- Task 1
 SELECT e.FirstName + ' ' + e.LastName AS [Employee],
 		e.Salary
-FROM Employees e
-WHERE e.Salary = 
-	(SELECT MIN(Salary) FROM Employees)
+	FROM Employees e
+		WHERE e.Salary = 
+			(SELECT MIN(Salary) FROM Employees)
 
 -- Task 2
 SELECT e.FirstName + ' ' + e.LastName AS [Employee],
 		e.Salary
-FROM Employees e
-WHERE e.Salary <= 
-	(SELECT MIN(Salary) * 1.1 FROM Employees)
-ORDER BY e.Salary
+	FROM Employees e
+		WHERE e.Salary <= 
+			(SELECT MIN(Salary) * 1.1 FROM Employees)
+	ORDER BY e.Salary
 
 -- Task 3
 SELECT e.FirstName + ' ' + e.MiddleName + ' ' + e.LastName AS [Employee],
 		e.Salary,
-		e.DepartmentID
-FROM Employees e
-WHERE e.Salary =
-	(SELECT MIN(Salary) FROM Employees em
-	 WHERE em.DepartmentID = e.DepartmentID)
-ORDER BY e.DepartmentID
+		d.Name AS [Department]
+	FROM Employees e	
+	 JOIN Departments d
+		ON d.DepartmentID = e.DepartmentID
+		WHERE e.Salary =
+			(SELECT MIN(Salary) FROM Employees em
+				WHERE em.DepartmentID = e.DepartmentID)
+	ORDER BY d.Name
 
 -- Task 4
 SELECT 
-	AVG(Salary) AS [Average Salary]
-FROM Employees
-WHERE DepartmentID = 1
+	AVG(Salary) AS [Average Salary],
+	d.Name AS [Department]
+	FROM Employees e
+		JOIN Departments d
+			ON d.DepartmentID = e.DepartmentID
+	WHERE e.DepartmentID = 1
+	GROUP BY d.Name
 
 -- Task 5
 SELECT 
-	AVG(Salary) AS [Average Salary]
+	AVG(Salary) AS [Average Salary],
+	d.Name AS [Department]
 FROM Employees e
 	JOIN Departments d
 		ON d.DepartmentID = e.DepartmentID
 	WHERE d.Name = 'Sales' 
+	GROUP BY d.Name
 
 -- Task 6
-SELECT COUNT(*) 
+SELECT COUNT(*) AS [Employees number],
+	d.Name AS [Department]
 FROM Employees e
 	JOIN Departments d
 		ON d.DepartmentID = e.DepartmentID
 	WHERE d.Name = 'Sales'
+	GROUP BY d.Name
 
 -- Task 7
-SELECT COUNT(*) [¹ of employees with manager]
+SELECT COUNT(*) [Employees with manager]
 FROM Employees e
 	-- Variant 1
 	WHERE e.ManagerID IS NOT NULL
@@ -56,17 +66,17 @@ FROM Employees e
 		--ON m.EmployeeID = e.ManagerID
 
 -- Task 8
-SELECT COUNT(*) AS [¹ of employees with manager]
+SELECT COUNT(*) AS [Employees without manager]
 FROM Employees e
 	WHERE e.ManagerID IS NULL
 
 -- Task 9
 SELECT 
-	d.Name,
+	d.Name AS [Department],
 	AVG(e.Salary) AS [Average Salary]
 FROM Employees e
 	JOIN Departments d
-	ON d.DepartmentID = e.DepartmentID
+		ON d.DepartmentID = e.DepartmentID
 GROUP BY d.Name
 
 -- Task 10
@@ -110,7 +120,8 @@ FROM Employees
 SELECT FORMAT(GETDATE(), 'dd.MMM.yyyy hh:m:ss:fff') AS [Date&Time]
 
 -- Task 15
-CREATE TABLE Users (
+CREATE TABLE Users 
+(
 	[Id] INT IDENTITY PRIMARY KEY NOT NULL,
 	[Username] NVARCHAR(50) UNIQUE NOT NULL,
 	[FullName] NVARCHAR(50) NOT NULL,
@@ -119,10 +130,10 @@ CREATE TABLE Users (
 )
 
 -- Task 16
-/*GO
+
 CREATE VIEW TodayVisitors AS
 	SELECT LastLogin FROM Users
-	WHERE CONVERT(DATE, LastLogin) = CONVERT(DATE,GETDATE())*/
+	WHERE CONVERT(DATE, LastLogin) = CONVERT(DATE,GETDATE())
 
 -- Task 17
 CREATE TABLE Groups (
@@ -212,25 +223,25 @@ SELECT  e.FirstName + ' ' + e.LastName AS [Employee],
 
 -- Task 27
 SELECT TOP(1) t.Name AS [Town],
-		COUNT(*) AS [№ of employees]
+		COUNT(*) AS [Employees number]
 	FROM Employees e
 		JOIN Addresses a
 			ON a.AddressID = e.AddressID
 		JOIN Towns t
 			ON t.TownID = a.TownID
 	GROUP BY t.Name
-	ORDER BY [№ of employees] DESC
+	ORDER BY [Employees number] DESC
 
 -- Task 28
 SELECT t.Name AS [Town],
-		COUNT(DISTINCT e.ManagerID) AS [№ of managers]
+		COUNT(DISTINCT e.ManagerID) AS [Managers number]
 	FROM Employees e
 		JOIN Addresses a
 			ON a.AddressID = e.AddressID
 		JOIN Towns t
 			ON t.TownID = a.TownID
 	GROUP BY t.Name
-	ORDER BY [№ of managers]
+	ORDER BY [Managers number]
 
 -- Task 29
 CREATE TABLE WorkHours
