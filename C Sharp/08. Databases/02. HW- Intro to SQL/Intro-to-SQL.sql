@@ -7,57 +7,68 @@ SELECT * FROM Departments
 SELECT Name FROM Departments
 
 -- Task 6
-SELECT FirstName + ' ' + LastName AS [Employee], Salary FROM Employees
+SELECT FirstName + ' ' + LastName AS [Employee], Salary 
+	FROM Employees
 
 -- Task 7
-SELECT FirstName + ' ' + LastName + ' ' + MiddleName AS [FullName] FROM Employees
-WHERE MiddleName IS NOT NULL
+SELECT FirstName + ' ' + LastName + ' ' + MiddleName AS [FullName] 
+	FROM Employees
+		WHERE MiddleName IS NOT NULL
 
 -- Task 8
-SELECT FirstName + '.' + LastName + '@telerik.com' AS [Full Email Addresses]  FROM Employees
+SELECT FirstName + '.' + LastName + '@telerik.com' AS [Full Email Addresses]  
+	FROM Employees
 
 -- Task 9
-SELECT DISTINCT Salary FROM Employees
+SELECT DISTINCT Salary 
+	FROM Employees
 
 -- Task 10
 SELECT * FROM Employees
-WHERE JobTitle = 'Sales Representative'
+	WHERE JobTitle = 'Sales Representative'
 
 -- Task 11
-SELECT FirstName FROM Employees
-WHERE FirstName LIKE 'SA%'
+SELECT FirstName 
+	FROM Employees
+		WHERE FirstName LIKE 'SA%'
 
 -- Task 12
-SELECT LastName FROM Employees
-WHERE LastName LIKE '%ei%'
+SELECT LastName 
+	FROM Employees
+		WHERE LastName LIKE '%ei%'
 
 -- Task 13
-SELECT FirstName + ' ' + LastName AS [Employee], Salary FROM Employees
-WHERE Salary BETWEEN 20000 AND 30000
-ORDER BY Salary
+SELECT FirstName + ' ' + LastName AS [Employee], Salary 
+	FROM Employees
+		WHERE Salary BETWEEN 20000 AND 30000
+	ORDER BY Salary
 
 -- Task 14
-SELECT FirstName + ' ' + LastName AS [Employee], Salary FROM Employees
-WHERE Salary IN (25000, 14000, 12500, 23600)
-ORDER BY Salary
+SELECT FirstName + ' ' + LastName AS [Employee], Salary 
+	FROM Employees
+		WHERE Salary IN (25000, 14000, 12500, 23600)
+	ORDER BY Salary
 
 -- Task 15
 SELECT * FROM Employees
 	WHERE ManagerID IS NULL
 
 -- Task 16
-SELECT FirstName + ' ' + LastName AS [Employee], Salary FROM Employees
-	WHERE Salary > 50000
+SELECT FirstName + ' ' + LastName AS [Employee], Salary 
+	FROM Employees
+		WHERE Salary > 50000
 	ORDER BY Salary DESC
 
 -- Task 17
-SELECT TOP(5) FirstName + ' ' + LastName AS Employee, Salary FROM Employees    
+SELECT TOP(5) FirstName + ' ' + LastName AS Employee, Salary 
+	FROM Employees    
 	ORDER BY Salary DESC  
 
 -- Task 18
-SELECT e.FirstName + ' ' + e.LastName AS [Employee], a.AddressText AS [Address] FROM Employees e
-	INNER JOIN Addresses a
-		ON e.AddressID = a.AddressID
+SELECT e.FirstName + ' ' + e.LastName AS [Employee], a.AddressText AS [Address] 
+	FROM Employees e
+		INNER JOIN Addresses a
+			ON a.AddressID = e.AddressID
 
 -- Task 19
 SELECT e.FirstName + ' ' + e.LastName AS [Employee], a.AddressText AS [Address] 
@@ -65,10 +76,12 @@ SELECT e.FirstName + ' ' + e.LastName AS [Employee], a.AddressText AS [Address]
 		WHERE e.AddressID = a.AddressID
 
 -- Task 20
-SELECT e.FirstName + ' ' + e.LastName AS [Employee], m.FirstName + ' ' + m.LastName AS Manager, m.ManagerID 
+SELECT e.FirstName + ' ' + e.LastName AS [Employee],
+	   m.FirstName + ' ' + m.LastName AS [Manager],
+	   m.ManagerID 
 	FROM Employees e
-	INNER JOIN Employees m
-		ON e.ManagerID = m.EmployeeID
+		INNER JOIN Employees m
+			ON e.ManagerID = m.EmployeeID
 	
 
 -- Task 21
@@ -77,10 +90,10 @@ SELECT e.FirstName + ' ' + e.LastName AS [Employee],
 	 m.FirstName + ' ' + m.LastName AS Manager,
 	 m.ManagerID 
 	FROM Employees e
-	JOIN Employees m
-		ON e.ManagerID = m.EmployeeID
-	JOIN Addresses a
-		ON e.AddressID = a.AddressID
+		JOIN Employees m
+			ON e.ManagerID = m.EmployeeID
+		JOIN Addresses a
+			ON e.AddressID = a.AddressID
 
 -- Task 22
 SELECT Name 
@@ -108,9 +121,9 @@ SELECT e.FirstName + ' ' + e.LastName AS [Employee],
 	   d.Name AS [DepartmentName],
 	   e.HireDate
 	FROM Employees e
-	JOIN Departments d
-		ON (d.Name IN ('Sales', 'Finance')
-		AND (e.HireDate > '1995' AND e.HireDate < '2005'))
+		JOIN Departments d
+			ON (d.Name IN ('Sales', 'Finance')
+			AND (e.HireDate > '1995' AND e.HireDate < '2005'))
 
 		-- It's the same
 		--ON d.Name = 'Sales'
