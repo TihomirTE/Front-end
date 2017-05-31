@@ -45,7 +45,7 @@ GO
 
 -- Execute the stored procedure
 EXEC usp_GetFullNames
-
+GO
 
 -- Task 2
 CREATE PROC usp_GetMoney
@@ -94,14 +94,14 @@ CREATE PROC usp_PersonalInterestRateForOneMonth
 AS
 	BEGIN
 		UPDATE Accounts
-		SET Balance = dbo.ufn_CalculateInterestRate(Balance, @intersetRate, 1)
+		SET Balance = dbo.ufn_CalculateInterestRate(Balance, @intersetRate, @accountId)
 			WHERE Id = @accountId
 	END
 GO
 
 EXEC dbo.usp_PersonalInterestRateForOneMonth 1, 8.5 
-
 GO
+
 -- Task 5
  CREATE PROC usp_WithdrawMoney
 	@accountId int,
@@ -113,6 +113,9 @@ GO
 			FROM Accounts 
 			WHERE Id = @accountId
 		COMMIT TRAN
+GO
+
+EXEC usp_WithdrawMoney 2, 10000
 GO
 
 CREATE PROC usp_DepositMoney
@@ -127,6 +130,9 @@ CREATE PROC usp_DepositMoney
 		COMMIT TRAN
 GO
 
+EXEC usp_DepositMoney 3, 40000
+GO
+
 -- Task 6
 CREATE TABLE Logs
 	(
@@ -138,8 +144,9 @@ CREATE TABLE Logs
 GO
 
 -- trigger to the Accounts
-CREATE TRIGGER tr_AccountUpdate ON Accounts FOR UPDATE
-	AS
+CREATE TRIGGER tr_AccountUpdate 
+	ON Accounts FOR UPDATE
+AS
 	BEGIN
 		INSERT INTO Logs(AccountID, OldSum, NewSum)
 			SELECT i.Id, d.Balance, i.Balance
@@ -155,6 +162,6 @@ UPDATE Accounts
 GO
 
 UPDATE Accounts
-	SET Balance = Balance + 5500
-	WHERE Id = 1
+	SET Balance = Balance - 5500
+	WHERE Id = 4
 GO
