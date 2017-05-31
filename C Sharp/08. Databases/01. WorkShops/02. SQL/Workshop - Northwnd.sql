@@ -18,20 +18,21 @@ INSERT INTO Cities
 		SELECT DISTINCT City FROM Customers
 	) e
 
+GO
 -- Task 3
 	-- Stored procedure
-CREATE PROC usp_InsertForeignKeyToCity
-	@table NVARCHAR(15)
+CREATE PROC usp_InsertForeignKeyToCity2 
 AS
 	BEGIN
-		ALTER TABLE [@table]
-		ADD CityId INT FOREIGN KEY REFERENCES Cities (CityId)
-
+	ALTER TABLE Employees
+		ADD CityId INT FOREIGN KEY REFERENCES Cities(CityId)
+		
 	END
 
 GO
 
---EXEC usp_InsertForeignKeyToCity ('Employees')
+USE NORTHWND
+EXEC usp_InsertForeignKeyToCity 'dbo.Employees'
 --EXEC usp_InsertForeignKeyToCity 'Suppliers'
 --EXEC usp_InsertForeignKeyToCity 'Customers'
 
@@ -43,50 +44,39 @@ ADD CityId INT FOREIGN KEY REFERENCES Cities(CityId)
 
 ALTER TABLE Customers
 ADD CityId INT FOREIGN KEY REFERENCES Cities(CityId)
+GO
+
 
 -- Task 4
- -- Stored procedure
 UPDATE Employees
-CREATE PROC usp_UpdateCityId
-	@table NVARCHAR(15)
-AS
-	BEGIN
-		SET CityId =
-	(
-		SELECT CityId
-		FROM Cities
-		WHERE Cities.Name = @table.City
-	)
-	END
-
-
-UPDATE Employees
-	SET CityId =
-	(
-		SELECT CityId
-		FROM Cities
-		WHERE Cities.Name = Employees.City
-	)
+	SET CityId = c.CityId
+	FROM (
+		SELECT Name, CityId
+			FROM Cities) c
+		WHERE 
+			c.Name = Employees.City
 
 UPDATE Suppliers
-	SET CityId =
-	(
-		SELECT CityId
-		FROM Cities
-		WHERE Cities.Name = Suppliers.City
-	)
+	SET CityId = c.CityId
+	FROM(
+		SELECT Name, CityId
+		FROM Cities) c
+		WHERE 
+			c.Name = Suppliers.City
+	
 
 UPDATE Customers
-	SET CityId =
-	(
-		SELECT CityId
-		FROM Cities
-		WHERE Cities.Name = Customers.City
-	)
+	SET CityId = c.CityId
+	FROM (
+		SELECT Name, CityId
+			FROM Cities) c
+		WHERE 
+			c.Name = Customers.City
+	
 
 -- Task 5
 ALTER TABLE Cities
-ADD  UNIQUE (Name)
+	ADD  UNIQUE (Name)
 
 -- Task 6
 INSERT INTO Cities
@@ -95,19 +85,19 @@ INSERT INTO Cities
 	 
 -- Task 7
 ALTER TABLE Orders
-ADD CityId INT FOREIGN KEY REFERENCES Cities(CityId)
+	ADD CityId INT FOREIGN KEY REFERENCES Cities(CityId)
 
 -- Task 8
 EXEC sys.sp_rename 'Orders.CityId', 'ShipCityId'
 	
 -- Task 9
 UPDATE Orders
-	SET ShipCityId =
-	(
-		SELECT CityId
-		FROM Cities
-		WHERE Cities.CityId = Orders.ShipCityId
-	)
+	SET ShipCityId = c.CityId
+	FROM (
+		SELECT CityId, Name
+			FROM Cities) c
+		WHERE c.Name = Orders.ShipCity
+	
 
 -- Task 10
 ALTER TABLE Orders
@@ -120,9 +110,9 @@ CREATE TABLE Countries
 	[Name] NVARCHAR(15) UNIQUE,
 )
 
--- Òàñê 12
+-- Task 12
 ALTER TABLE Cities
-ADD CountryId INT FOREIGN KEY REFERENCES Countries(CountryId)
+	ADD CountryId INT FOREIGN KEY REFERENCES Countries(CountryId)
 
 -- Task 13
 INSERT INTO Countries
@@ -167,15 +157,33 @@ FROM (
 WHERE 
     Cities.CityId = CitiesInCountries.CityId
 
--- Task 16
-ALTER TABLE Orders
-DROP COLUMN ShipCountry
-
-ALTER TABLE Customers
-DROP COLUMN Country
+-- Task 15
+ALTER TABLE Suppliers
+	DROP COLUMN City
 
 ALTER TABLE Employees
-DROP COLUMN Country
+	DROP COLUMN City
+
+ALTER TABLE Orders
+	DROP COLUMN ShipCity
+
+ALTER TABLE Customers
+	DROP COLUMN City
+
+
+DROP INDEX Customers.City
+	ALTER TABLE Customers
+	DROP COLUMN City
+
+-- Task 16
+ALTER TABLE Orders
+	DROP COLUMN ShipCountry
+
+ALTER TABLE Customers
+	DROP COLUMN Country
+
+ALTER TABLE Employees
+	DROP COLUMN Country
 
 ALTER TABLE Suppliers
-DROP COLUMN Country
+	DROP COLUMN Country
