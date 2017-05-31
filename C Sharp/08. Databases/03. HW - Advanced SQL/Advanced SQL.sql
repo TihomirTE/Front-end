@@ -128,18 +128,20 @@ CREATE TABLE Users
 	[UserPassword] NVARCHAR(50) CHECK(LEN(UserPassword) >= 5) NOT NULL,
 	[LastLogin] smalldatetime
 )
-
+GO
 -- Task 16
 
 CREATE VIEW TodayVisitors AS
 	SELECT LastLogin FROM Users
 	WHERE CONVERT(DATE, LastLogin) = CONVERT(DATE,GETDATE())
+GO
 
 -- Task 17
 CREATE TABLE Groups (
 	[Id] INT IDENTITY PRIMARY KEY NOT NULL,
 	[Name] NVARCHAR(50) UNIQUE NOT NULL,
 )
+GO
 
 -- Task 18
 ALTER TABLE Users
