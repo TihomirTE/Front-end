@@ -31,5 +31,28 @@ namespace Entity_Framework
             northwind.SaveChanges();
             return customer.CustomerID;
         }
+
+        public static Customer GetCustomerById(NorthwndEntities northwind, string customerId)
+        {
+            var customer = northwind.Customers.FirstOrDefault(c => c.CustomerID == customerId);
+
+            return customer;
+        }
+
+        public static void ModifyCompanyName(string customerId, string companyName)
+        {
+            var northwind = new NorthwndEntities();
+            var customer = GetCustomerById(northwind, customerId);
+            customer.CompanyName = companyName;
+            northwind.SaveChanges();
+        }
+
+        public static void DeleteCustomer(string customerId)
+        {
+            var northwind = new NorthwndEntities();
+            var customer = GetCustomerById(northwind, customerId);
+            northwind.Customers.Remove(customer);
+            northwind.SaveChanges();
+        }
     }
 }
