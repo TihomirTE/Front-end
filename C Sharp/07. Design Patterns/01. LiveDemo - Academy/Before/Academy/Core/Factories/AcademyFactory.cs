@@ -27,7 +27,9 @@ namespace Academy.Core.Factories
             }
         }
 
-        public ISeason CreateSeason(string startingYear, string endingYear, string initiative)
+        // the methods return class implementation, because these are models - the don't have logig
+        // and their implementation is the same
+        public Season CreateSeason(string startingYear, string endingYear, string initiative)
         {
             var parsedStartingYear = int.Parse(startingYear);
             var parsedEngingYear = int.Parse(endingYear);
@@ -38,7 +40,7 @@ namespace Academy.Core.Factories
             return new Season(parsedStartingYear, parsedEngingYear, parsedInitiativeAsEnum);
         }
 
-        public IStudent CreateStudent(string username, string track)
+        public Student CreateStudent(string username, string track)
         {
             Track parsedTrackAsEnum;
             Enum.TryParse<Track>(track, out parsedTrackAsEnum);
@@ -46,12 +48,12 @@ namespace Academy.Core.Factories
             return new Student(username, parsedTrackAsEnum);
         }
 
-        public ITrainer CreateTrainer(string username, string technologies)
+        public Trainer CreateTrainer(string username, string technologies)
         {            
             return new Trainer(username, technologies.Split(','));
         }
 
-        public ICourse CreateCourse(string name, string lecturesPerWeek, string startingDate)
+        public Course CreateCourse(string name, string lecturesPerWeek, string startingDate)
         {
             var lectures = int.Parse(lecturesPerWeek);
             var starting = DateTime.Parse(startingDate);
@@ -60,7 +62,7 @@ namespace Academy.Core.Factories
             return new Course(name, lectures, starting, ending);
         }
 
-        public ILecture CreateLecture(string name, string date, ITrainer trainer)
+        public Lecture CreateLecture(string name, string date, ITrainer trainer)
         {
             var parsedDate = DateTime.Parse(date);
 
@@ -82,7 +84,7 @@ namespace Academy.Core.Factories
             }
         }
 
-        public ICourseResult CreateCourseResult(ICourse course, string examPoints, string coursePoints)
+        public CourseResult CreateCourseResult(ICourse course, string examPoints, string coursePoints)
         {
             return new CourseResult(course, float.Parse(examPoints), float.Parse(coursePoints));
         }
