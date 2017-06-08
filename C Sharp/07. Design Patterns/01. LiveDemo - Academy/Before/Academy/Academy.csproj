@@ -56,6 +56,8 @@
     <Compile Include="Commands\Listing\ListCoursesInSeasonCommand.cs" />
     <Compile Include="Commands\Listing\ListUsersCommand.cs" />
     <Compile Include="Commands\Listing\ListUsersInSeasonCommand.cs" />
+    <Compile Include="Core\Contracts\IAcademyDatabase.cs" />
+    <Compile Include="Core\Factories\AcademyDatabase.cs" />
     <Compile Include="Core\Providers\DateTimeProvider.cs" />
     <Compile Include="Core\Factories\AcademyFactory.cs" />
     <Compile Include="Core\Factories\IAcademyFactory.cs" />

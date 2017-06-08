@@ -9,12 +9,12 @@ namespace Academy.Commands.Creating
     public class CreateStudentCommand : ICommand
     {
         private readonly IAcademyFactory factory;
-        private readonly IEngine engine;
+        private readonly IAcademyDatabase academyDatabase;
 
-        public CreateStudentCommand(IAcademyFactory factory, IEngine engine)
+        public CreateStudentCommand(IAcademyFactory factory, IAcademyDatabase academyDatabase)
         {
             this.factory = factory;
-            this.engine = engine;
+            this.academyDatabase = academyDatabase;
         }
 
         public string Execute(IList<string> parameters)
@@ -22,16 +22,16 @@ namespace Academy.Commands.Creating
             var username = parameters[0];
             var track = parameters[1];
 
-            if (this.engine.Students.Any(x => x.Username.ToLower() == username.ToLower()) ||
-                this.engine.Trainers.Any(x => x.Username.ToLower() == username.ToLower()))
+            if (this.academyDatabase.Students.Any(x => x.Username.ToLower() == username.ToLower()) ||
+                this.academyDatabase.Trainers.Any(x => x.Username.ToLower() == username.ToLower()))
             {
                 throw new ArgumentException($"A user with the username {username} already exists!");
             }
 
             var student = this.factory.CreateStudent(username, track);
-            this.engine.Students.Add(student);
+            this.academyDatabase.Students.Add(student);
 
-            return $"Student with ID {this.engine.Students.Count - 1} was created.";
+            return $"Student with ID {this.academyDatabase.Students.Count - 1} was created.";
         }
     }
 }

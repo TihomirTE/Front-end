@@ -9,12 +9,12 @@ namespace Academy.Commands.Creating
     public class CreateCourseResultCommand : ICommand
     {
         private readonly IAcademyFactory factory;
-        private readonly IEngine engine;
+        private readonly IAcademyDatabase academyDatabase;
 
-        public CreateCourseResultCommand(IAcademyFactory factory, IEngine engine)
+        public CreateCourseResultCommand(IAcademyFactory factory, IAcademyDatabase academyDatabase)
         {
             this.factory = factory;
-            this.engine = engine;
+            this.academyDatabase = academyDatabase;
         }
 
         public string Execute(IList<string> parameters)
@@ -25,10 +25,10 @@ namespace Academy.Commands.Creating
             var coursePoints = parameters[3];
             var studentUsername = parameters[4];
 
-            var student = this.engine.Students
+            var student = this.academyDatabase.Students
                 .Single(x => x.Username.ToLower() == studentUsername.ToLower());
 
-            var course = this.engine
+            var course = this.academyDatabase
                 .Seasons[int.Parse(seasonId)]
                 .Courses[int.Parse(courseId)];
 

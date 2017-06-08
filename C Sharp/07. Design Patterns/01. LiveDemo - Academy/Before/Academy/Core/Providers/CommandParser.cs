@@ -15,7 +15,7 @@ namespace Academy.Core.Providers
         {
             var commandName = fullCommand.Split(' ')[0];
             var commandTypeInfo = this.FindCommand(commandName);
-            var command = Activator.CreateInstance(commandTypeInfo, AcademyFactory.Instance, Engine.Instance) as ICommand;
+            var command = Activator.CreateInstance(commandTypeInfo, AcademyFactory.Instance, AcademyDatabase.Instance) as ICommand;
 
             return command;
         }
