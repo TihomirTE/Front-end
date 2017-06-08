@@ -12,21 +12,6 @@ namespace Academy.Core.Factories
 {
     public class AcademyFactory : IAcademyFactory
     {
-        private static IAcademyFactory instanceHolder = new AcademyFactory();
-
-        // private because of Singleton design pattern
-        private AcademyFactory()
-        {
-        }
-
-        public static IAcademyFactory Instance
-        {
-            get
-            {
-                return instanceHolder;
-            }
-        }
-
         // the methods return class implementation, because these are models - the don't have logig
         // and their implementation is the same
         public Season CreateSeason(string startingYear, string endingYear, string initiative)

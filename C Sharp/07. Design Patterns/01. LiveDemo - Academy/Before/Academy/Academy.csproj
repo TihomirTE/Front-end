@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,11 +57,18 @@
     <Compile Include="Commands\Creating\CreateSeasonCommand.cs" />
     <Compile Include="Commands\Creating\CreateStudentCommand.cs" />
     <Compile Include="Commands\Creating\CreateTrainerCommand.cs" />
+    <Compile Include="Commands\Creating\LogCommandDecorator.cs" />
     <Compile Include="Commands\Listing\ListCoursesInSeasonCommand.cs" />
     <Compile Include="Commands\Listing\ListUsersCommand.cs" />
     <Compile Include="Commands\Listing\ListUsersInSeasonCommand.cs" />
+    <Compile Include="Container\AcademyNinjectModule.cs" />
     <Compile Include="Core\Contracts\IAcademyDatabase.cs" />
-    <Compile Include="Core\Factories\AcademyDatabase.cs" />
+    <Compile Include="Core\Contracts\ILogger.cs" />
+    <Compile Include="Core\Factories\CommandFactory.cs" />
+    <Compile Include="Core\Factories\ICommandFactory.cs" />
+    <Compile Include="Core\Providers\AcademyDatabase.cs" />
+    <Compile Include="Core\Providers\AuthProvider.cs" />
+    <Compile Include="Core\Providers\ConsoleLogger.cs" />
     <Compile Include="Core\Providers\DateTimeProvider.cs" />
     <Compile Include="Core\Factories\AcademyFactory.cs" />
     <Compile Include="Core\Factories\IAcademyFactory.cs" />
@@ -69,6 +80,7 @@
     <Compile Include="Core\Providers\CommandParser.cs" />
     <Compile Include="Core\Providers\ConsoleReader.cs" />
     <Compile Include="Core\Providers\ConsoleWriter.cs" />
+    <Compile Include="Core\Contracts\IAuthProvider.cs" />
     <Compile Include="Models\Abstractions\User.cs" />
     <Compile Include="Models\Contracts\IUser.cs" />
     <Compile Include="Models\Contracts\ICourse.cs" />
@@ -97,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

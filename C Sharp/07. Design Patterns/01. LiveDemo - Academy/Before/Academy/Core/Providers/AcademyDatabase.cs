@@ -7,12 +7,10 @@ using System.Threading.Tasks;
 using Academy.Models.Contracts;
 using Academy.Models;
 
-namespace Academy.Core.Factories
+namespace Academy.Core.Providers
 {
     public class AcademyDatabase : IAcademyDatabase
     {
-        private static IAcademyDatabase instanceHolder = new AcademyDatabase();
-
         private readonly IList<Season> seasons;
         private readonly IList<Student> students;
         private readonly IList<Trainer> trainers;
@@ -22,14 +20,6 @@ namespace Academy.Core.Factories
             this.seasons = new List<Season>();
             this.students = new List<Student>();
             this.trainers = new List<Trainer>();
-        }
-
-        public static IAcademyDatabase Instance
-        {
-            get
-            {
-                return instanceHolder;
-            }
         }
 
         public IList<Season> Seasons

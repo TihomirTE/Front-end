@@ -1,4 +1,5 @@
 ﻿using Academy.Core.Contracts;
+using Academy.Core.Factories;
 using Academy.Core.Providers;
 using Academy.Models.Contracts;
 using System;
@@ -10,18 +11,27 @@ namespace Academy.Core
 {
     public class Engine : IEngine
     {
-        private static IEngine instanceHolder = new Engine();
+        private static IEngine instanceHolder = new Engine(
+            new ConsoleReader(),
+            new ConsoleWriter(new AuthProvider()),
+            new CommandParser(),
+            new CommandFactory(Academy.Container.Container.Kernel));
 
         private const string TerminationCommand = "Exit";
         private const string NullProvidersExceptionMessage = "cannot be null.";
         private readonly StringBuilder builder = new StringBuilder();
 
-        // private because of Singleton design pattern
-        private Engine()
+        private readonly IReader reader;
+        private readonly IWriter writer;
+        private readonly IParser parser;
+        private readonly ICommandFactory commandFactory;
+
+        private Engine(IReader reader, IWriter writer, IParser parser, ICommandFactory commandFactory)
         {
-            this.Reader = new ConsoleReader();
-            this.Writer = new ConsoleWriter();
-            this.Parser = new CommandParser();
+            this.reader = reader;
+            this.writer = writer;
+            this.parser = parser;
+            this.commandFactory = commandFactory;
         }
 
         public static IEngine Instance
@@ -32,12 +42,6 @@ namespace Academy.Core
             }
         }
 
-        // Property dependencty injection not validated for simplicity
-        public IReader Reader { get; set; }
-
-        public IWriter Writer { get; set; }
-
-        public IParser Parser { get; set; }
 
         public void Start()
         {
@@ -45,11 +49,11 @@ namespace Academy.Core
             {
                 try
                 {
-                    var commandAsString = this.Reader.ReadLine();
+                    var commandAsString = this.reader.ReadLine();
 
                     if (commandAsString == TerminationCommand)
                     {
-                        this.Writer.Write(this.builder.ToString());
+                        this.writer.Write(this.builder.ToString());
                         break;
                     }
 
@@ -73,10 +77,10 @@ namespace Academy.Core
                 throw new ArgumentNullException("Command cannot be null or empty.");
             }
 
-            var command = this.Parser.ParseCommand(commandAsString);
-            var parameters = this.Parser.ParseParameters(commandAsString);
-
+            var command = this.commandFactory.GetCommand(commandAsString);
+            var parameters = this.parser.ParseParameters(commandAsString);
             var executionResult = command.Execute(parameters);
+
             this.builder.AppendLine(executionResult);
         }
     }
