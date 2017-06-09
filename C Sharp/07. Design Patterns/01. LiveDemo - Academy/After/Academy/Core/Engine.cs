@@ -11,12 +11,6 @@ namespace Academy.Core
 {
     public class Engine : IEngine
     {
-        private static IEngine instanceHolder = new Engine(
-            new ConsoleReader(),
-            new ConsoleWriter(new AuthProvider()),
-            new CommandParser(),
-            new CommandFactory(Academy.Container.Container.Kernel));
-
         private const string TerminationCommand = "Exit";
         private const string NullProvidersExceptionMessage = "cannot be null.";
         private readonly StringBuilder builder = new StringBuilder();
@@ -26,22 +20,13 @@ namespace Academy.Core
         private readonly IParser parser;
         private readonly ICommandFactory commandFactory;
 
-        private Engine(IReader reader, IWriter writer, IParser parser, ICommandFactory commandFactory)
+        public Engine(IReader reader, IWriter writer, IParser parser, ICommandFactory commandFactory)
         {
             this.reader = reader;
             this.writer = writer;
             this.parser = parser;
             this.commandFactory = commandFactory;
         }
-
-        public static IEngine Instance
-        {
-            get
-            {
-                return instanceHolder;
-            }
-        }
-
 
         public void Start()
         {

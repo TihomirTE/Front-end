@@ -24,6 +24,7 @@ namespace Academy.Commands.Creating
             var season = this.factory.CreateSeason(startingYear, endingYear, initiative);
             this.academyDatabase.Seasons.Add(season);
 
+
             return $"Season with ID {this.academyDatabase.Seasons.Count - 1} was created.";
         }
     }

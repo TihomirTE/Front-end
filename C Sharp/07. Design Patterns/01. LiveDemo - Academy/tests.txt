@@ -1,0 +1,10 @@
+CreateSeason 2016 2017 SoftwareAcademy
+CreateStudent Pesho Frontend
+CreateTrainer Gosho Java,Spring
+AddStudentToSeason Pesho 0
+AddTrainerToSeason Gosho 0
+CreateCourse 0 JavaScriptOOP 2 2017-01-24
+AddStudentToCourse Pesho 0 0 onsite
+ListUsersInSeason 0
+ListCoursesInSeason 0
+Exit
