@@ -5,17 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Academy.Commands.Contracts;
 using System.Reflection;
-using Ninject;
+using Academy.Framework.Core.Contracts;
 
 namespace Academy.Core.Factories
 {
     public class CommandFactory : ICommandFactory
     {
-        private readonly IKernel kernel;
+        private readonly IServiceLocator serviceLocator;
 
-        public CommandFactory(IKernel kernel)
+        public CommandFactory(IServiceLocator serviceLocator)
         {
-            this.kernel = kernel;
+            this.serviceLocator = serviceLocator;
         }
 
         public ICommand GetCommand(string fullCommand)
@@ -23,7 +23,7 @@ namespace Academy.Core.Factories
             var commandName = fullCommand.Split(' ')[0];
             TypeInfo type = this.FindCommand(commandName);
 
-            return (ICommand)this.kernel.Get(type);
+            return this.serviceLocator.GetCommand(type);
         }
 
         private TypeInfo FindCommand(string commandName)

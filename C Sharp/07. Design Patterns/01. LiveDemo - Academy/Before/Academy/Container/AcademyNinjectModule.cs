@@ -4,6 +4,7 @@ using Academy.Core;
 using Academy.Core.Contracts;
 using Academy.Core.Factories;
 using Academy.Core.Providers;
+using Academy.Framework.Core.Contracts;
 using Ninject;
 using Ninject.Modules;
 using System;
@@ -27,6 +28,7 @@ namespace Academy.Container
             this.Bind<ICommandFactory>().To<CommandFactory>();
             this.Bind<IAuthProvider>().To<AuthProvider>();
             this.Bind<IParser>().To<CommandParser>();
+            this.Bind<IServiceLocator>().To<ServiceLocator>();
 
             this.Bind<IEngine>().To<Engine>().InSingletonScope();
         }
