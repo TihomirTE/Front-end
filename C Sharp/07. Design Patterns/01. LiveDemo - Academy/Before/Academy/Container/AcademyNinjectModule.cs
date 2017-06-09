@@ -5,7 +5,9 @@ using Academy.Core.Contracts;
 using Academy.Core.Factories;
 using Academy.Core.Providers;
 using Academy.Framework.Core.Contracts;
+using Academy.Interceptors;
 using Ninject;
+using Ninject.Extensions.Interception.Infrastructure.Language;
 using Ninject.Modules;
 using System;
 using System.Collections.Generic;
@@ -24,7 +26,7 @@ namespace Academy.Container
             this.Bind<ILogger>().To<ConsoleLogger>();
 
             this.Bind<IReader>().To<ConsoleReader>();
-            this.Bind<IWriter>().To<ConsoleWriter>();
+            this.Bind<IWriter>().To<ConsoleWriter>().Intercept().With<AuthInterceptor>();
             this.Bind<ICommandFactory>().To<CommandFactory>();
             this.Bind<IAuthProvider>().To<AuthProvider>();
             this.Bind<IParser>().To<CommandParser>();

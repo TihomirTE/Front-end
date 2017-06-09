@@ -11,8 +11,11 @@ namespace Academy
         {
             IKernel kernel = new StandardKernel(new AcademyNinjectModule());
 
-            IEngine engine = kernel.Get<IEngine>();
-            engine.Start();
+            //IEngine engine = kernel.Get<IEngine>();
+            //engine.Start();
+
+            IWriter writer = kernel.Get<IWriter>();
+            writer.Write("test ConsoleWriter ");
         }
     }
 }
