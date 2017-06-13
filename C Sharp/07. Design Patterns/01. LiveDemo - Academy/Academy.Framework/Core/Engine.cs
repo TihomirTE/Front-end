@@ -1,4 +1,4 @@
-﻿using Academy.Core.Contracts;
+﻿  using Academy.Core.Contracts;
 using Academy.Core.Factories;
 using Academy.Core.Providers;
 using Academy.Models.Contracts;

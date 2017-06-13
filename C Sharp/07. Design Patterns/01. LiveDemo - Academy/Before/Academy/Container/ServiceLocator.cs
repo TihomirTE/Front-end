@@ -18,9 +18,9 @@ namespace Academy.Container
             this.kernel = kernel;
         }
 
-        public ICommand GetCommand(Type commandType)
+        public ICommand GetCommand(string commandName)
         {
-            return (ICommand)this.kernel.Get(commandType);
+            return this.kernel.Get<ICommand>(commandName);
         }
     }
 }

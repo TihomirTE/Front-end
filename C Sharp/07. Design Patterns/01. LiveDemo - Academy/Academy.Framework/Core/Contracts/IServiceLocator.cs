@@ -9,6 +9,6 @@ namespace Academy.Framework.Core.Contracts
 {
     public interface IServiceLocator
     {
-        ICommand GetCommand(Type commandType);
+        ICommand GetCommand(string commandName);
     }
 }
