@@ -1,10 +1,5 @@
 ﻿using Academy.Core.Contracts;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Academy.Models.Contracts;
 using Academy.Models;
 
 namespace Academy.Core.Providers
@@ -35,7 +30,6 @@ namespace Academy.Core.Providers
             get
             {
                 return this.students;
-
             }
         }
 
@@ -44,7 +38,6 @@ namespace Academy.Core.Providers
             get
             {
                 return this.trainers;
-
             }
         }
     }

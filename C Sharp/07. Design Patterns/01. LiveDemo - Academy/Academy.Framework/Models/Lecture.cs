@@ -24,6 +24,7 @@ namespace Academy.Models
             {
                 return this.name;
             }
+
             set
             {
                 if (string.IsNullOrWhiteSpace(value) 

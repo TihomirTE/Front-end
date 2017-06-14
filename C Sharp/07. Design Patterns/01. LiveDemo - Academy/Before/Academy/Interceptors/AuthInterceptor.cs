@@ -1,10 +1,6 @@
 ﻿using Academy.Core.Providers;
+using Bytes2you.Validation;
 using Ninject.Extensions.Interception;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Academy.Interceptors
 {
@@ -14,6 +10,8 @@ namespace Academy.Interceptors
 
         public AuthInterceptor(IAuthProvider authProvider)
         {
+            Guard.WhenArgument(authProvider, "authProvider").IsNull().Throw();
+
             this.authProvider = authProvider;
         }
 

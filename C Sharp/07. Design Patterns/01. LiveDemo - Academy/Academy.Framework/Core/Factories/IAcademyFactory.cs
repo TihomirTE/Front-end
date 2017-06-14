@@ -1,8 +1,6 @@
 ﻿using Academy.Models;
 using Academy.Models.Contracts;
 using Academy.Models.Utils;
-using Academy.Models.Utils.Contracts;
-using System;
 
 namespace Academy.Core.Contracts
 {

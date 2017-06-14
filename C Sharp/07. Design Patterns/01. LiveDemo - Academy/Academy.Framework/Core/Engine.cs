@@ -44,7 +44,7 @@ namespace Academy.Core
 
                     this.ProcessCommand(commandAsString);
                 }
-                catch (ArgumentOutOfRangeException ex)
+                catch (ArgumentOutOfRangeException)
                 {
                     this.builder.AppendLine("Invalid command parameters supplied or the entity with that ID for does not exist.");
                 }

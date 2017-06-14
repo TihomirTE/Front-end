@@ -29,6 +29,7 @@ namespace Academy.Models
             {
                 return this.startingYear;
             }
+
             set
             {
                 if (value < 2016 || value > 2017)
@@ -46,6 +47,7 @@ namespace Academy.Models
             {
                 return this.startingYear;
             }
+
             set
             {
                 if (value < 2016 || value > 2017)

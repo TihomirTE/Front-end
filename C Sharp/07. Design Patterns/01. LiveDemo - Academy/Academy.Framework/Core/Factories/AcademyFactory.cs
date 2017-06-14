@@ -4,7 +4,6 @@ using Academy.Models;
 using Academy.Models.Contracts;
 using Academy.Models.Enums;
 using Academy.Models.Utils;
-using Academy.Models.Utils.Contracts;
 using Academy.Models.Utils.LectureResources;
 using System;
 

@@ -1,5 +1,4 @@
 ﻿using Academy.Container;
-using Academy.Core;
 using Academy.Core.Contracts;
 using Ninject;
 

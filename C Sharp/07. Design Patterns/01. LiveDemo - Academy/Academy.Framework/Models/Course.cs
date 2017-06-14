@@ -31,6 +31,7 @@ namespace Academy.Models
             {
                 return this.name;
             }
+
             set
             {
                 if (string.IsNullOrWhiteSpace(value) 
@@ -50,6 +51,7 @@ namespace Academy.Models
             {
                 return this.lecturesPerWeek;
             }
+
             set
             {
                 if (value < 1 || value > 7)
@@ -67,6 +69,7 @@ namespace Academy.Models
             {
                 return this.startingDate;
             }
+
             set
             {
                 if (value == null)
@@ -84,6 +87,7 @@ namespace Academy.Models
             {
                 return this.endingDate;
             }
+
             set
             {
                 if (value == null)

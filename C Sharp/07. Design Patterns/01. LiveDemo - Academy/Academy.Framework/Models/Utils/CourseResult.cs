@@ -26,6 +26,7 @@ namespace Academy.Models.Utils
             {
                 return this.examPoints;
             }
+
             private set
             {
                 if (value < 0 || value > 1000)
@@ -43,6 +44,7 @@ namespace Academy.Models.Utils
             {
                 return this.coursePoints;
             }
+
             private set
             {
                 if (value < 0 || value > 125)

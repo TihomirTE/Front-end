@@ -1,5 +1,4 @@
-﻿using Academy.Commands.Contracts;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Academy.Core.Contracts
 {

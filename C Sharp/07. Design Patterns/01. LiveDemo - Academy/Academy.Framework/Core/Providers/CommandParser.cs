@@ -1,10 +1,6 @@
-﻿using Academy.Commands.Contracts;
-using Academy.Core.Contracts;
-using Academy.Core.Factories;
-using System;
+﻿using Academy.Core.Contracts;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 
 namespace Academy.Core.Providers
 {
