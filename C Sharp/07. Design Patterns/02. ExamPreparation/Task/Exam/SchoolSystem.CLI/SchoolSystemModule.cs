@@ -1,8 +1,10 @@
 ﻿using Ninject;
 using Ninject.Extensions.Factory;
+using Ninject.Extensions.Interception.Infrastructure.Language;
 using Ninject.Modules;
 using Ninject.Parameters;
 using SchoolSystem.Cli.Configuration;
+using SchoolSystem.Cli.Interceptor;
 using SchoolSystem.Framework.Core;
 using SchoolSystem.Framework.Core.Commands;
 using SchoolSystem.Framework.Core.Commands.Contracts;
@@ -35,7 +37,6 @@ namespace SchoolSystem.Cli
             this.Bind<StudentListMarksCommand>().ToSelf().InSingletonScope();
             this.Bind<TeacherAddMarkCommand>().ToSelf().InSingletonScope();
 
-            this.Bind<ICommandFactory>().ToFactory();
 
 
             // In IoC container this is the way to implement Interface logic, part of Factory methods:
@@ -59,18 +60,24 @@ namespace SchoolSystem.Cli
             this.Bind<ITeacher>().To<Teacher>();
             this.Bind<IMark>().To<Mark>();
 
-            this.Bind<IStudentFactory>().ToFactory().InSingletonScope();
             this.Bind<ITeacherFactory>().ToFactory().InSingletonScope();
-            this.Bind<IMarkFactory>().ToFactory().InSingletonScope();
 
             Bind(typeof(IAddStudent), typeof(IAddTeacher), typeof(IRemoveStudent),
                  typeof(IRemoveTeacher), typeof(IGetStudent), typeof(IGetTeacher))
                 .To<School>()
                 .InSingletonScope();
 
+            var commandFactoryBinding = this.Bind<ICommandFactory>().ToFactory();
+            var studentFactoryBinding = this.Bind<IStudentFactory>().ToFactory().InSingletonScope();
+            var markFactoryBinding = this.Bind<IMarkFactory>().ToFactory().InSingletonScope();
+
             IConfigurationProvider configurationProvider = Kernel.Get<IConfigurationProvider>();
             if (configurationProvider.IsTestEnvironment)
             {
+                // Intercept methods
+                commandFactoryBinding.Intercept().With<StopwatchInterceptor>();
+                studentFactoryBinding.Intercept().With<StopwatchInterceptor>();
+                markFactoryBinding.Intercept().With<StopwatchInterceptor>();
             }
         }
     }
