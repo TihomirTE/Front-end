@@ -3,6 +3,7 @@ using Ninject.Extensions.Conventions;
 using Ninject.Modules;
 using SchoolSystem.Cli.Configuration;
 using SchoolSystem.Framework.Core;
+using SchoolSystem.Framework.Core.Commands;
 using SchoolSystem.Framework.Core.Contracts;
 using SchoolSystem.Framework.Core.Providers;
 using System.IO;
@@ -28,6 +29,9 @@ namespace SchoolSystem.Cli
             this.Bind<IConfigurationProvider>().To<ConfigurationProvider>();
 
             this.Bind<IEngine>().To<Engine>();
+
+            this.Bind<CreateStudentCommand>().ToSelf().InSingletonScope();
+            this.Bind<CreateTeacherCommand>().ToSelf().InSingletonScope();
 
             IConfigurationProvider configurationProvider = Kernel.Get<IConfigurationProvider>();
             if (configurationProvider.IsTestEnvironment)
