@@ -1,4 +1,4 @@
-﻿namespace SchoolSystem.Framework.Core
+﻿namespace SchoolSystem.Framework.Core.Contracts
 {
     public interface IEngine
     {
