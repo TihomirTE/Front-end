@@ -15,6 +15,7 @@ namespace SchoolSystem.Framework.Core.Commands
             this.getStudent = getStudent;
             this.getTeacher = getTeacher;
         }
+
         public string Execute(IList<string> parameters)
         {
             var teacherId = int.Parse(parameters[0]);

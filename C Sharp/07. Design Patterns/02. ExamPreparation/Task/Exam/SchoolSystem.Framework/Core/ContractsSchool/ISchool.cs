@@ -8,6 +8,5 @@ namespace SchoolSystem.Framework.Core.ContractsSchool
 {
     public interface ISchool : IAddStudent, IAddTeacher, IRemoveStudent, IRemoveTeacher, IGetStudent, IGetTeacher
     {
-
     }
 }

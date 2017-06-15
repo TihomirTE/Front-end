@@ -12,8 +12,8 @@ namespace SchoolSystem.Tests.Core.Commands.CreateStudentCommandTests
     [TestFixture]
     public class Execute_Should
     {
-        private static object[] sourceLists = {new object[] {new List<string> { "Pesho", "Petrov", "6" }},
-                                                new object[] {new List<string> { "Gosho", "Peshev", "9" } }};
+        private static object[] sourceLists = {new object[] {new List<string> {"Pesho", "Petrov", "6"}},
+                                                new object[] {new List<string> {"Gosho", "Peshev", "9"}}};
 
         [Test, TestCaseSource("sourceLists")]
         public void CreateStudent_WhenParametersAreCorrect(IList<string> parameters)
@@ -56,7 +56,5 @@ namespace SchoolSystem.Tests.Core.Commands.CreateStudentCommandTests
             // Assert
             addStudentMock.Verify(s => s.AddStudent(0, studentMock.Object), Times.Once());
         }
-
-
     }
 }

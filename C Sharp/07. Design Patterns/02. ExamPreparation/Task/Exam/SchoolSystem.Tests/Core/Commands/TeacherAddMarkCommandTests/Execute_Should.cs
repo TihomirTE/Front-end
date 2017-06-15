@@ -25,7 +25,7 @@ namespace SchoolSystem.Tests.Core.Commands.TeacherAddMarkCommandTests
             var studentMock = new Mock<IStudent>();
             var teacherMock = new Mock<ITeacher>();
             getStudentMock.Setup(s => s.GetStudent(studentId)).Returns(studentMock.Object);
-            getTeacherMock.Setup(s => s.GetTeacher(studentId)).Returns(teacherMock.Object);
+            getTeacherMock.Setup(s => s.GetTeacher(teacherId)).Returns(teacherMock.Object);
 
             var teacherAddMarkCommand = new TeacherAddMarkCommand(getStudentMock.Object, getTeacherMock.Object);
 

@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-
 using SchoolSystem.Framework.Core.Contracts;
-using SchoolSystem.Framework.Models.Contracts;
 
 namespace SchoolSystem.Framework.Core
 {

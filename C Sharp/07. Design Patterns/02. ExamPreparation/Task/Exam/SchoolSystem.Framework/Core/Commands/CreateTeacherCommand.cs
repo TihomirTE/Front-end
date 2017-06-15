@@ -25,7 +25,7 @@ namespace SchoolSystem.Framework.Core.Commands
             var subject = (Subject)int.Parse(parameters[2]);
 
             var teacher = this.teacherFacory.CreateTeacher(firstName, lastName, subject);
-            this.addTeacher.AddTeacher(currentTeacherId, teacher);
+            this.addTeacher.AddTeacher(this.currentTeacherId, teacher);
 
             return $"A new teacher with name {firstName} {lastName}, subject {subject} and ID {currentTeacherId++} was created.";
         }

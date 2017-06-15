@@ -27,7 +27,7 @@ namespace SchoolSystem.Framework.Core.Commands
             var grade = (Grade)int.Parse(parameters[2]);
 
             var student = this.studentFactory.CreateStudent(firstName, lastName, grade);
-            this.addStudent.AddStudent(currentStudentId, student);
+            this.addStudent.AddStudent(this.currentStudentId, student);
 
             return $"A new student with name {firstName} {lastName}, grade {grade} and ID {currentStudentId++} was created.";
         }

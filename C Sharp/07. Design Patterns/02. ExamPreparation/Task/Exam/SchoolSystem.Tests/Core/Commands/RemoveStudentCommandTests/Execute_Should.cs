@@ -35,7 +35,7 @@ namespace SchoolSystem.Tests.Core.Commands.RemoveStudentCommandTests
             var studentId = int.Parse(parameters[0]);
             var removeStudentMock = new Mock<IRemoveStudent>();
             var removeStudentCommandMock = new RemoveStudentCommand(removeStudentMock.Object);
-            var expectedMessage = string.Format(ReturnMessage, studentId);
+            var expectedMessage = string.Format(this.ReturnMessage, studentId);
 
             // Act 
             var result = removeStudentCommandMock.Execute(parameters);
