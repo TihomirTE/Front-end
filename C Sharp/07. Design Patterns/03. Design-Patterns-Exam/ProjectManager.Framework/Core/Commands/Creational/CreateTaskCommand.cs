@@ -10,14 +10,10 @@ namespace ProjectManager.Framework.Core.Commands.Creational
     public sealed class CreateTaskCommand : CreationalCommand, ICommand
     {
         private const int ParameterCountConstant = 4;
-        private readonly IDatabase database;
-        private readonly IModelsFactory factory;
 
         public CreateTaskCommand(IModelsFactory factory, IDatabase database) 
             : base(factory, database)
         {
-            this.database = database;
-           this.factory = factory;
         }
 
         public override int ParameterCount
@@ -30,15 +26,13 @@ namespace ProjectManager.Framework.Core.Commands.Creational
         
         public override string Execute(IList<string> parameters)
         {
-            this.ValidateParameters(parameters);
-
             var projectId = int.Parse(parameters[0]);
-            var project = this.database.Projects[projectId];
+            var project = this.Database.Projects[projectId];
 
             var ownerId = int.Parse(parameters[1]);
             var owner = project.Users[ownerId];
 
-            var task = this.factory.CreateTask(owner, parameters[2], parameters[3]);
+            var task = this.Factory.CreateTask(owner, parameters[2], parameters[3]);
             project.Tasks.Add(task);
 
             return "Successfully created a new task!";

@@ -61,6 +61,8 @@
     <Compile Include="Core\Common\Contracts\IValidator.cs" />
     <Compile Include="Core\Common\Contracts\IWriter.cs" />
     <Compile Include="Core\Common\Exceptions\UserValidationException.cs" />
+    <Compile Include="Core\Common\Providers\ConsoleReader.cs" />
+    <Compile Include="Core\Common\Providers\ConsoleWriter.cs" />
     <Compile Include="Core\Common\Providers\Validator.cs" />
     <Compile Include="Core\Common\Contracts\IEngine.cs" />
     <Compile Include="Core\Common\Contracts\ILogger.cs" />

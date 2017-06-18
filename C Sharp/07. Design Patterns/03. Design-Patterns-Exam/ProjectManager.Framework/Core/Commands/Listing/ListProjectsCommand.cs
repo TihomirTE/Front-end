@@ -10,12 +10,10 @@ namespace ProjectManager.Framework.Core.Commands.Listing
     public class ListProjectsCommand : Command, ICommand
     {
         private const int ParameterCountConstant = 0;
-        private readonly IDatabase database;
 
         public ListProjectsCommand(IDatabase database)
             :base(database)
         {
-            this.database = database;
         }
 
         public override int ParameterCount
@@ -28,9 +26,7 @@ namespace ProjectManager.Framework.Core.Commands.Listing
 
         public override string Execute(IList<string> parameters)
         {
-            this.ValidateParameters(parameters);
-
-            var projects = this.database.Projects;
+            var projects = this.Database.Projects;
 
             if(projects.Count == 0)
             {

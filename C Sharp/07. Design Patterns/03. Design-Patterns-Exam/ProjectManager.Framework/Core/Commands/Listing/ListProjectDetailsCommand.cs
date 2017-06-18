@@ -10,12 +10,10 @@ namespace ProjectManager.Framework.Core.Commands.Listing
     public sealed class ListProjectDetailsCommand : Command, ICommand
     {
         private const int ParameterCountConstant = 1;
-        private readonly IDatabase database;
 
         public ListProjectDetailsCommand(IDatabase database)
             :base(database)
         {
-            this.database = database;
         }
 
         public override int ParameterCount
@@ -28,15 +26,13 @@ namespace ProjectManager.Framework.Core.Commands.Listing
 
         public override string Execute(IList<string> parameters)
         {
-            this.ValidateParameters(parameters);
-
             var projectId = int.Parse(parameters[0]);
-            if (this.database.Projects.Count <= projectId || projectId < 0)
+            if (this.Database.Projects.Count <= projectId || projectId < 0)
             {
                 throw new UserValidationException("The project is not present in the database");
             }
 
-            var project = this.database.Projects[projectId];
+            var project = this.Database.Projects[projectId];
 
             return project.ToString();
         }

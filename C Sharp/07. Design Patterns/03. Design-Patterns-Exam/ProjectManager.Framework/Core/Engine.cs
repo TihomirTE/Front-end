@@ -8,41 +8,20 @@ namespace ProjectManager.Framework.Core
 {
     public class Engine : IEngine
     {
-        private ILogger logger;
+        private IReader reader;
+        private IWriter writer;
         private IProcessor processor;
 
-        public Engine(ILogger logger, IProcessor processor)
+        public Engine(IReader reader, IWriter writer, IProcessor processor)
         {
-            this.logger = logger;
+            if (processor == null)
+            {
+                throw new ArgumentNullException();
+            }
+
+            this.reader = reader;
+            this.writer = writer;
             this.processor = processor;
-        }
-
-        public ILogger Loogger
-        {
-            get
-            {
-                return this.logger;
-            }
-
-            set
-            {
-                Guard.WhenArgument(value, "Engine Logger provider").IsNull().Throw();
-                this.logger = value;
-            }
-        }
-
-        public IProcessor Processor
-        {
-            get
-            {
-                return this.processor;
-            }
-
-            set
-            {
-                Guard.WhenArgument(value, "Engine Processor provider").IsNull().Throw();
-                this.processor = value;
-            }
         }
 
         public void Start()
@@ -53,25 +32,11 @@ namespace ProjectManager.Framework.Core
 
                 if (commandLine.ToLower() == "exit")
                 {
-                    Console.WriteLine("Program terminated.");
+                    this.writer.WriteLine("Program terminated.");
                     break;
                 }
 
-                try
-                {
-                    var executionResult = this.processor.ProcessCommand(commandLine);
-                    Console.WriteLine(executionResult);
-                }
-                catch (UserValidationException ex)
-                {
-                    this.logger.Error(ex.Message);
-                    Console.WriteLine(ex.Message);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Opps, something happened. Check the log file :(");
-                    this.logger.Error(ex.Message);
-                }
+                this.processor.ProcessCommand(commandLine);
             }
         }
     }

@@ -8,7 +8,7 @@ namespace ProjectManager.Framework.Core.Common.Providers
 {
     public class FileLogger : ILogger
     {
-        private string filePath;
+        private readonly string filePath;
 
         public FileLogger(string filePath)
         {

@@ -15,7 +15,18 @@ namespace ProjectManager.Framework.Core.Commands.Abstracts
 
         public Command(IDatabase database)
         {
+            Guard.WhenArgument(database, "CreateProjectCommand Database").IsNull().Throw();
+
             this.database = database;
+        }
+
+        public IDatabase Database
+        {
+            get
+            {
+                return this.database;
+            }
+
         }
 
         public abstract int ParameterCount
@@ -24,18 +35,5 @@ namespace ProjectManager.Framework.Core.Commands.Abstracts
         }
 
         public abstract string Execute(IList<string> parameters);
-
-        protected virtual void ValidateParameters(IList<string> parameters)
-        {
-            if (parameters.Count != this.ParameterCount)
-            {
-                throw new UserValidationException("Invalid command parameters count!");
-            }
-
-            if (parameters.Any(x => x == string.Empty))
-            {
-                throw new UserValidationException("Some of the passed parameters are empty!");
-            }
-        }
     }
 }

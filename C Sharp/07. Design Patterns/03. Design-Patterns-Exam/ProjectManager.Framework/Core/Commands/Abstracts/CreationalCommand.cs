@@ -11,10 +11,19 @@ namespace ProjectManager.Framework.Core.Commands.Abstracts
         private readonly IModelsFactory factory;
 
         public CreationalCommand(IModelsFactory factory, IDatabase database)
-            :base(database)
+            : base(database)
         {
             Guard.WhenArgument(factory, "CreateProjectCommand ModelsFactory").IsNull().Throw();
+
             this.factory = factory;
+        }
+
+        protected IModelsFactory Factory
+        {
+            get
+            {
+                return this.factory;
+            }
         }
     }
 }

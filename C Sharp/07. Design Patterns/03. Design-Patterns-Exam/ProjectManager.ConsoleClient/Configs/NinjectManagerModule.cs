@@ -33,11 +33,12 @@ namespace ProjectManager.Configs
             this.Bind<ILogger>().To<FileLogger>().InSingletonScope().WithConstructorArgument(configurationProvider.LogFilePath);
 
             this.Bind<IEngine>().To<Engine>().InSingletonScope();
-
-            this.Bind<IProcessor>().To<CommandProcessor>();
-            this.Bind<IModelsFactory>().To<ModelsFactory>().InSingletonScope();
+            this.Bind<IReader>().To<ConsoleReader>().InSingletonScope();
+            this.Bind<IWriter>().To<ConsoleWriter>().InSingletonScope();
+            this.Bind<IProcessor>().To<CommandProcessor>().InSingletonScope();
             this.Bind<IValidator>().To<Validator>();
 
+            this.Bind<IModelsFactory>().To<ModelsFactory>().InSingletonScope();
             this.Bind<IDatabase>().To<Database>().InSingletonScope();
 
             this.Bind<ICommand>().To<CreateProjectCommand>().Named(CreateProjectCommand);
