@@ -1,0 +1,30 @@
+ERROR: Object reference not set to an instance of an object.
+ERROR: Object reference not set to an instance of an object.
+ERROR: Object reference not set to an instance of an object.
+ERROR: Object reference not set to an instance of an object.
+ERROR: No command has been provided!
+ERROR: Object reference not set to an instance of an object.
+ERROR: Object reference not set to an instance of an object.
+ERROR: Object reference not set to an instance of an object.
+ERROR: Object reference not set to an instance of an object.
+ERROR: Object reference not set to an instance of an object.
+ERROR: Object reference not set to an instance of an object.
+ERROR: Object reference not set to an instance of an object.
+ERROR: Object reference not set to an instance of an object.
+ERROR: Invalid command parameters count!
+ERROR: Invalid command parameters count!
+ERROR: Invalid command parameters count!
+ERROR: Invalid command parameters count!
+ERROR: Failed to parse the passed starting date!
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
+ERROR: Unable to cast object of type 'System.String' to type 'System.Type'.
