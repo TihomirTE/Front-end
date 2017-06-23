@@ -1,2 +1,4 @@
 SQL Server  Profiler - is an interface to create and manage traces
- and analyze and replay trace results. 
+ and analyze and replay trace results. -> "Express Profiler"
+ 
+ AutoMapper
