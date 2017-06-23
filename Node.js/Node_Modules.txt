@@ -1,0 +1,12 @@
+export function(object) ->
+
+	module.exports = {
+		(function's name)
+		};
+		
+		
+---------------------------------------------------------
+
+import ->
+	
+	const (variable name) = require(relative or absulute path);
