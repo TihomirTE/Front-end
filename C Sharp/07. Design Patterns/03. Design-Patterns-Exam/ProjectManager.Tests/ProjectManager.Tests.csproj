@@ -47,6 +47,9 @@
     <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProjectManager.Framework\Core\CacheableCommandTests.cs" />
+    <Compile Include="ProjectManager.Framework\Services\CachingServiceTests\Constructor_Should.cs" />
+    <Compile Include="ProjectManager.Framework\Services\CachingServiceTests\Mocks\CachingServiceMock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +58,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectManager.Common\ProjectManager.Common.csproj">
+      <Project>{b30a75c3-3443-4d32-ba8c-f9e3303fbefa}</Project>
+      <Name>ProjectManager.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectManager.Framework\ProjectManager.Framework.csproj">
+      <Project>{6D548169-75E7-495F-BC01-0C8CF6F6BE04}</Project>
+      <Name>ProjectManager.Framework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

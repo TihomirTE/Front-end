@@ -101,5 +101,11 @@
   <ItemGroup>
     <Folder Include="Core\Commands\Factories\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectManager.Common\ProjectManager.Common.csproj">
+      <Project>{b30a75c3-3443-4d32-ba8c-f9e3303fbefa}</Project>
+      <Name>ProjectManager.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

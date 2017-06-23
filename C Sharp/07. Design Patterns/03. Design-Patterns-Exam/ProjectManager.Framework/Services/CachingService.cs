@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Bytes2you.Validation;
+using ProjectManager.Common;
 
 namespace ProjectManager.Framework.Services
 {
@@ -17,7 +18,7 @@ namespace ProjectManager.Framework.Services
             Guard.WhenArgument(duration, "duration").IsLessThan(TimeSpan.Zero).Throw();
 
             this.duration = duration;
-            this.timeExpiring = DateTime.Now;
+            this.timeExpiring = DateTimeProvider.Current.UtcNow;
             this.cache = new Dictionary<string, object>();
         }
 
@@ -31,7 +32,7 @@ namespace ProjectManager.Framework.Services
         {
             get
             {
-                if (this.timeExpiring < DateTime.Now)
+                if (this.timeExpiring < DateTimeProvider.Current.UtcNow)
                 {
                     return true;
                 }
@@ -39,6 +40,22 @@ namespace ProjectManager.Framework.Services
                 {
                     return false;
                 }
+            }
+        }
+
+        protected DateTime TimeExpiring
+        {
+            get
+            {
+                return this.timeExpiring;
+            }
+        }
+
+        protected IDictionary<string, object> Cache
+        {
+            get
+            {
+                return this.cache;
             }
         }
 
