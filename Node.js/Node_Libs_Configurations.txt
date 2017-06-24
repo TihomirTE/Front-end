@@ -1,0 +1,8 @@
+yarn - package manager
+
+--------------------------------------------------------------------------
+yarn global add eslint - do it in cmd
+
+ - (folder's name) eslint . --fix -> fix all the mistakes according his convention
+ 
+ 
