@@ -8,7 +8,11 @@ namespace BucketList.Demo
         public static void Main(string[] args)
         {
             var x = new BucketList<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3 };
-
+            x.Add(99);
+            x.Add(98);
+            x.Add(97);
+            x.Add(96);
+            x.Add(95);
             Console.WriteLine(string.Join(" ", x));
             x.Insert(0, 42);
             Console.WriteLine(string.Join(" ", x));
