@@ -10,3 +10,9 @@ export function(object) ->
 import ->
 	
 	const (variable name) = require(relative or absulute path);
+	
+-----------------------------------------------------------------
+
+wget "url" - download everything from URL
+
+--------------------------------------------------------------------
