@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task_07
 {
-    class Program
+    // TODO Print all paths
+
+    public class PathsInMatrix
     {
         // passable cells -> ' '
         // not passable -> 'x'
          
-        static char[,] matrix =
+        public static char[,] matrix =
         {
             {' ', ' ', ' ', 'x', ' ', ' ', ' '},
             {'x', 'x', ' ', 'x', ' ', 'x', ' '},
@@ -21,7 +19,9 @@ namespace Task_07
             {' ', ' ', ' ', ' ', ' ', ' ', 'е'},
         };
 
-        static void Main()
+        public static List<char> path = new List<char>();
+
+        public static void Main()
         {
             FindExit(0, 0);
         }
@@ -48,10 +48,10 @@ namespace Task_07
             // temporary mark the cell as visited
             matrix[row, col] = 's';
 
-            FindExit(row, col - 1);
-            FindExit(row - 1, col);
-            FindExit(row, col + 1);
-            FindExit(row + 1, col);
+            FindExit(row, col - 1); // left
+            FindExit(row - 1, col); // up
+            FindExit(row, col + 1); // right
+            FindExit(row + 1, col); // down
 
             // free the cell
             matrix[row, col] = ' ';
