@@ -5,4 +5,8 @@ yarn global add eslint - do it in cmd
 
  - (folder's name) eslint . --fix -> fix all the mistakes according his convention
  
+ ---------------------------------------------------------------------
+ VS code - view tabulations
+ 
+ -> user settings - "editor.renderWhitespace": "all"
  
