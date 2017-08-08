@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01.Lazyness
 {
@@ -19,7 +17,7 @@ namespace _01.Lazyness
 
             var sortedArr = new List<int>();
 
-            for (int i = 0; i < numbers.Count; i++)
+            for (int i = 0; i < n; i++)
             {
                 if (i >= start && i <= end)
                 {
@@ -28,9 +26,9 @@ namespace _01.Lazyness
             }
 
             numbers.RemoveRange(start, len);
-
             sortedArr.Sort();
             numbers.InsertRange(start, sortedArr);
+
             Console.WriteLine(string.Join(" ", numbers));
         }
     }
