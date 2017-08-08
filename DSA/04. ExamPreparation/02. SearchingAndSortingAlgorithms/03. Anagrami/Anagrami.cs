@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _03.Anagrami
 {
@@ -12,8 +10,8 @@ namespace _03.Anagrami
         {
             string input;
             string group = " ";
-            var list = new List<string>();
-            int numberOfGroups = 0;
+            var set = new HashSet<string>();
+           // int numberOfGroups = 0;
 
             do
             {
@@ -22,16 +20,11 @@ namespace _03.Anagrami
                 // Sort Alphabetically
                 group = String.Concat(input.OrderBy(c => c));
 
-                if (group != "-1" && list.IndexOf(group) == -1)
-                {
-                    list.Add(group);
-
-                    numberOfGroups++;
-                }
-
+                    set.Add(group); 
+                
             } while (input != "-1");
 
-            Console.WriteLine(numberOfGroups);
+            Console.WriteLine(set.Count - 1);
         }
     }
 }
