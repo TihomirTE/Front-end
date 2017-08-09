@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Goro", "02. Goro\02. Go
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Anagrami", "03. Anagrami\03. Anagrami.csproj", "{BFD1F6A1-B5B8-4352-9E77-C9645B9732E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. SquareRoot", "04. SquareRoot\04. SquareRoot.csproj", "{6359850D-B565-4F08-B41F-959D6037CE0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Root", "04. Root\04. Root.csproj", "{2372318B-E090-43A3-BE47-25247ADCDFFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{BFD1F6A1-B5B8-4352-9E77-C9645B9732E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFD1F6A1-B5B8-4352-9E77-C9645B9732E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFD1F6A1-B5B8-4352-9E77-C9645B9732E2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6359850D-B565-4F08-B41F-959D6037CE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6359850D-B565-4F08-B41F-959D6037CE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6359850D-B565-4F08-B41F-959D6037CE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6359850D-B565-4F08-B41F-959D6037CE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2372318B-E090-43A3-BE47-25247ADCDFFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2372318B-E090-43A3-BE47-25247ADCDFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2372318B-E090-43A3-BE47-25247ADCDFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2372318B-E090-43A3-BE47-25247ADCDFFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
