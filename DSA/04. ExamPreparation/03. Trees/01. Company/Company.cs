@@ -59,6 +59,7 @@ namespace _01.Company
                 CalculateSalary(employee);
                 salary += employee.Salary;
             }
+
             currentBoss.Salary = salary;
             salaries += currentBoss.Salary;
         }
