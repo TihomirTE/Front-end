@@ -4,14 +4,13 @@ using System.Linq;
 
 namespace _03.Anagrami
 {
-    public class Anagrami
+    public class Algogrami
     {
         public static void Main()
         {
             string input;
             string group = " ";
             var set = new HashSet<string>();
-           // int numberOfGroups = 0;
 
             do
             {

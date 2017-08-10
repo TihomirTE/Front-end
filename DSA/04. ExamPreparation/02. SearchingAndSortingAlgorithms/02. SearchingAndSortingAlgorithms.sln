@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Lazyness", "01. Lazynes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Goro", "02. Goro\02. Goro.csproj", "{E8C99D1F-4C78-41F9-A16F-2FAAB4CCE29E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Anagrami", "03. Anagrami\03. Anagrami.csproj", "{BFD1F6A1-B5B8-4352-9E77-C9645B9732E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Algogrami", "03. Anagrami\03. Algogrami.csproj", "{BFD1F6A1-B5B8-4352-9E77-C9645B9732E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Root", "04. Root\04. Root.csproj", "{2372318B-E090-43A3-BE47-25247ADCDFFD}"
 EndProject
