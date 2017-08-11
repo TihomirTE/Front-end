@@ -8,10 +8,10 @@ namespace _02.MaximalPath
 {
     public class MaximalPath
     {
-        private static int maxSum = 0;
-        private static List<Node> usedNodes = new List<Node>();
+        private static long maxSum = 0;
+        private static HashSet<Node> usedNodes = new HashSet<Node>();
 
-        private static void DFS(Node node, int currentSum)
+        private static void DFS(Node node, long currentSum)
         {
             currentSum += node.Value;
             usedNodes.Add(node);
