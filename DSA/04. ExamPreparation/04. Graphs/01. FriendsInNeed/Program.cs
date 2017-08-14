@@ -69,6 +69,11 @@ namespace _01.FriendsInNeed
             {
                 int currentHospital = int.Parse(allHospitals[i]);
                 allNodes[currentHospital].IsHospital = true;
+            }
+
+            for (int i = 0; i < allHospitals.Length; i++)
+            {
+                int currentHospital = int.Parse(allHospitals[i]);
 
                 DijkstraAlgorithm(graph, allNodes[currentHospital]);
 
