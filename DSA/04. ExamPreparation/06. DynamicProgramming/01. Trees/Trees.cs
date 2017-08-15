@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01.Trees
 {
     public class Trees
     {
+        // parameters for the different type of trees and lastType placed tree
+        private static long[,,,,] memo = new long[11, 11, 11, 11, 5];
+
         public static void Main()
         {
             int a = int.Parse(Console.ReadLine());
@@ -15,15 +14,22 @@ namespace _01.Trees
             int c = int.Parse(Console.ReadLine());
             int d = int.Parse(Console.ReadLine());
 
-            long result = PlaceTree(a, b, c, d, -1);
+            long result = PlaceTree(a, b, c, d, 4);
             Console.WriteLine(result);
         }
 
+        // Solved it with MEMOIZATION
         private static long PlaceTree(int a, int b, int c, int d, int lastType)
         {
             if (a == 0 && b == 0 && c == 0 && d == 0)
             {
                 return 1;
+            }
+
+            // if we calculated previously - use it
+            if (memo[a, b, c, d, lastType] > 0)
+            {
+                return memo[a, b, c, d, lastType];
             }
 
             long count = 0;
@@ -49,6 +55,9 @@ namespace _01.Trees
                 count += PlaceTree(a, b, c, d - 1, 3);
             }
 
+            // Save new value when find it
+            memo[a, b, c, d, lastType] = count;
+            
             return count;
         }
     }
