@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Trees", "01. Trees\01. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Guitar", "02. Guitar\02. Guitar.csproj", "{C77372BB-8E66-4E43-92E1-CFF658A052FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Brackets", "03. Brackets\03. Brackets.csproj", "{8E215B97-252C-4D56-85CC-4B541103CDEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C77372BB-8E66-4E43-92E1-CFF658A052FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C77372BB-8E66-4E43-92E1-CFF658A052FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C77372BB-8E66-4E43-92E1-CFF658A052FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E215B97-252C-4D56-85CC-4B541103CDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E215B97-252C-4D56-85CC-4B541103CDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E215B97-252C-4D56-85CC-4B541103CDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E215B97-252C-4D56-85CC-4B541103CDEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
