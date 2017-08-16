@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace _02.Words
 {
@@ -19,12 +17,10 @@ namespace _02.Words
 
             for (int i = 0; i < numOfLines; i++)
             {
-                //var line = Console.ReadLine().Split(new[] {'~','!','@','#','$','%','^','&','*','(',')','_','+','|','}','{','\"',':','?','>','<','`','1','2','3','4','5','6','7','8','9','0','-','=','\\',']','[','\'',',',';','/','.',',',' ' }, StringSplitOptions.RemoveEmptyEntries);
-                //var pattern = new Regex(@"^[A-Za-z]+$");
                 string input = Console.ReadLine();
 
-              var regex = Regex.Split(input, @"[^\w0-9-]+")
-                                 .Where(s => !String.IsNullOrWhiteSpace(s));
+                var regex = Regex.Split(input, @"[^\w0-9-]+")
+                                   .Where(s => !String.IsNullOrWhiteSpace(s));
 
                 var line = regex.ToArray();
 
