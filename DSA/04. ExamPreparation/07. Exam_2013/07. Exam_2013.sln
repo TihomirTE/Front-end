@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. 3D_Labyrinth", "02. 3D_Labyrinth\02. 3D_Labyrinth.csproj", "{918329CC-2B12-4AEB-A1C1-FA19C8F2AEEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Frames", "01. Frames\01. Frames.csproj", "{52CFDC0A-259F-477C-AFB7-563A6682B993}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{918329CC-2B12-4AEB-A1C1-FA19C8F2AEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{918329CC-2B12-4AEB-A1C1-FA19C8F2AEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{918329CC-2B12-4AEB-A1C1-FA19C8F2AEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CFDC0A-259F-477C-AFB7-563A6682B993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CFDC0A-259F-477C-AFB7-563A6682B993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CFDC0A-259F-477C-AFB7-563A6682B993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CFDC0A-259F-477C-AFB7-563A6682B993}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
