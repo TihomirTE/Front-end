@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. RecoverMessage", "04. R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.1 RecoverMessage_OriginalSolution", "04.1 RecoverMessage_OriginalSolution\04.1 RecoverMessage_OriginalSolution.csproj", "{28ED2223-9222-4A24-94A0-C8264A5A6DBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Businessmen", "05. Businessmen\05. Businessmen.csproj", "{F13A0EB6-B5F5-405A-A116-3A1BCA502E38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{28ED2223-9222-4A24-94A0-C8264A5A6DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28ED2223-9222-4A24-94A0-C8264A5A6DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28ED2223-9222-4A24-94A0-C8264A5A6DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F13A0EB6-B5F5-405A-A116-3A1BCA502E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F13A0EB6-B5F5-405A-A116-3A1BCA502E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F13A0EB6-B5F5-405A-A116-3A1BCA502E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F13A0EB6-B5F5-405A-A116-3A1BCA502E38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
