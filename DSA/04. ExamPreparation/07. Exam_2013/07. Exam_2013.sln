@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. SupermarketQueue", "03.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. RecoverMessage", "04. RecoverMessage\04. RecoverMessage.csproj", "{F5B1C865-D65B-4B7A-AAF1-B47784A55D42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.1 RecoverMessage_OriginalSolution", "04.1 RecoverMessage_OriginalSolution\04.1 RecoverMessage_OriginalSolution.csproj", "{28ED2223-9222-4A24-94A0-C8264A5A6DBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F5B1C865-D65B-4B7A-AAF1-B47784A55D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5B1C865-D65B-4B7A-AAF1-B47784A55D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5B1C865-D65B-4B7A-AAF1-B47784A55D42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28ED2223-9222-4A24-94A0-C8264A5A6DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28ED2223-9222-4A24-94A0-C8264A5A6DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28ED2223-9222-4A24-94A0-C8264A5A6DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28ED2223-9222-4A24-94A0-C8264A5A6DBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
