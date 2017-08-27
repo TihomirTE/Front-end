@@ -69,6 +69,7 @@ namespace _04._1_RecoverMessage_OriginalSolution
                 }
             }
 
+            // return result -> (topologically sorted order)
             Console.WriteLine(string.Join("", result));
         }
 
