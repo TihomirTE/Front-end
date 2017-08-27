@@ -19,12 +19,7 @@ namespace _05.Businessmen
                 }
             }
 
-            for (int i = 0; i < n; i+=2)
-            {
-                Console.WriteLine(dp[i]);
-            }
-
-            //Console.WriteLine(dp[n]);
+            Console.WriteLine(dp[n]);
         }
     }
 }
