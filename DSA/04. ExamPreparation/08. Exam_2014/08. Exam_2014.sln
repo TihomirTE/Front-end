@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.1 Portals", "01.1 Portal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. GirlsGoneWild", "02. GirlsGoneWild\02. GirlsGoneWild.csproj", "{98731209-CB45-4645-A100-4BAC84A0181A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.1 Market", "03.1 Market\03.1 Market.csproj", "{9C75AB83-29E5-4B4E-854D-5575AD041ABF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Market", "03.1 Market\03. Market.csproj", "{9C75AB83-29E5-4B4E-854D-5575AD041ABF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
