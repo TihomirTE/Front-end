@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. GirlsGoneWild", "02. Gi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Market", "03.1 Market\03. Market.csproj", "{9C75AB83-29E5-4B4E-854D-5575AD041ABF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Towns", "04. Towns\04. Towns.csproj", "{16BFE9A1-949E-4129-BD42-2763A94456FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9C75AB83-29E5-4B4E-854D-5575AD041ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C75AB83-29E5-4B4E-854D-5575AD041ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C75AB83-29E5-4B4E-854D-5575AD041ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16BFE9A1-949E-4129-BD42-2763A94456FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16BFE9A1-949E-4129-BD42-2763A94456FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16BFE9A1-949E-4129-BD42-2763A94456FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16BFE9A1-949E-4129-BD42-2763A94456FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
