@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. TheRings", "03. TheRing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Documentation", "04. Documentation\04. Documentation.csproj", "{D010913F-6B77-4953-8960-A66ED988F815}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Swapping", "05. Swapping\05. Swapping.csproj", "{10BC559A-75B0-4B95-B06E-879F05785E6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D010913F-6B77-4953-8960-A66ED988F815}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D010913F-6B77-4953-8960-A66ED988F815}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D010913F-6B77-4953-8960-A66ED988F815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BC559A-75B0-4B95-B06E-879F05785E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BC559A-75B0-4B95-B06E-879F05785E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BC559A-75B0-4B95-B06E-879F05785E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BC559A-75B0-4B95-B06E-879F05785E6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
