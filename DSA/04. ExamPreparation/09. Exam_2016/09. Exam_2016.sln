@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. PlayerRanking", "01. Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. GoldFever", "02. GoldFever\02. GoldFever.csproj", "{835B9B50-B4E4-4156-B8B8-4D45F65C6A16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. TheRings", "03. TheRings\03. TheRings.csproj", "{CCB041A5-77C1-4CF7-A934-AC3A76F9BCD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{835B9B50-B4E4-4156-B8B8-4D45F65C6A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{835B9B50-B4E4-4156-B8B8-4D45F65C6A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{835B9B50-B4E4-4156-B8B8-4D45F65C6A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB041A5-77C1-4CF7-A934-AC3A76F9BCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB041A5-77C1-4CF7-A934-AC3A76F9BCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB041A5-77C1-4CF7-A934-AC3A76F9BCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB041A5-77C1-4CF7-A934-AC3A76F9BCD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
