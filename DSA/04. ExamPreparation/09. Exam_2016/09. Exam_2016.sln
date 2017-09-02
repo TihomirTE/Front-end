@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Swapping", "05. Swappin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Guards", "06. Guards\06. Guards.csproj", "{3A9FDF1C-64FB-4A1C-BE3D-23355AC8F932}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Conference", "07. Conference\07. Conference.csproj", "{7AF106DD-0A5B-461B-84B7-1502A063F943}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{3A9FDF1C-64FB-4A1C-BE3D-23355AC8F932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A9FDF1C-64FB-4A1C-BE3D-23355AC8F932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A9FDF1C-64FB-4A1C-BE3D-23355AC8F932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF106DD-0A5B-461B-84B7-1502A063F943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF106DD-0A5B-461B-84B7-1502A063F943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF106DD-0A5B-461B-84B7-1502A063F943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF106DD-0A5B-461B-84B7-1502A063F943}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
