@@ -48,7 +48,7 @@ namespace _05.Password
                 for (int i = 0; i < 10; i++)
                 {
                     digits[0] = i;
-                    k = FindResult(index + 1, n, k, digits, relations, result);
+                    k = FindResult(1, n, k, digits, relations, result);
                 }
 
                 return k;
@@ -62,6 +62,8 @@ namespace _05.Password
                     digits[index] = i;
                     k = FindResult(index + 1, n, k, digits, relations, result);
                 }
+
+                return k;
             }
 
             if (relations[index - 1] == '>')

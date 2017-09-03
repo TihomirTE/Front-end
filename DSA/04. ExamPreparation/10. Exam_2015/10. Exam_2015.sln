@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. OfficeSpace", "02. Offi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Password", "03. Box\05. Password.csproj", "{FCBBB64A-51F7-4B67-98A4-D6DCC470508E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Words", "06. Words\06. Words.csproj", "{385B68D6-EFC4-4265-9852-2B9D5D7F5354}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FCBBB64A-51F7-4B67-98A4-D6DCC470508E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCBBB64A-51F7-4B67-98A4-D6DCC470508E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCBBB64A-51F7-4B67-98A4-D6DCC470508E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{385B68D6-EFC4-4265-9852-2B9D5D7F5354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{385B68D6-EFC4-4265-9852-2B9D5D7F5354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{385B68D6-EFC4-4265-9852-2B9D5D7F5354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{385B68D6-EFC4-4265-9852-2B9D5D7F5354}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
