@@ -1,0 +1,25 @@
+GRAPHS
+
+Find shortest path in weighted graph (Dijkstra's Algorithm) -> use priority heap min heap:
+(order the smallest elements first) - not implemented in .NET. Instead of that
+it can be used - OrderedBag<T> in 	
+ Wintellect's Power Collections for .NET -> extract the smallest value!!!
+
+
+A* - modification of Dijkstra's algorithm -> using in GPS for finding the shortest path depends on
+the traffic, speed limitations, obstacles on the road etc.
+
+
+Topological Sorting -> use in directed graph
+
+Minimum Spanning Tree ->
+1) Prim's Algorithm - 
+2) Kruskal's algorithm -
+----------------------------------------------------------------------------------------------
+
+Wintellect power collections -> open source data structure library.
+In Nuget packages -> unofficial packaging.
+
+-------------------------------------------------------------------------------------------------
+
+

@@ -1,1 +1,1 @@
-### HomeWorks from Telerik Academy
+### HomeWorks from Telerik Software Academy

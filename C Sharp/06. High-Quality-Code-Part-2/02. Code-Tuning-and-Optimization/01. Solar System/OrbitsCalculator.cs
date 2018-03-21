@@ -116,13 +116,13 @@ namespace SolarSystem
         // Optimize this method - remove the forloop
         private void EarthRotation()
         {
-            this.EarthRotationAngle = 360 * this.Days / EarthRotationPeriod;
+            this.EarthRotationAngle = EarthYear * this.Days / EarthRotationPeriod;
             Update("EarthRotationAngle");
         }
 
         private void SunRotation()
         {
-            this.SunRotationAngle = 360 * this.Days / SunRotationPeriod;
+            this.SunRotationAngle = EarthYear * this.Days / SunRotationPeriod;
             Update("SunRotationAngle");
         }
 
