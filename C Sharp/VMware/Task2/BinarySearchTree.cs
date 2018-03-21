@@ -6,25 +6,30 @@ namespace Task2
     {
         public static void Main()
         {
-            BinaryTree b = new BinaryTree();
+            BinaryTree binaryTree = new BinaryTree();
 
-            b.Insert(1);
-            b.Insert(6);
-            b.Insert(2);
-            b.Insert(4);
-            b.Insert(5);
-            b.Insert(3);
+            binaryTree.Insert(1);
+            binaryTree.Insert(6);
+            binaryTree.Insert(2);
+            binaryTree.Insert(4);
+            binaryTree.Insert(8);
+            binaryTree.Insert(7);
+            binaryTree.Insert(5);
+            binaryTree.Insert(3);
 
-            if(b.Search(int.Parse(Console.ReadLine())))
+            Console.Write("Enter number ");
+            int searchedNumber = int.Parse(Console.ReadLine());
+
+            if (binaryTree.Search(searchedNumber))
             {
-                Console.WriteLine("Contains");
+                Console.WriteLine($"{searchedNumber} contains in the binary tree");
             }
             else
             {
-                Console.WriteLine("Nope");
+                Console.WriteLine($"{searchedNumber} DOES NOT contain in the binary tree");
             }
 
-            b.display();
+            binaryTree.DisplayTree();
 
             Console.ReadLine();
         }
@@ -37,51 +42,56 @@ namespace Task2
 
         public BinaryTree()
         {
-            root = null;
-            count = 0;
+            this.root = null;
+            this.count = 0;
         }
 
         public bool IsEmpty()
         {
-            return root == null;
+            return this.root == null;
         }
 
-        public void Insert(int d)
+        public void Insert(int number)
         {
             if (IsEmpty())
             {
-                root = new Node(d);
+                this.root = new Node(number);
             }
             else
             {
-                root.InsertData(ref root, d);
+                this.root.InsertData(ref this.root, number);
             }
 
-            count++;
+            this.count++;
         }
 
-        public bool Search(int s)
+        public bool Search(int number)
         {
-            return root.Search(root, s);
+            return this.root.Search(this.root, number);
         }
 
         public bool IsLeaf()
         {
             if (!IsEmpty())
-                return root.IsLeaf(ref root);
+            {
+                return this.root.IsLeaf(ref this.root);
+            }
 
             return true;
         }
 
-        public void display()
+        public void DisplayTree()
         {
+            Console.Write("The given binary tree -> ");
             if (!IsEmpty())
-                root.Display(root);
+            {
+                this.root.DisplayNode(this.root);
+            }
         }
 
         public int Count()
         {
-            return count;
+            return this.count;
         }
     }
 
@@ -93,15 +103,14 @@ namespace Task2
 
         public Node(int value)
         {
-            number = value;
-            rightLeaf = null;
-            leftLeaf = null;
+            this.number = value;
+            this.rightLeaf = null;
+            this.leftLeaf = null;
         }
 
         public bool IsLeaf(ref Node node)
         {
             return (node.rightLeaf == null && node.leftLeaf == null);
-
         }
 
         public void InsertData(ref Node node, int data)
@@ -109,49 +118,49 @@ namespace Task2
             if (node == null)
             {
                 node = new Node(data);
-
             }
             else if (node.number < data)
             {
-                InsertData(ref node.rightLeaf, data);
+                this.InsertData(ref node.rightLeaf, data);
             }
 
             else if (node.number > data)
             {
-                InsertData(ref node.leftLeaf, data);
+                this.InsertData(ref node.leftLeaf, data);
             }
         }
 
-        public bool Search(Node node, int s)
+        public bool Search(Node node, int number)
         {
             if (node == null)
                 return false;
 
-            if (node.number == s)
+            if (node.number == number)
             {
                 return true;
             }
-            else if (node.number < s)
+            else if (node.number < number)
             {
-                return Search(node.rightLeaf, s);
+                return Search(node.rightLeaf, number);
             }
-            else if (node.number > s)
+            else if (node.number > number)
             {
-                return Search(node.leftLeaf, s);
+                return Search(node.leftLeaf, number);
             }
 
             return false;
         }
 
-        public void Display(Node n)
+        public void DisplayNode(Node node)
         {
-            if (n == null)
+            if (node == null)
+            {
                 return;
+            }
 
-            Display(n.leftLeaf);
-            Console.Write(" " + n.number);
-            Display(n.rightLeaf);
+            this.DisplayNode(node.leftLeaf);
+            Console.Write(node.number + " ");
+            this.DisplayNode(node.rightLeaf);
         }
-
     }
 }
