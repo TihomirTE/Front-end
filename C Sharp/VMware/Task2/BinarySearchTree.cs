@@ -2,19 +2,27 @@
 
 namespace Task2
 {
+    /*
+     Given a binary search tree you have to answer the question if a given number X belongs to the tree.
+     A binary search tree is such a tree that each node has value (a positive integer) and two child nodes –
+     left and right, following the rule that the value of the left node is not bigger than the value of the current node
+     and also the value of the right not is strictly bigger than the value of the current node.
+     Your task is to define Node and Tree elements and implement a function that by given Tree and element value answers
+     if that value belongs to the tree.
+     */
     public class Program
     {
         public static void Main()
         {
             BinaryTree binaryTree = new BinaryTree();
 
+            binaryTree.Insert(5);
             binaryTree.Insert(1);
             binaryTree.Insert(6);
             binaryTree.Insert(2);
             binaryTree.Insert(4);
             binaryTree.Insert(8);
             binaryTree.Insert(7);
-            binaryTree.Insert(5);
             binaryTree.Insert(3);
 
             Console.Write("Enter number ");
@@ -119,7 +127,7 @@ namespace Task2
             {
                 node = new Node(data);
             }
-            else if (node.number < data)
+            else if (node.number <= data)
             {
                 this.InsertData(ref node.rightLeaf, data);
             }
