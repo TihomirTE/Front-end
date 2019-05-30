@@ -9,11 +9,11 @@ namespace Task2_BinaryToDecimal
         static void Main()
         {
             var binary = Console.ReadLine().ToArray();
-            long decimalNumber = ConvertDecimalToBinary(binary);
+            long decimalNumber = ConvertBinaryToDecimal(binary);
             Console.WriteLine(decimalNumber);
         }
 
-        static long ConvertDecimalToBinary(char[] arr)
+        static long ConvertBinaryToDecimal(char[] arr)
         {
             long number = 0;
             for (long i = arr.Length - 1; i >= 0; i--)
